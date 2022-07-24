@@ -9,3 +9,9 @@
     -webkit-box-shadow: -2px 7px 14px -5px #000000; 
     box-shadow: -2px 7px 14px -5px #000000;
 }
+
+@media (min-width: 320px){
+    #homeHeading{
+        height: 65vh;
+    }
+}
