@@ -2888,6 +2888,7 @@ __metadata:
     react-dom: ^18.2.0
     react-icons: ^4.4.0
     react-router-dom: ^6.3.0
+    tailwind-styled-components: ^2.1.8
     tailwindcss: ^3.1.6
     vite: ^3.0.0
   languageName: unknown
@@ -3876,6 +3877,25 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^1.2.0":
+  version: 1.5.1
+  resolution: "tailwind-merge@npm:1.5.1"
+  checksum: 5f2611a6c8f2808e06f0904f36be9b1d3e1df71e54552f742be3d81f5cf1806f93c1ae7206bca418b82f302f5bb827d627e3aa971070edd6024730927c63d7d6
+  languageName: node
+  linkType: hard
+
+"tailwind-styled-components@npm:^2.1.8":
+  version: 2.1.8
+  resolution: "tailwind-styled-components@npm:2.1.8"
+  dependencies:
+    tailwind-merge: ^1.2.0
+  peerDependencies:
+    react: ">= 16.8.0"
+    react-dom: ">= 16.8.0"
+  checksum: e9d34486c4a9ceb854cdd7c1bbf804e309bffd6aa0d13300ed3546b5b40114a501e6fd55b104ca4e2ab2a51e43d0d5d87356d3c7d83fda1da73281daf78d8c03
   languageName: node
   linkType: hard
 
