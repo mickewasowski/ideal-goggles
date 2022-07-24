@@ -1,7 +1,7 @@
 import {NavLink} from 'react-router-dom';
 import '../../index.css';
 
-import RouteBtn from './route-btn/routebtn-component';
+import RouteBtn from './route-btn/Routebtn-Component';
 
 function Home(){
 
