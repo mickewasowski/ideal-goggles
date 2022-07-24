@@ -9,6 +9,7 @@ module.exports = {
       genericWhite: '#ffffff',
       mainMenuCardsBackground: '#F5F8FF',
       mainMenuCardsHoverBackground: '#ebeef5',
+      mainHeaderBackground: '#0A0A0B',
     },
     screens: {
       'phone': '320px',
