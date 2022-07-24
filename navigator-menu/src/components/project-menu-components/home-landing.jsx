@@ -1,12 +1,9 @@
 import {NavLink} from 'react-router-dom';
 import '../../index.css';
 
-import RouteBtn from './routebtn-component';
+import RouteBtn from './route-btn/routebtn-component';
 
 function Home(){
-
-    const navlistStyles = "h-[40rem] w-[45rem] mx-1 p-8 rounded-xl bg-gray-50 text-2xl flex flex-col justify-between";
-    const imageStyles = 'w-full';
 
     return(
         <>
@@ -15,11 +12,11 @@ function Home(){
                 <h3 className='text-3xl text-white mt-[2rem]'>A navigational menu for all N2J Academy projects.</h3>
             </div>
             <div className="inline-flex flex-wrap gap-[4rem] text-center w-4/5 mt-[6rem] mb-[4rem]">
-                <RouteBtn navlinkStyling={navlistStyles} path={'project/tips-calculator'} imageStyling={imageStyles} imageSource={'./tipscalculator-thumbnail.jpg'}>Tips Calculator</RouteBtn>
-                <RouteBtn navlinkStyling={navlistStyles} path={'project/github'} imageStyling={imageStyles} imageSource={'./github-thumbnail.jpg'}>Github</RouteBtn>
-                <RouteBtn navlinkStyling={navlistStyles} path={'project/e-commerce'} imageStyling={imageStyles} imageSource={'./e-commerce-thumbnail.jpg'}>E-Commerce</RouteBtn>
-                <RouteBtn navlinkStyling={navlistStyles} path={'project/loop-studio'} imageStyling={imageStyles} imageSource={'./loopstudio-thumbnail.jpg'}>Loop-studio</RouteBtn>
-                <RouteBtn navlinkStyling={navlistStyles} path={'project/equalizer'} imageStyling={imageStyles} imageSource={'./equalizer-thumbnail.jpg'}>Equalizer</RouteBtn>
+                <RouteBtn  path={'project/tips-calculator'} imageSource={'./tipscalculator-thumbnail.jpg'}>Tips Calculator</RouteBtn>
+                <RouteBtn path={'project/github'} imageSource={'./github-thumbnail.jpg'}>Github</RouteBtn>
+                <RouteBtn path={'project/e-commerce'} imageSource={'./e-commerce-thumbnail.jpg'}>E-Commerce</RouteBtn>
+                <RouteBtn path={'project/loop-studio'} imageSource={'./loopstudio-thumbnail.jpg'}>Loop-studio</RouteBtn>
+                <RouteBtn path={'project/equalizer'} imageSource={'./equalizer-thumbnail.jpg'}>Equalizer</RouteBtn>
             </div>
         </>
     )
