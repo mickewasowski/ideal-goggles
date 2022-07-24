@@ -12,8 +12,9 @@ module.exports = {
       mainHeaderBackground: '#0A0A0B',
     },
     screens: {
-      'phone': '320px',
-      'tablet': '768px'
+      'phone': {'min': '320px', 'max': '767px'},
+      'tablet': {'min':'768px', 'max': '1023px'},
+      'desktop': {'min': '1440px'}
     },
     extend: {},
   },

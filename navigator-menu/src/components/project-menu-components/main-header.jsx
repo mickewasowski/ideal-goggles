@@ -1,6 +1,6 @@
 import {Outlet, NavLink} from 'react-router-dom';
 import { MdArrowBackIosNew } from 'react-icons/md';
-import {NavigationWrapper} from './Main-header.styles';
+import {NavigationWrapper, StyledNavLink} from './Main-header.styles';
 
 function MainHeader(){
     let path = window.location.pathname;
@@ -10,10 +10,10 @@ function MainHeader(){
     return(
         <>
             <NavigationWrapper>
-                <NavLink to={'/'} className={'flex items-center'}>
+                <StyledNavLink to={'/'}>
                     <MdArrowBackIosNew className='mr-[.5rem]'/>
                     Back
-                </NavLink>
+                </StyledNavLink>
                 <h1 className=''>{currentProject}</h1>
             </NavigationWrapper>
             <Outlet />
