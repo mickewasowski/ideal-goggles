@@ -1,12 +1,12 @@
-
+import {Wrapper,Parag, Strong, H1} from './Amount.styles';
 
 function Amount({name, amount}){
 
     return(
-        <div id="amount-container">
-            <p><strong>{name}</strong><br />/ person</p>
-            <h1 id="tip-amount-person">$ {amount}</h1>
-        </div>
+        <Wrapper>
+            <Parag><Strong>{name}</Strong><br />/ person</Parag>
+            <H1 id="tip-amount-person">$ {amount}</H1>
+        </Wrapper>
     )
 }
 

@@ -20,6 +20,13 @@ module.exports = {
       tipsCalcBtnTextHover: '#00494d',
       tipsCalcCustBtnBG: '#f4fafa',
       tipsCalcErrorText: '#e07152',
+      tipsCalcRightBG: '#00494d',
+      tipsCalcRightParag: '#7f9c9f',
+      tipsCalcRightH1: '#26c0ab',
+      tipsCalcResetBtn: '#5e7a7d',
+      tipsCalcResetBtnText: '#00494d',
+      tipsCalcResetBtnHover: '#a1e8e0',
+      tipsCalcResetBtnActive: '#26c0ab'
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},

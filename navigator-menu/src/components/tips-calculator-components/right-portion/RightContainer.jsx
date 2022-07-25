@@ -1,16 +1,18 @@
 import Amount from "./amount-component/Amount";
 
-import {Container} from './RightContainer.styles';
+import {Container, Wrapper,Reset} from './RightContainer.styles';
 
 function RightContainer(){
 
+    const activeReset = 'bg-tipsCalcResetBtnActive';
+
     return(
         <Container>
-            <Amount name="Tip Amount" amount={0.00}/>
-            <Amount name="Total" amount={0.00}/>
-            <div id="reset-container">
-                <button onclick="resetForm()" id="reset-btn">Reset</button>
-            </div>
+            <Amount name="Tip Amount" amount={'0.00'}/>
+            <Amount name="Total" amount={'0.00'}/>
+            <Wrapper>
+                <Reset onclick="resetForm()" id="reset-btn">Reset</Reset>
+            </Wrapper>
         </Container>
     )
 }
