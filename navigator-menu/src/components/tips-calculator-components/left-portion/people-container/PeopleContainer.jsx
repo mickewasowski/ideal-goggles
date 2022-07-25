@@ -2,10 +2,12 @@ import {Container,Label, ErrorLabel,InputWrapper, Input} from './PeopleContainer
 
 function PeopleContainer(){
 
+    const errorDiv = 'outline-2 outline outline-tipsCalcErrorText';
+
     return(
         <Container>
             <Label>Number of People</Label>
-            <ErrorLabel id="error-label" style={{display: 'inline-block'}}>Can't be zero</ErrorLabel>
+            <ErrorLabel id="error-label" style={{display: 'none'}}>Can't be zero</ErrorLabel>
             <InputWrapper>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16">
