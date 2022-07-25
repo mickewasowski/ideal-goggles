@@ -1,9 +1,9 @@
-
+import TipsCalculatorWrapper from "../../components/tips-calculator-components/TipsCalculatorWrapper";
 
 function TipsCalculatorRoute(){
 
     return(
-        <h2>This is the Tips Calculator landing page</h2>
+        <TipsCalculatorWrapper />
     )
 }
 
