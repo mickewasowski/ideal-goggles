@@ -1,11 +1,11 @@
-import {Container,Label,InputWrapper, Input} from './PeopleContainer.styles';
+import {Container,Label, ErrorLabel,InputWrapper, Input} from './PeopleContainer.styles';
 
 function PeopleContainer(){
 
     return(
         <Container>
             <Label>Number of People</Label>
-            <label htmlFor="" id="error-label" style={{display: 'none'}}>Can't be zero</label>
+            <ErrorLabel id="error-label" style={{display: 'inline-block'}}>Can't be zero</ErrorLabel>
             <InputWrapper>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16">

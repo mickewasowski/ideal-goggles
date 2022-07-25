@@ -10,6 +10,12 @@ export const Label = tw.label`
     text-tipsCalcLabelTextColor
 `
 
+export const ErrorLabel = tw.label`
+    text-tipsCalcErrorText
+    float-right
+    text-base
+`
+
 export const InputWrapper = tw.div`
     bg-tipsCalcInputDivBG
     h-1/2

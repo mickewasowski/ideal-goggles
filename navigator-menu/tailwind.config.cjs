@@ -18,7 +18,8 @@ module.exports = {
       tipsCalcBtnBG: '#00494d',
       tipsCalcBtnHover: '#a1e8e0',
       tipsCalcBtnTextHover: '#00494d',
-      tipsCalcCustBtnBG: '#f4fafa'
+      tipsCalcCustBtnBG: '#f4fafa',
+      tipsCalcErrorText: '#e07152',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},

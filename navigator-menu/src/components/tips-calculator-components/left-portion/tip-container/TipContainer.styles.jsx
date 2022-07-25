@@ -12,28 +12,28 @@ export const Label = tw.label`
 `
 
 export const PercentageBtns = tw.div`
-flex
-flex-row
-flex-wrap
-justify-between
-gap-3
-mt-4
+    flex
+    flex-row
+    flex-wrap
+    justify-between
+    gap-3
+    mt-4
 `
 
 export const Button = tw.button`
-inline-block
-w-[9rem]
-h-[4rem]
-border-none
-rounded-md
-text-3xl
-font-bold
-bg-tipsCalcBtnBG
-text-genericWhite
+    inline-block
+    w-[9rem]
+    h-[4rem]
+    border-none
+    rounded-md
+    text-3xl
+    font-bold
+    bg-tipsCalcBtnBG
+    text-genericWhite
 
-hover:bg-tipsCalcBtnHover
-hover:text-tipsCalcBtnTextHover
-hover:cursor-pointer
+    hover:bg-tipsCalcBtnHover
+    hover:text-tipsCalcBtnTextHover
+    hover:cursor-pointer
 `
 
 export const InputBtn = tw.input`
