@@ -35,9 +35,13 @@ export const TipsCalculatorInfoProvider = ({
        }));
     }
 
+    const reset = () => {
+        setTipsCalc(initialState);
+    }
+
  
     return (
-       <TipsCalculatorContext.Provider value={{tipsCalc, bill, percentage, people}}>
+       <TipsCalculatorContext.Provider value={{tipsCalc, bill, percentage, people, reset}}>
           {children}
        </TipsCalculatorContext.Provider>
     );

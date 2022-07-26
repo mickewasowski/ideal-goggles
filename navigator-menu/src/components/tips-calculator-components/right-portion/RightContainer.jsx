@@ -5,7 +5,7 @@ import {TipsCalculatorContext} from '../../../contexts/TipsCalculatorContext';
 
 
 function RightContainer(){
-    const {tipsCalc} = useContext(TipsCalculatorContext); 
+    const {tipsCalc, reset} = useContext(TipsCalculatorContext); 
 
     const totalTip = tipsCalc.bill * tipsCalc.percentage;
     const tipPerPerson = (totalTip / tipsCalc.people).toFixed(2);
@@ -18,7 +18,7 @@ function RightContainer(){
             <Amount name="Tip Amount" amount={tipPerPerson}/>
             <Amount name="Total" amount={perPersonBill}/>
             <Wrapper>
-                <Reset  id="reset-btn">Reset</Reset>
+                <Reset onClick={reset} id="reset-btn">Reset</Reset>
             </Wrapper>
         </Container>
     )
