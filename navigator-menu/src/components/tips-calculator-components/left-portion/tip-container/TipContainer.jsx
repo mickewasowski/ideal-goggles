@@ -1,17 +1,33 @@
 import {Container,Label,PercentageBtns,Button, InputBtn} from './TipContainer.styles';
+import { useContext } from 'react';
+import {TipsCalculatorContext} from '../../../../contexts/TipsCalculatorContext';
+
 
 function TipContainer(){
-    
+    const {percentage, tipsCalc} = useContext(TipsCalculatorContext); 
+
+    const handleBtnChange = (e) => {
+        let percentageAmount;
+
+        if(e.target.tagName === 'BUTTON'){
+            percentageAmount = parseFloat(e.target.innerText.replace('%', '')) / 100;
+
+        }else if(e.target.tagName === 'INPUT'){
+            percentageAmount = parseFloat(e.target.value) / 100;
+        }
+        percentage(percentageAmount);
+    }
+
     return(
         <Container>
             <Label>Select Tip %</Label>
             <PercentageBtns>
-                <Button >5%</Button>
-                <Button >10%</Button>
-                <Button >15%</Button>
-                <Button >25%</Button>
-                <Button >50%</Button>
-                <InputBtn type="number" placeholder="Custom" className="input-percent"/>
+                <Button onClick={handleBtnChange}>5%</Button>
+                <Button onClick={handleBtnChange}>10%</Button>
+                <Button onClick={handleBtnChange}>15%</Button>
+                <Button onClick={handleBtnChange}>25%</Button>
+                <Button onClick={handleBtnChange}>50%</Button>
+                <InputBtn type="number" placeholder="Custom" className="input-percent" onChange={handleBtnChange}/>
             </PercentageBtns>
         </Container>
     )

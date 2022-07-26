@@ -5,7 +5,11 @@ function Amount({name, amount}){
     return(
         <Wrapper>
             <Parag><Strong>{name}</Strong><br />/ person</Parag>
-            <H1 id="tip-amount-person">$ {amount}</H1>
+            {
+                amount === 'NaN'
+                ? <H1 id="tip-amount-person">$ {'0.00'}</H1>
+                : <H1 id="tip-amount-person">$ {amount}</H1>
+            }
         </Wrapper>
     )
 }
