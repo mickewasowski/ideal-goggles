@@ -18,7 +18,7 @@ function RightContainer(){
             <Amount name="Tip Amount" amount={tipPerPerson}/>
             <Amount name="Total" amount={perPersonBill}/>
             <Wrapper>
-                <Reset onClick={reset} id="reset-btn">Reset</Reset>
+                <Reset onClick={reset} id="reset-btn" className={(tipsCalc.bill != 0 || tipsCalc.people != 0 || tipsCalc.percentage != 0) ? activeReset : ''}>Reset</Reset>
             </Wrapper>
         </Container>
     )
