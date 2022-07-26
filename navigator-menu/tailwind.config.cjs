@@ -16,7 +16,10 @@ module.exports = {
       'tablet': {'min':'768px', 'max': '1023px'},
       'desktop': {'min': '1440px'}
     },
-    extend: {},
+    extend: {
+      'alata': ['"Alata"', 'sans-serif'],
+      'josefin-sans': ['"Josefin Sans"', 'sans-serif']
+    },
   },
   plugins: [],
 }
