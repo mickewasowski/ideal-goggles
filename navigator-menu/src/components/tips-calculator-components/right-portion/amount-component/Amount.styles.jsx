@@ -20,4 +20,8 @@ export const Strong = tw.strong`
 export const H1 = tw.h1`
     text-tipsCalcRightH1
     text-5xl
+
+    phone:text-3xl
+
+    tablet:text-3xl
 `

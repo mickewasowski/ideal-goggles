@@ -8,12 +8,22 @@ export const Label = tw.label`
     text-lg
     font-bold
     text-tipsCalcLabelTextColor
+
+    phone:block
+    
+    tablet:block
 `
 
 export const ErrorLabel = tw.label`
     text-tipsCalcErrorText
     float-right
     text-base
+
+    phone:float-none
+    phone:text-base
+
+    tablet:float-none
+    tablet:text-base
 `
 
 export const InputWrapper = tw.div`

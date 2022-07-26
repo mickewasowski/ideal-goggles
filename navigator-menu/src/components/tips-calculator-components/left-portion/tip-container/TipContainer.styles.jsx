@@ -34,6 +34,14 @@ export const Button = tw.button`
     hover:bg-tipsCalcBtnHover
     hover:text-tipsCalcBtnTextHover
     hover:cursor-pointer
+
+    phone:w-2/5
+    phone:h-[2.5rem]
+
+    tablet:w-[5rem]
+    tablet:text-2xl
+
+    laptop:w-[7rem]
 `
 
 export const InputBtn = tw.input`
@@ -55,4 +63,12 @@ export const InputBtn = tw.input`
     focus:outline-2
     focus:outline
     focus:outline-tipsCalcInputDivOutline
+
+    phone:w-2/5
+    phone:h-[2.5rem]
+    
+    tablet:w-[5rem]
+    tablet:text-2xl
+
+    laptop:w-[7rem]
 `

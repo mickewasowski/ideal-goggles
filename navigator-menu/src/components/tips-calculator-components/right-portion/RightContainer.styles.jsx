@@ -9,6 +9,10 @@ export const Container = tw.div`
     flex-col
     items-center
     justify-around
+
+    phone:w-11/12
+    phone:h-3/5
+    phone:py-[2rem]
 `
 
 export const Wrapper = tw.div`
@@ -30,4 +34,7 @@ font-bold
 text-xl
 
 hover:bg-tipsCalcResetBtnHover
+
+phone:h-[2rem]
+phone:mt-[1.5rem]
 `

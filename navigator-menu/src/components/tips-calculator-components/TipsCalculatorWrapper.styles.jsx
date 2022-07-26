@@ -18,4 +18,14 @@ export const PageContainer = tw.div`
     flex
     justify-around
     items-center
+
+    phone:w-full
+    phone:h-auto
+    phone:flex-col
+    phone:gap-8
+    phone:py-8
+
+    tablet:w-full
+
+    laptop:w-full
 `

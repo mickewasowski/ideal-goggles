@@ -31,6 +31,7 @@ module.exports = {
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
       'tablet': {'min':'768px', 'max': '1023px'},
+      'laptop': {'min': '1023px', 'max': '1399px'},
       'desktop': {'min': '1440px'}
     },
     extend: {
