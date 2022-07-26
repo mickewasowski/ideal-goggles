@@ -37,6 +37,11 @@ export const TipsCalculatorInfoProvider = ({
 
     const reset = () => {
         setTipsCalc(initialState);
+
+        let billInput = document.getElementById('bill');
+        let peopleCountInput = document.getElementById('people-count');
+        billInput.value = '';
+        peopleCountInput.value = '';
     }
 
  
