@@ -40,8 +40,10 @@ export const TipsCalculatorInfoProvider = ({
 
         let billInput = document.getElementById('bill');
         let peopleCountInput = document.getElementById('people-count');
+        let customPercentageInput = document.getElementById('percentage');
         billInput.value = '';
         peopleCountInput.value = '';
+        customPercentageInput.value = '';
     }
 
  

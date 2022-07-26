@@ -12,6 +12,10 @@ function TipContainer(){
         if(e.target.tagName === 'BUTTON'){
             percentageAmount = parseFloat(e.target.innerText.replace('%', '')) / 100;
 
+            if (document.getElementById('percentage').value !== '') {
+                document.getElementById('percentage').value = '';
+            }
+
         }else if(e.target.tagName === 'INPUT'){
             percentageAmount = parseFloat(e.target.value) / 100;
         }
@@ -27,7 +31,7 @@ function TipContainer(){
                 <Button onClick={handleBtnChange}>15%</Button>
                 <Button onClick={handleBtnChange}>25%</Button>
                 <Button onClick={handleBtnChange}>50%</Button>
-                <InputBtn type="number" placeholder="Custom" className="input-percent" onChange={handleBtnChange}/>
+                <InputBtn type="number" placeholder="Custom" id="percentage" onChange={handleBtnChange}/>
             </PercentageBtns>
         </Container>
     )
