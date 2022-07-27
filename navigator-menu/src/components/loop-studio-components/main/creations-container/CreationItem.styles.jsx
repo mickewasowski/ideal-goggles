@@ -1,22 +1,30 @@
 import tw from "tailwind-styled-components/dist/tailwind";
 
 export const ItemWrapper = tw.div`
-w-[19rem]
-h-[28.1rem]
-bg-no-repeat
-bg-cover
-bg-[#00000066]
-bg-blend-hard-light
+    w-[19rem]
+    h-[28.1rem]
+    bg-no-repeat
+    bg-cover
+    bg-[#00000066]
+    bg-blend-hard-light
 
-flex
-flex-col
-justify-end
-items-center
+    flex
+    flex-col
+    justify-end
+    items-center
 
-text-genericWhite
+    text-genericWhite
 
-hover:text-genericBlack
-hover:cursor-pointer
+    hover:text-genericBlack
+    hover:cursor-pointer
+
+    phone:w-11/12
+    phone:h-[10rem]
+    phone:bg-center
+
+    tablet:w-11/12
+    tablet:h-[10rem]
+    tablet:bg-center
 `
 
 export const Backdrop = tw.div`
