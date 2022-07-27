@@ -1,10 +1,10 @@
-
+import LoopStudioWrapper from "../../components/loop-studio-components/LoopStudioWrapper";
 
 
 function LoopStudioRoute(){
 
     return(
-        <h2>This is the Loop studio landing page</h2>
+        <LoopStudioWrapper />
     )
 }
 
