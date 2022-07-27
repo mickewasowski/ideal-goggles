@@ -5,4 +5,7 @@ w-full
 h-full
 
 font-alata
+
+phone:w-full
+phone:h-full
 `

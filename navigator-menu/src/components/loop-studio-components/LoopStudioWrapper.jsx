@@ -8,8 +8,8 @@ function LoopStudioWrapper(){
     return(
         <Wrapper>
             <Header />
-            <Main />
-            <Footer />
+            {/* <Main />
+            <Footer /> */}
         </Wrapper>
     )
 }

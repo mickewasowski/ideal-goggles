@@ -11,6 +11,10 @@ export const HeaderContainer = tw.header`
     bg-no-repeat
     bg-center
     bg-cover
+
+    phone:w-full 
+    phone:h-screen
+    phone:hero-mobile
 `
 
 export const LowerContainer = tw.div`

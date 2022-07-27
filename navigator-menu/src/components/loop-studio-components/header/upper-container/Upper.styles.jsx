@@ -6,14 +6,38 @@ export const UpperContainer = tw.div`
     justify-between
     my-[5rem]
     mx-[9rem]
+
+    phone:m-0
+    phone:mt-[2rem]
+    phone:px-[1rem]
+    phone:items-center
 `
 
 export const NavigationContainer = tw.div`
     flex
+
+    phone:w-screen
+    phone:h-screen
+    phone:z-3
+    phone:bg-genericBlack
+    phone:absolute
+    phone:top-0
+    phone:-left-0
+    phone:flex-col
+    phone:gap-40
+`
+
+export const MobileLogoContainer = tw.div`
+    pt-[2rem]
+    px-[1.8rem]
+    justify-between
 `
 
 export const UL = tw.ul`
     flex
+
+    phone:flex-col
+    phone:gap-4
 `
 
 export const LiItem = tw.li`
@@ -29,4 +53,9 @@ export const AnchorTag = tw(NavLink)`
     hover:border-solid
     hover:border-b-2
     hover:border-genericWhite
+
+    phone:text-[1.5rem]
+    phone:uppercase
+    phone:font-josefin-sans
+    phone:font-light
 `
