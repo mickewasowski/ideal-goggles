@@ -20,11 +20,9 @@ export const ItemWrapper = tw.div`
 
     phone:w-11/12
     phone:h-[10rem]
-    phone:bg-center
 
     tablet:w-11/12
     tablet:h-[10rem]
-    tablet:bg-center
 `
 
 export const Backdrop = tw.div`

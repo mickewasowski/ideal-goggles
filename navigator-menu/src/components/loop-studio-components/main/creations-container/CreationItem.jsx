@@ -4,13 +4,18 @@ import {useEffect} from 'react';
 
 function CreationItem({title, backgroundImage}){
     let windowWidth = window.innerWidth;
-    let background = windowWidth > 1440 ? ('bg-' + backgroundImage + '-desktop') : ('bg-' + backgroundImage + '-mobile');
-
     let backdropID = title + '-backdrop';
+
+    let design = windowWidth < 1440 ? 'mobile' : 'desktop';
+    let string = `/images/loop-studio/${design}/image-${backgroundImage}.jpg`;
+
 
     useEffect(() => {
         let wrapper = document.getElementById(title);
-        wrapper.classList.add(background);
+
+        wrapper.style.background = `url(${string})`;
+        wrapper.style.backgroundPosition = 'center';
+        wrapper.style.backgroundRepeat = 'no-repeat';
     }, []);
 
 
