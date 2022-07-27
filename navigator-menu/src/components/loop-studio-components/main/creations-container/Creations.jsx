@@ -1,4 +1,6 @@
+import {Wrapper, HeadingBtnContainer, Heading, BtnPrimary, CreationsContainer} from './Creations.styles';
 
+import CreationItem from './CreationItem';
 
 function Creations(){
 
@@ -11,47 +13,23 @@ function Creations(){
     }
 
     return(
-        <div id="creations-container">
-            <div id="heading-button-container">
-                <h2>Our creations</h2>
-                <button>See all</button>
-            </div>
-            <div id="creations">
-                <div className="creation-item" onMouseLeave={removeBackdrop} onMouseEnter={changeBackgroundOpacity}>
-                <div className="backdrop" style={{display: "none"}}></div>
-                <h3 className="creation-item">Deep earth</h3>
-                </div>
-                <div className="creation-item" onMouseLeave={removeBackdrop} onMouseEnter={changeBackgroundOpacity}>
-                <div className="backdrop" style={{display: "none"}}></div>
-                <h3 className="creation-item">Night arcade</h3>
-                </div>
-                <div className="creation-item" onMouseLeave={removeBackdrop} onMouseEnter={changeBackgroundOpacity}>
-                <div className="backdrop" style={{display: "none"}}></div>
-                <h3 className="creation-item">Soccer team VR</h3>
-                </div>
-                <div className="creation-item" onMouseLeave={removeBackdrop} onMouseEnter={changeBackgroundOpacity}>
-                <div className="backdrop" style={{display: "none"}}></div>
-                <h3 className="creation-item">The grid</h3>
-                </div>
-                <div className="creation-item" onMouseLeave={removeBackdrop} onMouseEnter={changeBackgroundOpacity}>
-                <div className="backdrop" style={{display: "none"}}></div>
-                <h3 className="creation-item">From up above VR</h3>
-                </div>
-                <div className="creation-item" onMouseLeave={removeBackdrop} onMouseEnter={changeBackgroundOpacity}>
-                <div className="backdrop" style={{display: "none"}}></div>
-                <h3 className="creation-item">Pocket borealis</h3>
-                </div>
-                <div className="creation-item" onMouseLeave={removeBackdrop} onMouseEnter={changeBackgroundOpacity}>
-                <div className="backdrop" style={{display: "none"}}></div>
-                <h3 className="creation-item">The curiosity</h3>
-                </div>
-                <div className="creation-item" onMouseLeave={removeBackdrop} onMouseEnter={changeBackgroundOpacity}>
-                <div className="backdrop" style={{display: "none"}}></div>
-                <h3 className="creation-item">Make it fisheye</h3>
-                </div>
-            </div>
-            <button>See all</button>
-            </div>
+        <Wrapper id="creations-container">
+            <HeadingBtnContainer>
+                <Heading>Our creations</Heading>
+                <BtnPrimary>See all</BtnPrimary>
+            </HeadingBtnContainer>
+            <CreationsContainer id="creations">
+                <CreationItem title={'Deep Earth'} backgroundImage={'deep-earth'}/>
+                <CreationItem title={'Night arcade'} backgroundImage={'night-arcade'}/>
+                <CreationItem title={'Soccer team VR'} backgroundImage={'soccer-team'}/>
+                <CreationItem title={'The grid'} backgroundImage={'grid'}/>
+                <CreationItem title={'From up above VR'} backgroundImage={'from-above'}/>
+                <CreationItem title={'Pocket borealis'} backgroundImage={'pocket-borealis'}/>
+                <CreationItem title={'The curiosity'} backgroundImage={'curiosity'}/>
+                <CreationItem title={'Make it fisheye'} backgroundImage={'fisheye'}/>
+            </CreationsContainer>
+            <button style={{display: "none"}}>See all</button>
+        </Wrapper>
     )
 }
 
