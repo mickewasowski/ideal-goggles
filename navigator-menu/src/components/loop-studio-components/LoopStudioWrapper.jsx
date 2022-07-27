@@ -1,5 +1,5 @@
 import Header from "./header/Header";
-
+import Main from "./main/Main";
 import {Wrapper} from './LoopStudioWrapper.styles'
 
 function LoopStudioWrapper(){
@@ -7,6 +7,7 @@ function LoopStudioWrapper(){
     return(
         <Wrapper>
             <Header />
+            <Main />
         </Wrapper>
     )
 }

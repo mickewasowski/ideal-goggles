@@ -10,6 +10,7 @@ module.exports = {
       mainMenuCardsBackground: '#F5F8FF',
       mainMenuCardsHoverBackground: '#ebeef5',
       mainHeaderBackground: '#0A0A0B',
+      loopStudioDescParag: '#8c8c8c',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
@@ -24,6 +25,7 @@ module.exports = {
       backgroundImage: {
         'hero-desktop': "url('/images/loop-studio/desktop/image-hero.jpg')",
         'hero-mobile': "url('/images/loop-studio/mobile/image-hero.jpg')",
+        'vr-goggles-desktop': "url('/images/loop-studio/desktop/image-interactive.jpg')"
       }
     },
   },
