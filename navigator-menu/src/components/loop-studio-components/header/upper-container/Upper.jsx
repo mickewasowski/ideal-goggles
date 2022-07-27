@@ -2,6 +2,8 @@ import logo from '../../../../assets/loop-studio/logo.svg';
 import hamburger from '../../../../assets/loop-studio/icon-hamburger.svg'
 import closeMenu from '../../../../assets/loop-studio/icon-close.svg'
 
+import {UpperContainer, NavigationContainer, UL, LiItem, AnchorTag} from './Upper.styles';
+
 function Upper(){
 
     const toggleNavigation = () => {
@@ -9,15 +11,15 @@ function Upper(){
     }
 
     return(
-        <div id="upper" style={{backgroundColor: "blueviolet"}}>
+        <UpperContainer id="upper">
             <div id="logo-container">
                 <img src={logo} />
             </div>
-            <div id="navigation-toggle" onClick={toggleNavigation}>
+            <div id="navigation-toggle" style={{display: "none"}} onClick={toggleNavigation}>
                 <img src={hamburger}/>
             </div>
-            <div id="navigation-container">
-                <div id="mobile-logo" style={{display: "block"}}>
+            <NavigationContainer>
+                <div id="mobile-logo" style={{display: "none"}}>
                     <img src={logo} />
                     <span onClick={toggleNavigation}>
                         <img src={closeMenu} />
@@ -25,16 +27,16 @@ function Upper(){
                 </div>
                 <nav id="nav-tag">
                     {/* <!-- style="display: block;" --> */}
-                    <ul id="nav-ul">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Support</a></li>
-                    </ul>
+                    <UL>
+                        <LiItem><AnchorTag to={''}>About</AnchorTag></LiItem>
+                        <LiItem><AnchorTag to={''}>Careers</AnchorTag></LiItem>
+                        <LiItem><AnchorTag to={''}>Events</AnchorTag></LiItem>
+                        <LiItem><AnchorTag to={''}>Products</AnchorTag></LiItem>
+                        <LiItem><AnchorTag to={''}>Support</AnchorTag></LiItem>
+                    </UL>
                 </nav>
-            </div>
-        </div>
+            </NavigationContainer>
+        </UpperContainer>
     )
 }
 
