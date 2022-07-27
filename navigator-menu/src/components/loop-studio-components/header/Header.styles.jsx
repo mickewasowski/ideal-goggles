@@ -24,6 +24,11 @@ export const LowerContainer = tw.div`
     w-[70rem]
     border-4
     border-genericWhite
+
+    phone:w-11/12
+    phone:self-center
+    phone:m-0
+    phone:mt-[12rem]
 `
 
 export const Heading = tw.h1`
@@ -35,4 +40,7 @@ export const Heading = tw.h1`
     mx-[3rem]
     text-9xl
     font-light
+
+    phone:m-[1rem]
+    phone:text-[2.2rem]
 `
