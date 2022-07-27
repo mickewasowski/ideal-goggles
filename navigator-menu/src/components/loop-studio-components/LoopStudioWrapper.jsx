@@ -9,7 +9,7 @@ function LoopStudioWrapper(){
         <Wrapper>
             <Header />
             <Main />
-            {/*<Footer /> */}
+            <Footer />
         </Wrapper>
     )
 }

@@ -4,16 +4,16 @@ import instagram from '../../../assets/loop-studio/icon-instagram.svg';
 import pinterest from '../../../assets/loop-studio/icon-pinterest.svg';
 import twitter from '../../../assets/loop-studio/icon-twitter.svg';
 
-import {Wrapper, LeftContainer,Navigation,ListItem, RightContainer,IconsContainer,AnchorTag} from './Footer.styles';
+import {Wrapper, LeftContainer,LogoContainer,Navigation,ListItem, RightContainer,IconsContainer,AnchorTag} from './Footer.styles';
 
 function Footer(){
 
     return(
         <Wrapper>
             <LeftContainer id="left">
-                <div id="left-logo">
+                <LogoContainer id="left-logo">
                     <img src={logo}/>
-                </div>
+                </LogoContainer>
                 <div id="footer-nav">
                     <Navigation>
                         <ListItem><a href="#">About</a></ListItem>
