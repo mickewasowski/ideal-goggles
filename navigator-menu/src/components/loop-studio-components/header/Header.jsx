@@ -1,15 +1,15 @@
 import Upper from "./upper-container/Upper";
 
-import {HeaderContainer} from './Header.styles';
+import {HeaderContainer, LowerContainer, Heading} from './Header.styles';
 
 function Header(){
 
     return(
         <HeaderContainer>
             <Upper />
-            <div id="lower">
-                <h1>Immersive experiences that deliver</h1>
-            </div>
+            <LowerContainer>
+                <Heading>Immersive experiences that deliver</Heading>
+            </LowerContainer>
         </HeaderContainer>
     )
 }
