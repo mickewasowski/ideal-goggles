@@ -1,13 +1,15 @@
 import Desctiption from "./description-container/Description";
 import Creations from "./creations-container/Creations";
 
+import {Wrapper} from './Main.styles';
+
 function Main(){
 
     return(
-        <main>
+        <Wrapper>
             <Desctiption />
             <Creations />
-      </main>
+        </Wrapper>
     )
 }
 

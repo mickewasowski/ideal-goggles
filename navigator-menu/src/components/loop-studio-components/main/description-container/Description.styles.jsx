@@ -5,6 +5,16 @@ export const Wrapper = tw.div`
     items-end
     pt-[10rem]
     pl-[10rem]
+
+    phone:flex-col
+    phone:p-0
+    phone:gap-3
+    phone:items-center
+
+    tablet:flex-col
+    tablet:p-0
+    tablet:gap-3
+    tablet:items-center
 `
 
 export const VRGoggles = tw.div`
@@ -14,6 +24,14 @@ export const VRGoggles = tw.div`
     bg-no-repeat
     bg-center
     bg-cover
+
+    phone:bg-vr-goggles-mobile
+    phone:w-11/12
+    phone:h-[14.5rem]
+
+    tablet:bg-vr-goggles-mobile
+    tablet:w-11/12
+    tablet:h-[27rem]
 `
 
 export const DescriptionContainer = tw.div`
@@ -27,6 +45,19 @@ export const DescriptionContainer = tw.div`
     justify-end
     gap-[2rem]
     pl-[5rem]
+
+    phone:static
+    phone:p-0
+    phone:m-0
+    phone:w-8/12
+    phone:h-auto
+
+    tablet:static
+    tablet:p-0
+    tablet:m-0
+    tablet:mt-[1rem]
+    tablet:w-8/12
+    tablet:h-auto
 `
 
 export const Heading = tw.h2`
@@ -35,6 +66,12 @@ export const Heading = tw.h2`
     m-0
     text-5xl
     font-light
+
+    phone:text-[2rem]
+    phone:text-center
+
+    tablet:text-[2rem]
+    tablet:text-center
 `
 
 export const Parag = tw.p`
@@ -42,4 +79,8 @@ export const Parag = tw.p`
     font-alata
     font-normal
     text-loopStudioDescParag
+
+    phone:text-center
+
+    tablet:text-center
 `
