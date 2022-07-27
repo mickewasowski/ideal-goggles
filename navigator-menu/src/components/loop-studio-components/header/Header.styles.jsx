@@ -15,6 +15,10 @@ export const HeaderContainer = tw.header`
     phone:w-full 
     phone:h-screen
     phone:hero-mobile
+
+    tablet:w-full 
+    tablet:h-screen
+    tablet:hero-mobile
 `
 
 export const LowerContainer = tw.div`
@@ -29,6 +33,11 @@ export const LowerContainer = tw.div`
     phone:self-center
     phone:m-0
     phone:mt-[12rem]
+
+    tablet:w-11/12
+    tablet:self-center
+    tablet:m-0
+    tablet:mt-[12rem]
 `
 
 export const Heading = tw.h1`
@@ -43,4 +52,7 @@ export const Heading = tw.h1`
 
     phone:m-[1rem]
     phone:text-[2.2rem]
+
+    tablet:m-[1rem]
+    tablet:text-[2.2rem]
 `
