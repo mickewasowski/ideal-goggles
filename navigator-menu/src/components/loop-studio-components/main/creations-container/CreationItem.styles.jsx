@@ -20,8 +20,8 @@ hover:cursor-pointer
 `
 
 export const Backdrop = tw.div`
-w-[19rem]
-h-[28.1rem]
+w-full
+h-full
 bg-[#ffffff99]
 
 relative
