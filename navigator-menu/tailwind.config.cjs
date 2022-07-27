@@ -17,8 +17,14 @@ module.exports = {
       'desktop': {'min': '1440px'}
     },
     extend: {
-      'alata': ['"Alata"', 'sans-serif'],
-      'josefin-sans': ['"Josefin Sans"', 'sans-serif']
+      fontFamily: {
+        'alata': ['"Alata"', 'sans-serif'],
+        'josefin-sans': ['"Josefin Sans"', 'sans-serif']
+      },
+      backgroundImage: {
+        'hero-desktop': "url('/images/loop-studio/desktop/image-hero.jpg')",
+        'hero-mobile': "url('/images/loop-studio/mobile/image-hero.jpg')",
+      }
     },
   },
   plugins: [],
