@@ -2,14 +2,16 @@ import Header from "./header/Header";
 import Main from "./main/Main";
 import Footer from "./footer/Footer";
 
+import {Container} from './EqualizerWrapper.styles';
+
 function EqualizerWrapper(){
 
     return(
-        <div class="page-container">
+        <Container>
             <Header />
             <Main />
             <Footer />
-        </div>
+        </Container>
     )
 }
 
