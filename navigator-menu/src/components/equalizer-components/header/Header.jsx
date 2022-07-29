@@ -1,13 +1,13 @@
 import logo from '../../../assets/equalizer/logo.svg';
-
+import {LogoContainer} from './Header.styles';
 
 function Header(){
 
     return(
         <header>
-            <div class="logo-container">
+            <LogoContainer>
                 <img src={logo} />
-            </div>
+            </LogoContainer>
         </header>
     )
 }

@@ -10,6 +10,14 @@ module.exports = {
       mainMenuCardsBackground: '#F5F8FF',
       mainMenuCardsHoverBackground: '#ebeef5',
       mainHeaderBackground: '#0A0A0B',
+      equalizerOfferBg: '#191826',
+      equalizerPlanBg: '#fa7352',
+      equalizerPlanText: '#fcf9f8',
+      equalizerAppleBtnBg: '#191826',
+      equalizerAppleBtnBgHover: '#65e2db',
+      equalizerAndroidBtnBg: '#fcf9f8',
+      equalizerAndroidBtnText: '#191826',
+      equalizerAndroidBtnBgHover: '#ffba66',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
@@ -17,7 +25,14 @@ module.exports = {
       'laptop': {'min': '1024px', 'max': '1439px'},
       'desktop': {'min': '1440px'}
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'ibm-plex': ['"IBM Plex Sans"', 'sans-serif']
+      },
+      backgroundImage: {
+        'offer-desktop-bg': "url('/images/equalizer/bg-pattern-2.svg')",
+      }
+    },
   },
   plugins: [],
 }

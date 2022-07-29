@@ -7,4 +7,5 @@ flex
 flex-col
 justify-between
 gap-20
+font-ibm-plex
 `
