@@ -18,6 +18,7 @@ module.exports = {
       equalizerAndroidBtnBg: '#fcf9f8',
       equalizerAndroidBtnText: '#191826',
       equalizerAndroidBtnBgHover: '#ffba66',
+      equalizerFooterIconsHover: '#fa7352',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
@@ -31,6 +32,10 @@ module.exports = {
       },
       backgroundImage: {
         'offer-desktop-bg': "url('/images/equalizer/bg-pattern-2.svg')",
+      },
+      flex: {
+        '2': '2 2 0%',
+        '4': '4 4 0%',
       }
     },
   },
