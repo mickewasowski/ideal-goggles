@@ -14,7 +14,8 @@ module.exports = {
       githubLightBg: '#f6f8ff',
       githubDarkBg: '#212630',
       githubTextLightGray: '#697C9A',
-
+      githubSearchBtnBg: '#0079ff',
+      githubErrorColor: '#f74545'
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},

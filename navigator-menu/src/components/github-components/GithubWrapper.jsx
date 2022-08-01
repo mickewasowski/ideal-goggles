@@ -12,7 +12,7 @@ function GithubWrapper(){
         <Background>
             <PageContainer>
                 <Toggle />
-                {/* <SearchBar /> */}
+                <SearchBar />
                 {/* <UserDetails /> */}
             </PageContainer>
         </Background>
