@@ -14,7 +14,11 @@ function Main(){
                 way your music sounds with a professional grade parametric EQ & volume mixer. Control
                 bass, mids, treble, gain control, reverb, and more!</Parag>
             </DescriptionContainer>
-            <OfferContainer>
+            <OfferContainer style={{
+                    backgroundImage: 'url(/images/equalizer/bg-pattern-2.svg)',
+                    backgroundSize: '27%',
+                    backgroundPosition: '43% -228%'
+                }}>
                 <AppIllustrationContainer>
                     <AppImage src={appIllustration} alt="app-illustration" />
                 </AppIllustrationContainer>
