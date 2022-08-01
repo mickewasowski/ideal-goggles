@@ -4,12 +4,17 @@ module.exports = {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     colors:{
       genericWhite: '#ffffff',
       mainMenuCardsBackground: '#F5F8FF',
       mainMenuCardsHoverBackground: '#ebeef5',
       mainHeaderBackground: '#0A0A0B',
+      githubLightBg: '#f6f8ff',
+      githubDarkBg: '#212630',
+      githubTextLightGray: '#697C9A',
+
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
