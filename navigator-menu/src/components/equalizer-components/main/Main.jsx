@@ -3,8 +3,11 @@ import androidLogo from '../../../assets/equalizer/icon-android.svg'
 import appIllustration from '../../../assets/equalizer/illustration-app.png';
 
 import {DescriptionContainer, BigHeading, Parag, OfferContainer, AppIllustrationContainer, AppImage, PlanContainer,Headings,H2,HeadingsParag, Prices,PricesParag,StrongTag, Btns, AppleBtn, AndroidBtn} from './Main.styles';
+import { useEffect } from 'react';
+
 
 function Main(){
+    let currentWidth = window.outerWidth;
 
     return(
         <main>
@@ -14,11 +17,16 @@ function Main(){
                 way your music sounds with a professional grade parametric EQ & volume mixer. Control
                 bass, mids, treble, gain control, reverb, and more!</Parag>
             </DescriptionContainer>
-            <OfferContainer style={{
+            <OfferContainer style={currentWidth <= 500 
+                ? {
+                    backgroundImage: 'url(/images/equalizer/bg-pattern-2.svg)',
+                    backgroundSize: '75%',
+                    backgroundPosition: '51% 0%'} 
+                : {
                     backgroundImage: 'url(/images/equalizer/bg-pattern-2.svg)',
                     backgroundSize: '27%',
-                    backgroundPosition: '43% -228%'
-                }}>
+                    backgroundPosition: '43% -228%'}
+                }>
                 <AppIllustrationContainer>
                     <AppImage src={appIllustration} alt="app-illustration" />
                 </AppIllustrationContainer>

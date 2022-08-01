@@ -2,6 +2,8 @@ import tw from "tailwind-styled-components/dist/tailwind";
 
 export const DescriptionContainer = tw.div`
 w-4/6
+
+phone:w-full
 `
 
 export const BigHeading = tw.h1`
@@ -10,11 +12,20 @@ export const BigHeading = tw.h1`
     mr-0
     font-bold
     w-11/12
+
+    phone:text-[2.5rem]
+    phone:w-auto
+    phone:px-[1rem]
+    phone:py-0
 `
 
 export const Parag = tw.p`
     w-11/12
     text-[1.25rem]
+
+    phone:w-auto
+    phone:px-[1rem]
+    phone:py-0
 `
 
 export const OfferContainer = tw.div`
@@ -25,16 +36,25 @@ export const OfferContainer = tw.div`
     flex
     justify-around
     mt-[20rem]
+
+    phone:flex-col
+    phone:items-center
+    phone:mt-[12rem]
 `
 
 export const AppIllustrationContainer = tw.div`
     translate-x-0
     -translate-y-[214px]
+
+    phone:-translate-y-[101px]
 `
 
 export const AppImage = tw.img`
     w-[19.5rem]
     h-[40.125rem]
+
+    phone:w-full
+    phone:h-[28rem]
 `
 
 export const PlanContainer = tw.div`
@@ -48,6 +68,9 @@ export const PlanContainer = tw.div`
     justify-around
     translate-x-0
     translate-y-[115px]
+
+    phone:w-full
+    phone:translate-y-0
 `
 
 export const Headings = tw.div`

@@ -8,4 +8,7 @@ flex-col
 justify-between
 gap-20
 font-ibm-plex
+
+phone:w-full
+phone:gap-[2rem]
 `

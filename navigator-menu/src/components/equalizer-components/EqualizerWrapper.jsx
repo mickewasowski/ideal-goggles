@@ -11,9 +11,9 @@ function EqualizerWrapper(){
     useEffect(() => {
 
         let currentWidth = window.outerWidth;
-        console.log(currentWidth);
+        
         let bodyTag = document.getElementsByTagName('body')[0];
-        console.log(bodyTag);
+        
         if (currentWidth >= 1440) {
             bodyTag.style.backgroundImage = "url('/images/equalizer/bg-pattern-1.svg'), url('/images/equalizer/bg-main-desktop.png')";
         }else if(currentWidth < 1440 && currentWidth >= 500){
