@@ -10,8 +10,8 @@ function EqualizerWrapper(){
 
     useEffect(() => {
 
-        let currentWidth = window.innerWidth;
-
+        let currentWidth = window.outerWidth;
+        console.log(currentWidth);
         let bodyTag = document.getElementsByTagName('body')[0];
         console.log(bodyTag);
         if (currentWidth >= 1440) {
@@ -19,7 +19,7 @@ function EqualizerWrapper(){
         }else if(currentWidth < 1440 && currentWidth >= 500){
             bodyTag.style.backgroundImage = "url('/images/equalizer/bg-pattern-1.svg'), url('/images/equalizer/bg-main-tablet.png')";
         }else{
-            bodyTag.style.backgroundImage = "url('/images/equalizer/bg-pattern-1.svg'), url('/images/equalizer/bg-main-mobile.png')";
+            bodyTag.style.backgroundImage = "url('/images/equalizer/bg-main-mobile.png')";
         }
         bodyTag.style.backgroundRepeat = 'no-repeat, no-repeat';
         bodyTag.style.backgroundPosition = 'top 2% right, top left';
