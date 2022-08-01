@@ -22,6 +22,16 @@ function Main(){
                     backgroundImage: 'url(/images/equalizer/bg-pattern-2.svg)',
                     backgroundSize: '75%',
                     backgroundPosition: '51% 0%'} 
+                : (currentWidth > 500 && currentWidth < 1024) 
+                ? {
+                    backgroundImage: 'url(/images/equalizer/bg-pattern-2.svg)',
+                    backgroundSize: '27%',
+                    backgroundPosition: '57% 0%'}
+                : (currentWidth >= 1024 && currentWidth <= 1440)
+                ? {
+                    backgroundImage: 'url(/images/equalizer/bg-pattern-2.svg)',
+                    backgroundSize: '35%',
+                    backgroundPosition: '52% 0%'}
                 : {
                     backgroundImage: 'url(/images/equalizer/bg-pattern-2.svg)',
                     backgroundSize: '27%',

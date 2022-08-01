@@ -11,4 +11,6 @@ font-ibm-plex
 
 phone:w-full
 phone:gap-[2rem]
+
+tablet:w-11/12
 `

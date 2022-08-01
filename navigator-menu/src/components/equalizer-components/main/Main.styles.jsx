@@ -17,6 +17,9 @@ export const BigHeading = tw.h1`
     phone:w-auto
     phone:px-[1rem]
     phone:py-0
+
+    tablet:w-auto
+    tablet:text-[2.5rem]
 `
 
 export const Parag = tw.p`
@@ -47,6 +50,9 @@ export const AppIllustrationContainer = tw.div`
     -translate-y-[214px]
 
     phone:-translate-y-[101px]
+
+    tablet:translate-x-[58px]
+    tablet:-translate-y-[214px]
 `
 
 export const AppImage = tw.img`
@@ -71,6 +77,10 @@ export const PlanContainer = tw.div`
 
     phone:w-full
     phone:translate-y-0
+
+    tablet:w-7/12
+    tablet:-translate-x-[56px]
+    tablet:translate-y-[137px]
 `
 
 export const Headings = tw.div`
