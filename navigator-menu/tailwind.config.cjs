@@ -17,7 +17,11 @@ module.exports = {
       'laptop': {'min': '1024px', 'max': '1439px'},
       'desktop': {'min': '1440px'}
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'space-mono': ['"Space Mono"', 'monospace']
+      },
+    },
   },
   plugins: [],
 }
