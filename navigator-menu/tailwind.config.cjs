@@ -22,6 +22,8 @@ module.exports = {
       githubUserDetailsParagText: '#697c9b',
       githubAccountInfoBg: '#f5f7ff',
       githubAccountInfoBgDark: '#141c2e',
+      githubSVGAndTextLightFill: '#4b699b',
+      githubSVGAndTextUnavailableLight: '#8f95a8'
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
