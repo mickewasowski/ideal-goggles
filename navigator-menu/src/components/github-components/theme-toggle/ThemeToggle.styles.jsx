@@ -15,6 +15,8 @@ export const ToggleBtns = tw.div`
 export const H2 = tw.h2`
     text-[1.5rem]
     font-bold
+
+    dark:text-genericWhite
 `
 
 export const ToggleText = tw.p`

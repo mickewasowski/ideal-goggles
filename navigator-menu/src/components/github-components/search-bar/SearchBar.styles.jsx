@@ -8,6 +8,9 @@ export const Wrapper = tw.div`
     flex
     justify-between
     items-center
+    shadow-xl
+
+    dark:bg-githubSearchBarAndUserDetailsBgDark
 `
 
 export const SearchBarContents = tw.div`

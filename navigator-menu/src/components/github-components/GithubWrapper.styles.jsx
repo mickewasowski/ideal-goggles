@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components/dist/tailwind";
 export const Background = tw.div`
     font-space-mono
     w-full
-    h-full
+    h-screen
     m-0
     p-0
     bg-githubLightBg
@@ -20,5 +20,4 @@ export const PageContainer = tw.div`
     flex-wrap
     gap-[1.5rem]
     w-1/2
-    mt-[10rem]
 `

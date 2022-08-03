@@ -6,4 +6,7 @@ export const UserDetailsContainer = tw.div`
     justify-evenly
     bg-githubUserDetailsContLightBg
     rounded-lg
+    shadow-2xl
+
+    dark:bg-githubSearchBarAndUserDetailsBgDark
 `

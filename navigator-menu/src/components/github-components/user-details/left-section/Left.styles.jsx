@@ -31,6 +31,8 @@ export const H2 = tw.h2`
     mb-[.5rem]
     text-3xl
     font-bold
+
+    dark:text-genericWhite
 `
 
 export const H4 = tw.h4`

@@ -12,7 +12,8 @@ module.exports = {
       mainMenuCardsHoverBackground: '#ebeef5',
       mainHeaderBackground: '#0A0A0B',
       githubLightBg: '#f6f8ff',
-      githubDarkBg: '#212630',
+      githubDarkBg: '#141d2f',
+      githubSearchBarAndUserDetailsBgDark: '#1e2a47',
       githubTextLightGray: '#697C9A',
       githubSearchBtnBg: '#0079ff',
       githubErrorColor: '#f74545',
@@ -21,7 +22,7 @@ module.exports = {
       githubUsernameText: '#0077ff',
       githubUserDetailsParagText: '#697c9b',
       githubAccountInfoBg: '#f5f7ff',
-      githubAccountInfoBgDark: '#141c2e',
+      githubAccountInfoBgDark: '#141d2f',
       githubSVGAndTextLightFill: '#4b699b',
       githubSVGAndTextUnavailableLight: '#8f95a8'
     },

@@ -8,6 +8,7 @@ export const Wrapper = tw.div`
     self-end
     mr-[2.5rem]
     mt-[2.5rem]
+    pb-[2rem]
 `
 
 export const AccountInfo = tw.div`
@@ -31,6 +32,8 @@ export const TH = tw.th`
     pt-[.5rem]
 
     text-githubUserDetailsParagText
+
+    dark:text-genericWhite
 `
 
 export const TD = tw.td`
@@ -38,6 +41,8 @@ font-bold
 text-center
 text-[1.4rem]
 pb-[.5rem]
+
+dark:text-genericWhite
 `
 
 export const Contacts = tw.div`
@@ -45,6 +50,7 @@ export const Contacts = tw.div`
     flex-wrap
     gap-[1.5rem]
     justify-between
+    mt-[1rem]
 `
 
 export const LeftContactsWrapper = tw.div`
