@@ -19,8 +19,16 @@ export const H2 = tw.h2`
     dark:text-genericWhite
 `
 
-export const ToggleText = tw.p`
+export const ToggleTextDark = tw.p`
     text-githubTextLightGray
+    text-[.8rem]
+    tracking-[.2rem]
+    font-bold
+    mr-[.7rem]
+`
+
+export const ToggleTextLight = tw.p`
+    text-genericWhite
     text-[.8rem]
     tracking-[.2rem]
     font-bold
