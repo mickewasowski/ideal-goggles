@@ -19,6 +19,7 @@ export const SearchBarContents = tw.div`
     items-center
     w-full
     px-[.7rem]
+    h-full
 `
 
 export const InputFieldAndErrorContainer = tw.div`
@@ -26,6 +27,7 @@ export const InputFieldAndErrorContainer = tw.div`
     flex
     items-center
     justify-start
+    h-full
 `
 
 export const InputWrapper = tw.div`
@@ -33,6 +35,8 @@ export const InputWrapper = tw.div`
     w-5/6
     items-center
     justify-start
+    h-full
+    pl-[.5rem]
 `
 
 export const SearchIcon = tw.span`
@@ -41,6 +45,10 @@ export const SearchIcon = tw.span`
 
 export const InputField = tw.input`
     w-3/4
+    h-4/5
+    text-[1.2rem]
+    
+    dark:placeholder-genericWhite
 `
 
 export const ErrorMsg = tw.p`
