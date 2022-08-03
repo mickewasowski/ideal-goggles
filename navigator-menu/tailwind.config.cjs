@@ -15,7 +15,11 @@ module.exports = {
       githubDarkBg: '#212630',
       githubTextLightGray: '#697C9A',
       githubSearchBtnBg: '#0079ff',
-      githubErrorColor: '#f74545'
+      githubErrorColor: '#f74545',
+      githubUserDetailsContDarkBg: '#1e2b48',
+      githubUserDetailsContLightBg: '#ffffff',
+      githubUsernameText: '#0077ff',
+      githubUserDetailsParagText: '#697c9b',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
@@ -27,6 +31,9 @@ module.exports = {
       fontFamily: {
         'space-mono': ['"Space Mono"', 'monospace']
       },
+      width: {
+        '85%': '46.75rem'
+      }
     },
   },
   plugins: [],
