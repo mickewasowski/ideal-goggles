@@ -20,6 +20,8 @@ module.exports = {
       githubUserDetailsContLightBg: '#ffffff',
       githubUsernameText: '#0077ff',
       githubUserDetailsParagText: '#697c9b',
+      githubAccountInfoBg: '#f5f7ff',
+      githubAccountInfoBgDark: '#141c2e',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
@@ -32,7 +34,8 @@ module.exports = {
         'space-mono': ['"Space Mono"', 'monospace']
       },
       width: {
-        '85%': '46.75rem'
+        '85%': '46.75rem',
+        '70%': '42rem',
       }
     },
   },

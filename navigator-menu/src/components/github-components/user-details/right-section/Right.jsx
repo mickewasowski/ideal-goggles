@@ -1,23 +1,23 @@
-
+import {Wrapper,AccountInfo,Table,TH,TD} from './Right.styles';
 
 function Right(){
 
     return(
-        <div className="right">
-            <div className="account-info dark">
-                <table>
+        <Wrapper>
+            <AccountInfo>
+                <Table>
                     <tr id="topics">
-                        <th>Repos</th>
-                        <th>Followers</th>
-                        <th>Following</th>
+                        <TH>Repos</TH>
+                        <TH>Followers</TH>
+                        <TH>Following</TH>
                     </tr>
                     <tr id="values">
-                        <td>8</td>
-                        <td>3938</td>
-                        <td>9</td>
+                        <TD>8</TD>
+                        <TD>3938</TD>
+                        <TD>9</TD>
                     </tr>
-                </table>
-            </div>
+                </Table>
+            </AccountInfo>
             <div className="contacts">
                 <div id="left-contacts">
                     <div id="location">
@@ -66,7 +66,7 @@ function Right(){
                     </div>
                 </div>
             </div>
-        </div>
+        </Wrapper>
     )
 }
 
