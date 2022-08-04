@@ -12,4 +12,7 @@ export const UserDetailsContainer = tw.div`
 
     phone:w-full
     phone:items-center
+
+    tablet:w-full
+    tablet:items-center
 `

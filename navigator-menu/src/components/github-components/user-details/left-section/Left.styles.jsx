@@ -8,6 +8,10 @@ self-center
 phone:flex
 phone:flex-col
 phone:justify-around
+
+tablet:flex
+tablet:flex-col
+tablet:justify-around
 `
 
 export const MainInfo = tw.div`
@@ -17,6 +21,9 @@ export const MainInfo = tw.div`
 
     phone:flex-col
     phone:justify-evenly
+
+    tablet:flex-col
+    tablet:justify-evenly
 `
 
 export const PicAndUsernameWrapper = tw.div`
@@ -26,6 +33,9 @@ export const PicAndUsernameWrapper = tw.div`
 
     phone:flex
     phone:w-full
+
+    tablet:flex
+    tablet:w-full
 `
 
 export const ProfilePicture = tw.img`
@@ -63,6 +73,9 @@ export const JoinedParag = tw.p`
 
     phone:text-left
     phone:mb-[2rem]
+
+    tablet:text-left
+    tablet:mb-[2rem]
 `
 
 export const BioWrapper = tw.div`
@@ -70,6 +83,8 @@ export const BioWrapper = tw.div`
     text-left
 
     phone:w-auto
+
+    tablet:w-auto
 `
 
 export const BioParag = tw.p`
@@ -79,4 +94,7 @@ export const BioParag = tw.p`
 
     phone:text-left
     phone:mb-[2rem]
+
+    tablet:text-left
+    tablet:mb-0
 `

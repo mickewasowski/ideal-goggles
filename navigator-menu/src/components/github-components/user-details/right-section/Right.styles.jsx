@@ -13,6 +13,11 @@ export const Wrapper = tw.div`
     phone:w-11/12
     phone:m-0
     phone:self-center
+
+    tablet:w-11/12
+    tablet:m-0
+    tablet:mt-[2rem]
+    tablet:self-center
 `
 
 export const AccountInfo = tw.div`
@@ -58,18 +63,29 @@ export const Contacts = tw.div`
 
     phone:flex-col
     phone:gap-0
+
+    
+    tablet:gap-0
 `
 
 export const LeftContactsWrapper = tw.div`
 w-2/5
 
 phone:w-full
+
+tablet:w-full
+tablet:flex
+tablet:justify-between
 `
 
 export const RightContactsWrapper = tw.div`
 w-2/5
 
 phone:w-full
+
+tablet:w-full
+tablet:flex
+tablet:justify-between
 `
 
 export const DetailsWrapper = tw.div`
@@ -79,6 +95,10 @@ export const DetailsWrapper = tw.div`
     
     phone:my-0
     phone:mt-[1.5rem]
+
+    tablet:my-0
+    tablet:mt-[1.5rem]
+    tablet:w-1/2
 `
 
 export const IconSpan = tw.span`

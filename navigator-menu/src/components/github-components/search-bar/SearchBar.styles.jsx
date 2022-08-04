@@ -13,6 +13,8 @@ export const Wrapper = tw.div`
     dark:bg-githubSearchBarAndUserDetailsBgDark
 
     phone:w-full
+
+    tablet:w-full
 `
 
 export const SearchBarContents = tw.div`

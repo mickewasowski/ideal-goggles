@@ -22,4 +22,6 @@ export const PageContainer = tw.div`
     w-1/2
 
     phone:w-11/12
+
+    tablet:w-11/12
 `
