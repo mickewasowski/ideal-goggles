@@ -18,7 +18,7 @@ function Left(){
                     <JoinedParag>Joined {data.createdAt}</JoinedParag>
                 </JoinedWrapper>
                 <BioWrapper>
-                    <BioParag>{data.bio}</BioParag>
+                    <BioParag>{data.bio ? data.bio : 'No bio...'}</BioParag>
                 </BioWrapper>
             </MainInfo>
         </Wrapper>
