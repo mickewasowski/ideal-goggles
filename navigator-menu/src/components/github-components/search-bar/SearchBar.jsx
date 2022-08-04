@@ -1,10 +1,51 @@
+import { GithubContext } from '../../../contexts/github/GithubContext';
+
 import {Wrapper, SearchBarContents,InputFieldAndErrorContainer, InputWrapper,SearchIcon,InputField,ErrorMsg,ButtonSearch} from './SearchBar.styles';
 
-function SearchBar(){
+import {useState, useContext} from 'react';
 
-    const toggle = () => {
+function SearchBar(){
+    const {loadFetchedData, resetToDefault} = useContext(GithubContext);
+    const [username,setUsername] = useState('');
+
+    const handleSearch = () => {
         let error = document.getElementById('error');
-        error.style.display = 'inline';
+        error.style.display = 'none';
+
+        fetch(`https://api.github.com/users/${username}`)
+            .then((res) => {
+                if (res.ok) {
+                    return res.json()
+                }else{
+                    throw new Error('error')
+                }
+            })
+            .then(res => {
+                var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                var created  = new Date(res.created_at);
+                var result = created.toLocaleDateString('en-US', options);
+
+                loadFetchedData({
+                    avatar: res.avatar_url,
+                    name: res.name,
+                    login: res.login,
+                    createdAt: result,
+                    bio: res.bio,
+                    repos: res.public_repos,
+                    followers: res.followers,
+                    following: res.following,
+                    location: res.location,
+                    twitterUsername: res.twitter_username,
+                    blog: res.blog,
+                    company: res.company
+                });
+            })
+            .catch(err => {
+                console.log(err.message);
+                error.style.display = 'inline';
+
+                resetToDefault();
+            })
     }
 
     return(
@@ -19,11 +60,15 @@ function SearchBar(){
                                 fill="#0079ff" />
                             </svg>
                         </SearchIcon>
-                        <InputField style={{backgroundColor: 'transparent'}} placeholder="Search GitHub username..." />
+                        <InputField 
+                            style={{backgroundColor: 'transparent'}} 
+                            placeholder="Search GitHub username..." 
+                            onChange={(e) => {setUsername(e.target.value)}}    
+                            />
                     </InputWrapper>
                     <ErrorMsg id='error' style={{display: 'none'}}>No results</ErrorMsg>
                 </InputFieldAndErrorContainer>
-                <ButtonSearch id="search-btn" onClick={toggle}>Search</ButtonSearch>
+                <ButtonSearch id="search-btn" onClick={handleSearch}>Search</ButtonSearch>
             </SearchBarContents>
         </Wrapper>
     )

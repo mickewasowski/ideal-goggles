@@ -1,6 +1,10 @@
+import { useContext } from 'react';
+import { GithubContext } from '../../../../contexts/github/GithubContext';
+
 import {Wrapper,AccountInfo,Table,TH,TD,Contacts,LeftContactsWrapper,RightContactsWrapper,DetailsWrapper,IconSpan} from './Right.styles';
 
 function Right(){
+    const {data} = useContext(GithubContext);
 
     return(
         <Wrapper>
@@ -12,9 +16,9 @@ function Right(){
                         <TH>Following</TH>
                     </tr>
                     <tr id="values">
-                        <TD>8</TD>
-                        <TD>3938</TD>
-                        <TD>9</TD>
+                        <TD>{data.repos}</TD>
+                        <TD>{data.followers}</TD>
+                        <TD>{data.following}</TD>
                     </tr>
                 </Table>
             </AccountInfo>
@@ -27,7 +31,7 @@ function Right(){
                             d="M12.797 3.425C11.584 1.33 9.427.05 7.03.002a7.483 7.483 0 00-.308 0C4.325.05 2.17 1.33.955 3.425a6.963 6.963 0 00-.09 6.88l4.959 9.077.007.012c.218.38.609.606 1.045.606.437 0 .828-.226 1.046-.606l.007-.012 4.96-9.077a6.963 6.963 0 00-.092-6.88zm-5.92 5.638c-1.552 0-2.813-1.262-2.813-2.813s1.261-2.812 2.812-2.812S9.69 4.699 9.69 6.25 8.427 9.063 6.876 9.063z" />
                             </svg>
                         </IconSpan>
-                        <p className='text-githubSVGAndTextLightFill dark:text-genericWhite'>San Francisco</p>
+                        <p className='text-githubSVGAndTextLightFill dark:text-genericWhite'>{data.location}</p>
                     </DetailsWrapper>
                     <DetailsWrapper>
                         <IconSpan>
@@ -40,7 +44,7 @@ function Right(){
                                 </g>
                             </svg>
                         </IconSpan>
-                        <p className='text-githubSVGAndTextLightFill dark:text-genericWhite hover:underline hover:decoration-githubSVGAndTextLightFill hover:dark:decoration-genericWhite'>https://github.blog</p>
+                        <p className='text-githubSVGAndTextLightFill dark:text-genericWhite hover:underline hover:decoration-githubSVGAndTextLightFill hover:dark:decoration-genericWhite'>{data.blog}</p>
                     </DetailsWrapper>
                 </LeftContactsWrapper>
                 <RightContactsWrapper>
@@ -51,7 +55,7 @@ function Right(){
                             d="M20 2.799a8.549 8.549 0 01-2.363.647 4.077 4.077 0 001.804-2.266 8.194 8.194 0 01-2.6.993A4.099 4.099 0 009.75 4.977c0 .324.027.637.095.934-3.409-.166-6.425-1.8-8.452-4.288a4.128 4.128 0 00-.56 2.072c0 1.42.73 2.679 1.82 3.408A4.05 4.05 0 01.8 6.598v.045a4.119 4.119 0 003.285 4.028 4.092 4.092 0 01-1.075.135c-.263 0-.528-.015-.776-.07.531 1.624 2.038 2.818 3.831 2.857A8.239 8.239 0 01.981 15.34 7.68 7.68 0 010 15.285a11.543 11.543 0 006.29 1.84c7.545 0 11.67-6.25 11.67-11.667 0-.182-.006-.357-.015-.53A8.18 8.18 0 0020 2.798z" />
                             </svg>
                         </IconSpan>
-                        <p className='text-githubSVGAndTextUnavailableLight'>Not Available</p>
+                        <p className='text-githubSVGAndTextUnavailableLight'>{data.twitterUsername ? data.twitterUsername : 'Not Available'}</p>
                     </DetailsWrapper>
                     <DetailsWrapper>
                         <IconSpan>
@@ -62,7 +66,7 @@ function Right(){
                                 </g>
                             </svg>
                         </IconSpan>
-                        <p className='text-githubSVGAndTextLightFill dark:text-genericWhite'>@github</p>
+                        <p className='text-githubSVGAndTextLightFill dark:text-genericWhite'>{data.company}</p>
                     </DetailsWrapper>
                 </RightContactsWrapper>
             </Contacts>

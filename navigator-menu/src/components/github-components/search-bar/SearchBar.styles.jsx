@@ -49,6 +49,9 @@ export const InputField = tw.input`
     text-[1.2rem]
     
     dark:placeholder-genericWhite
+    dark:text-genericWhite
+
+    focus:outline-none
 `
 
 export const ErrorMsg = tw.p`

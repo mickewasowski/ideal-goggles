@@ -1,9 +1,13 @@
+import { GithubInfoProvider } from "../../contexts/github/GithubContext";
+
 import GithubWrapper from "../../components/github-components/GithubWrapper";
 
 function GithubRoute(){
 
     return(
-        <GithubWrapper />
+        <GithubInfoProvider>
+            <GithubWrapper />
+        </GithubInfoProvider>
     )
 }
 
