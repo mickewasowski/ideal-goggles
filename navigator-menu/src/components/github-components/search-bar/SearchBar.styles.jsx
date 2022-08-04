@@ -15,6 +15,8 @@ export const Wrapper = tw.div`
     phone:w-full
 
     tablet:w-full
+
+    laptop:w-full
 `
 
 export const SearchBarContents = tw.div`

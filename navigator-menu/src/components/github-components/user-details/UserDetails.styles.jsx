@@ -15,4 +15,7 @@ export const UserDetailsContainer = tw.div`
 
     tablet:w-full
     tablet:items-center
+
+    laptop:w-full
+    laptop:justify-center
 `

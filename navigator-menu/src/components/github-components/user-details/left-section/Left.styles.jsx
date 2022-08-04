@@ -24,10 +24,12 @@ export const MainInfo = tw.div`
 
     tablet:flex-col
     tablet:justify-evenly
+
+    laptop:justify-start
 `
 
 export const PicAndUsernameWrapper = tw.div`
-    w-1/2
+    w-full
     text-left
     mt-[2rem]
 
@@ -68,6 +70,7 @@ export const JoinedWrapper = tw.div`
 
 export const JoinedParag = tw.p`
     text-githubUserDetailsParagText
+    float-right
 
     dark:text-genericWhite
 
@@ -81,10 +84,14 @@ export const JoinedParag = tw.p`
 export const BioWrapper = tw.div`
     w-85%
     text-left
+    mt-[2rem]
 
     phone:w-auto
 
     tablet:w-auto
+
+    laptop:w-auto
+    laptop:my-[2rem]
 `
 
 export const BioParag = tw.p`

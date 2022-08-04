@@ -18,6 +18,10 @@ export const Wrapper = tw.div`
     tablet:m-0
     tablet:mt-[2rem]
     tablet:self-center
+
+    laptop:self-center
+    laptop:w-11/12
+    laptop:m-0
 `
 
 export const AccountInfo = tw.div`
