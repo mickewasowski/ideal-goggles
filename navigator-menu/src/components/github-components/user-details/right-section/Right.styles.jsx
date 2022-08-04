@@ -9,6 +9,10 @@ export const Wrapper = tw.div`
     mr-[2.5rem]
     mt-[2.5rem]
     pb-[2rem]
+
+    phone:w-11/12
+    phone:m-0
+    phone:self-center
 `
 
 export const AccountInfo = tw.div`
@@ -51,14 +55,21 @@ export const Contacts = tw.div`
     gap-[1.5rem]
     justify-between
     mt-[1rem]
+
+    phone:flex-col
+    phone:gap-0
 `
 
 export const LeftContactsWrapper = tw.div`
 w-2/5
+
+phone:w-full
 `
 
 export const RightContactsWrapper = tw.div`
 w-2/5
+
+phone:w-full
 `
 
 export const DetailsWrapper = tw.div`
@@ -66,6 +77,8 @@ export const DetailsWrapper = tw.div`
     items-center
     my-[1rem]
     
+    phone:my-0
+    phone:mt-[1.5rem]
 `
 
 export const IconSpan = tw.span`

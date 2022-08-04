@@ -4,18 +4,28 @@ export const Wrapper = tw.div`
 w-11/12
 text-center
 self-center
+
+phone:flex
+phone:flex-col
+phone:justify-around
 `
 
 export const MainInfo = tw.div`
     flex
     flex-wrap
     justify-end
+
+    phone:flex-col
+    phone:justify-evenly
 `
 
 export const PicAndUsernameWrapper = tw.div`
     w-1/2
     text-left
     mt-[2rem]
+
+    phone:flex
+    phone:w-full
 `
 
 export const ProfilePicture = tw.img`
@@ -50,15 +60,23 @@ export const JoinedParag = tw.p`
     text-githubUserDetailsParagText
 
     dark:text-genericWhite
+
+    phone:text-left
+    phone:mb-[2rem]
 `
 
 export const BioWrapper = tw.div`
     w-85%
     text-left
+
+    phone:w-auto
 `
 
 export const BioParag = tw.p`
     text-githubUserDetailsParagText
 
     dark:text-genericWhite
+
+    phone:text-left
+    phone:mb-[2rem]
 `

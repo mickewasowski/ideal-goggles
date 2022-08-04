@@ -11,6 +11,8 @@ export const Wrapper = tw.div`
     shadow-xl
 
     dark:bg-githubSearchBarAndUserDetailsBgDark
+
+    phone:w-full
 `
 
 export const SearchBarContents = tw.div`

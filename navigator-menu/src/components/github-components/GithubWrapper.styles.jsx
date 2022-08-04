@@ -20,4 +20,6 @@ export const PageContainer = tw.div`
     flex-wrap
     gap-[1.5rem]
     w-1/2
+
+    phone:w-11/12
 `

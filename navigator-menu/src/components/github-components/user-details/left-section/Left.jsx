@@ -11,12 +11,14 @@ function Left(){
             <MainInfo>
                 <PicAndUsernameWrapper>
                     <ProfilePicture src={data.avatar} alt="profile-picture" />
-                    <H2>{data.name}</H2>
-                    <H4>@{data.login}</H4>
+                    <div>
+                        <H2>{data.name}</H2>
+                        <H4>@{data.login}</H4>
+                        <JoinedParag>Joined {data.createdAt}</JoinedParag>
+                    </div>
                 </PicAndUsernameWrapper>
-                <JoinedWrapper>
-                    <JoinedParag>Joined {data.createdAt}</JoinedParag>
-                </JoinedWrapper>
+                {/* <JoinedWrapper>
+                </JoinedWrapper> */}
                 <BioWrapper>
                     <BioParag>{data.bio ? data.bio : 'No bio...'}</BioParag>
                 </BioWrapper>

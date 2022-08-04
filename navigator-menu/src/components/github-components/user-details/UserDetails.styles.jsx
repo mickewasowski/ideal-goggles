@@ -9,4 +9,7 @@ export const UserDetailsContainer = tw.div`
     shadow-2xl
 
     dark:bg-githubSearchBarAndUserDetailsBgDark
+
+    phone:w-full
+    phone:items-center
 `
