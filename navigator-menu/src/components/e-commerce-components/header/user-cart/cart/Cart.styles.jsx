@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components/dist/tailwind";
 
 export const CartList = tw.div`
     absolute
-    w-[21rem]
+    w-[23rem]
     h-[14rem]
     top-[10rem]
     right-[5rem]
@@ -39,4 +39,36 @@ export const EmptyCartParag = tw.p`
     text-center
     text-eComNavTextColor
     font-bold
+`
+
+export const CartItem = tw.div`
+    flex
+    w-11/12
+    items-center
+    self-center
+    justify-around
+    text-eComNavTextColor
+`
+
+export const ImageThumbnailWrapper = tw.div`
+    w-[3.5rem]
+    h-[3.5rem]
+    inline-block
+`
+
+export const ImageThumb = tw.img`
+    rounded-md
+`
+
+export const ItemDetails = tw.div`
+    px-[.8rem]
+    leading-relaxed
+`
+
+export const Strong = tw.strong`
+    text-genericBlack
+`
+
+export const CheckOutBtn = tw.button`
+    
 `
