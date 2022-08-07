@@ -1,10 +1,10 @@
-
+import ECommerceWrapper from "../../components/e-commerce-components/ECommerceWrapper";
 
 
 function ECommerceRoute(){
 
     return(
-        <h2>This is the E-commerce landing page</h2>
+        <ECommerceWrapper />
     )
 }
 

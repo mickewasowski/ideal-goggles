@@ -10,6 +10,12 @@ module.exports = {
       mainMenuCardsBackground: '#F5F8FF',
       mainMenuCardsHoverBackground: '#ebeef5',
       mainHeaderBackground: '#0A0A0B',
+      eComHeaderBorder: '#f7f8fd',
+      eComNavTextColor: '#68707d',
+      eComNavTextColorHover: '#1d2025',
+      eComNavTextBorderHover: '#ff7d1a',
+      eComOrangeColor: '#ff7d1a',
+
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
@@ -17,7 +23,11 @@ module.exports = {
       'laptop': {'min': '1024px', 'max': '1439px'},
       'desktop': {'min': '1440px'}
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'kumbh-sans': ['"Kumbh Sans"', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
