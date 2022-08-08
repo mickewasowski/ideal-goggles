@@ -13,7 +13,7 @@ export const CartContainerBtn = tw.button`
 `
 
 export const CartCount = tw.p`
-    w-[1.2rem]
+    w-[1.5rem]
     h-[1.2rem]
     relative
     -top-[.8rem]
