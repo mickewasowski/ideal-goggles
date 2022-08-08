@@ -19,6 +19,7 @@ module.exports = {
       eComLimitedH1Text: '#1d2025',
       eComDiscountBg: '#ffede0',
       eComOriginalPriceText: '#b6bcc8',
+      eComQuantityBtnsBg: '#f7f8fd',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
