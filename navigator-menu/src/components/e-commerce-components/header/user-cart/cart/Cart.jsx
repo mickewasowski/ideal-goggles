@@ -16,7 +16,7 @@ function Cart({isCartOpen}){
             </CartHeadingContainer>
             <CartContent>
             {
-                itemsCount.itemsCount > 0
+                itemsCount > 0
                 ?
                 <>
                     <CartItem style={{display: 'flex'}}>
@@ -25,7 +25,7 @@ function Cart({isCartOpen}){
                         </ImageThumbnailWrapper>
                         <ItemDetails>
                             <h5>Fall Limited Edition Sneakers</h5>
-                            <h5 id="items-price">$125.00 x {itemsCount.itemsCount}<Strong>${(itemsCount.itemsCount * 125).toFixed(2)}</Strong></h5>
+                            <h5 id="items-price">$125.00 x {itemsCount}<Strong>${(itemsCount * 125).toFixed(2)}</Strong></h5>
                         </ItemDetails>
                         <div className="delete-icon" onClick={clearCart}>
                             <img src={deleteIcon} className="cursor-pointer" />

@@ -21,7 +21,7 @@ function UserCartWrapper(){
 
     return(
         <UserCartContainer>
-                <CartCount style={{display: 'inline'}}>{itemsCount.itemsCount}</CartCount>
+                <CartCount style={{display: 'inline'}}>{itemsCount}</CartCount>
                 <CartContainerBtn onClick={toggleCart}>
                     <svg className="cart-icon" width="22" height="20">
                         <path className="cart-icon-check"

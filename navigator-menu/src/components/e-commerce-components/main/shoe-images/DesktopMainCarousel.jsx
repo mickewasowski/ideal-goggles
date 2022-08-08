@@ -1,8 +1,11 @@
-import {useState} from 'react';
+import {ECommerceContext} from '../../../../contexts/e-commerce/ECommerceContext';
+import {useState, useContext} from 'react';
 
 import {ShoeImagesWrapper, BigImage,OtherImagesWrapper, ImageContainer, SmallImage} from './DesktopMainCarousel.styles';
 
 function DesktopMainCarousel(){
+    const {isGalleryOpen} = useContext(ECommerceContext);
+    console.log(isGalleryOpen);
     const [current, setCurrent] = useState(1);
 
     const changeBigImage = (e) => {
@@ -11,12 +14,17 @@ function DesktopMainCarousel(){
         setCurrent(id)
     }
 
+    const openGallery = () => {
+
+    }
+
     return(
         <ShoeImagesWrapper>
           <div className="main-image">
             <BigImage 
                 style={{display: "block"}} 
                 src={`/e-commerce/image-product-${current}.jpg`}
+                onClick={openGallery}
               />
             <div id="arrows" style={{display: 'none'}}>
               <span id="previous-image">
