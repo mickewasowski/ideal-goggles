@@ -8,7 +8,7 @@ function Main(){
     return(
       <Wrapper>
         <DesktopMainCarousel />
-        {/* <DetailsAndBtns /> */}
+        <DetailsAndBtns />
       </Wrapper>
     )
 }

@@ -1,30 +1,30 @@
-
+import {Details,SneakerH3, LimitedH1,DescriptionParag,Price,CurrentPriceWrapper,CurrentPriceParag,Discount,OriginalPriceWrapper,OriginalPriceParag} from './DetailsAndBtns.styles';
 
 function DetailsAndBtns(){
 
     return(
         <section class="details-and-buttons-container">
-          <div class="details">
+          <Details>
             <div class="headings">
-              <h3 id="sneaker-h3">Sneaker Company</h3>
-              <h1 id="limited-h1">Fall Limited Edition Sneakers</h1>
+              <SneakerH3>Sneaker Company</SneakerH3>
+              <LimitedH1>Fall Limited Edition Sneakers</LimitedH1>
             </div>
             <div class="description">
-              <p>
+              <DescriptionParag>
                 These low-profile sneakers are your perfect casual wear companion. Featuring a
                 durable rubber outer sole, they’ll withstand everything the weather can offer.
-              </p>
+              </DescriptionParag>
             </div>
-            <div class="price">
-              <div class="current-price">
-                <p>$125.00</p>
-                <p>50%</p>
-              </div>
-              <div class="original-price">
-                <p>$250.00</p>
-              </div>
-            </div>
-          </div>
+            <Price>
+              <CurrentPriceWrapper>
+                <CurrentPriceParag>$125.00</CurrentPriceParag>
+                <Discount>50%</Discount>
+              </CurrentPriceWrapper>
+              <OriginalPriceWrapper>
+                <OriginalPriceParag>$250.00</OriginalPriceParag>
+              </OriginalPriceWrapper>
+            </Price>
+          </Details>
           <div class="cart-buttons">
             <div class="quantity-buttons">
               <span id="decrement" onclick="decrement()">

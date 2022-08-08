@@ -16,7 +16,9 @@ module.exports = {
       eComNavTextColorHover: '#1d2025',
       eComNavTextBorderHover: '#ff7d1a',
       eComOrangeColor: '#ff7d1a',
-
+      eComLimitedH1Text: '#1d2025',
+      eComDiscountBg: '#ffede0',
+      eComOriginalPriceText: '#b6bcc8',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
