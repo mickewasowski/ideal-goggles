@@ -13,7 +13,9 @@ export const ECommerceInfoProvider = ({
 
     const clearCart = () => setItemsCount(initialState);
 
-    const addToCart = (count) => setItemsCount(count);
+    const addToCart = (count) => setItemsCount({
+        itemsCount: count
+    });
 
     return(
         <ECommerceContext.Provider value={{itemsCount, clearCart, addToCart}}>

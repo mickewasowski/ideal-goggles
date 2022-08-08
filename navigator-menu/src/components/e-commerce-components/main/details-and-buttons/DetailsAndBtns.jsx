@@ -1,17 +1,39 @@
+import {ECommerceContext} from '../../../../contexts/e-commerce/ECommerceContext';
+
 import {Details,SneakerH3, LimitedH1,DescriptionParag,Price,CurrentPriceWrapper,CurrentPriceParag,Discount,OriginalPriceWrapper,OriginalPriceParag, CartBtns,QuantityBtns,Btn,QuantityInput,AddToCartWrapper,CartImg,AddBtn} from './DetailsAndBtns.styles';
 
 import { FiMinus,FiPlus } from 'react-icons/fi';
+import { useContext, useState } from 'react';
 
 function DetailsAndBtns(){
+    const {addToCart} = useContext(ECommerceContext);
+    const [count, setCount] = useState(0);
+
+    const increment = () => {
+      setCount(count + 1);
+    }
+
+    const decrement = () =>{
+      if ((count - 1) < 0) {
+        setCount(0)
+      }else{
+        setCount(count - 1);
+      }
+    }
+
+    const handleAddToCart = () => {
+      addToCart(count);
+      setCount(0);
+    }
 
     return(
-        <section class="details-and-buttons-container">
+        <section className="details-and-buttons-container">
           <Details>
-            <div class="headings">
+            <div className="headings">
               <SneakerH3>Sneaker Company</SneakerH3>
               <LimitedH1>Fall Limited Edition Sneakers</LimitedH1>
             </div>
-            <div class="description">
+            <div className="description">
               <DescriptionParag>
                 These low-profile sneakers are your perfect casual wear companion. Featuring a
                 durable rubber outer sole, they’ll withstand everything the weather can offer.
@@ -29,17 +51,17 @@ function DetailsAndBtns(){
           </Details>
           <CartBtns>
             <QuantityBtns>
-              <Btn>
+              <Btn onClick={decrement}>
                 <FiMinus className='scale-150 text-eComOrangeColor hover:cursor-pointer'/>
               </Btn>
-              <QuantityInput id="quantity" value="0" type="number" min="0" />
-              <Btn>
+              <QuantityInput id="quantity" value={count} type="number" min="0" onChange={() => {}}/>
+              <Btn onClick={increment}>
                 <FiPlus className='scale-150 text-eComOrangeColor hover:cursor-pointer'/>
               </Btn>
             </QuantityBtns>
-            <AddToCartWrapper>
+            <AddToCartWrapper onClick={handleAddToCart}>
               <CartImg src="/e-commerce/icon-cart.svg" />
-              <AddBtn onclick="addToCart()">
+              <AddBtn>
                 Add to cart
               </AddBtn>
             </AddToCartWrapper>
