@@ -3,7 +3,7 @@ import {ECommerceContext} from '../../../../../contexts/e-commerce/ECommerceCont
 
 import {CartList,CartHeadingContainer, H3,CartContent,EmptyCartParag,CartItem,ImageThumbnailWrapper,ImageThumb,ItemDetails,Strong,CheckOutBtn} from './Cart.styles';
 
-import imageThumbnail from '../../../../../assets/e-commerce/image-product-1-thumbnail.jpg';
+import imageThumbnail from '/e-commerce/image-product-1-thumbnail.jpg';
 import deleteIcon from '../../../../../../public/e-commerce/icon-delete.svg';
 
 function Cart({isCartOpen}){
