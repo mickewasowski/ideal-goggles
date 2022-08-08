@@ -70,5 +70,12 @@ export const Strong = tw.strong`
 `
 
 export const CheckOutBtn = tw.button`
-    
+    bg-eComOrangeColor
+    w-11/12
+    self-center
+    mt-[1.5rem]
+    p-[.5rem]
+    rounded-lg
+    text-genericWhite
+    font-bold
 `
