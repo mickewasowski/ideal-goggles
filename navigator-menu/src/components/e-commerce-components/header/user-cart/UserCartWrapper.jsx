@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import {ECommerceContext} from '../../../../contexts/e-commerce/ECommerceContext';
+
 import avatar from '../../../../../public/e-commerce/image-avatar.png';
 import Cart from './cart/Cart';
 
@@ -6,6 +8,8 @@ import {UserCartContainer,CartContainerBtn,CartCount,UserIconContainer} from './
 
 function UserCartWrapper(){
     const [isCartOpen, setIsCartOpen] = useState(false);
+
+    const {itemsCount} = useContext(ECommerceContext);
 
     const toggleCart = () => {
         if (isCartOpen) {
@@ -17,7 +21,7 @@ function UserCartWrapper(){
 
     return(
         <UserCartContainer>
-                <CartCount style={{display: 'none'}}>0</CartCount>
+                <CartCount style={{display: 'inline'}}>{itemsCount.itemsCount}</CartCount>
                 <CartContainerBtn onClick={toggleCart}>
                     <svg className="cart-icon" width="22" height="20">
                         <path className="cart-icon-check"

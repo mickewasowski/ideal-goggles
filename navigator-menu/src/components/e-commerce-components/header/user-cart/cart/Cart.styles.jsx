@@ -66,6 +66,7 @@ export const ItemDetails = tw.div`
 `
 
 export const Strong = tw.strong`
+    ml-[.4rem]
     text-genericBlack
 `
 

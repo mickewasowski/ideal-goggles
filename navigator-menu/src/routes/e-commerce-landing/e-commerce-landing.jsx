@@ -1,10 +1,13 @@
 import ECommerceWrapper from "../../components/e-commerce-components/ECommerceWrapper";
 
+import {ECommerceInfoProvider} from '../../contexts/e-commerce/ECommerceContext';
 
 function ECommerceRoute(){
 
     return(
-        <ECommerceWrapper />
+        <ECommerceInfoProvider>
+            <ECommerceWrapper />
+        </ECommerceInfoProvider>
     )
 }
 
