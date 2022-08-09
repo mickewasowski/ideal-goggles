@@ -4,18 +4,16 @@ import {useState, useContext} from 'react';
 import {ShoeImagesWrapper, BigImage,OtherImagesWrapper, ImageContainer, SmallImage} from './DesktopMainCarousel.styles';
 
 function DesktopMainCarousel(){
-    const {isGalleryOpen} = useContext(ECommerceContext);
-    console.log(isGalleryOpen);
+    const {toggleGallery} = useContext(ECommerceContext);
     const [current, setCurrent] = useState(1);
 
     const changeBigImage = (e) => {
         let id = Number(e.target.id);
-
         setCurrent(id)
     }
 
     const openGallery = () => {
-
+      toggleGallery(true);
     }
 
     return(

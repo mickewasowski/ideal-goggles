@@ -8,12 +8,9 @@ function ECommerceWrapper(){
 
     return(
         <Wrapper>
-            <div id="backdrop-mobile-navbar" style={{display: 'none'}}></div>
-    
             <Header />
             <Main />
-            {/* <Gallery /> */}
-    
+            <Gallery />
         </Wrapper>
     )
 }

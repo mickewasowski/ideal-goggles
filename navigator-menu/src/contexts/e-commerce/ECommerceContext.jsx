@@ -12,7 +12,7 @@ export const ECommerceInfoProvider = ({
 
     const addToCart = (count) => setItemsCount(count);
 
-    const toggleGallery = (state) => setIsGalleryOpen(state);
+    const toggleGallery = (bool) => setIsGalleryOpen(bool);
 
     return(
         <ECommerceContext.Provider value={{itemsCount, isGalleryOpen, clearCart, addToCart, toggleGallery}}>
