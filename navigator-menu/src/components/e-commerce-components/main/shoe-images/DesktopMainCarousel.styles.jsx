@@ -45,3 +45,25 @@ export const SmallImage = tw.div`
     hover:opacity-50
     hover:cursor-pointer
 `
+
+export const ArrowsContainer = tw.div`
+    hidden
+
+    phone:flex
+    phone:relative
+    phone:w-screen
+    phone:justify-between
+    phone:-top-60
+`
+
+export const ArrowSpan = tw.span`
+    phone:m-0
+    phone:w-[3rem]
+    phone:h-[3rem]
+    phone:bg-genericWhite
+    phone:rounded-full
+
+    phone:flex
+    phone:justify-center
+    phone:items-center
+`

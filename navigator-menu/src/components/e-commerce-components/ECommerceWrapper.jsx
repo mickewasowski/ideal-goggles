@@ -10,7 +10,7 @@ function ECommerceWrapper(){
         <Wrapper>
             <Header />
             <Main />
-            {/* <Gallery /> */}
+            <Gallery />
         </Wrapper>
     )
 }

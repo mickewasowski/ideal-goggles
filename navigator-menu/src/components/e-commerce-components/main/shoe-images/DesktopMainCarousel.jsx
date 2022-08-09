@@ -1,9 +1,12 @@
 import {ECommerceContext} from '../../../../contexts/e-commerce/ECommerceContext';
 import {useState, useContext} from 'react';
+import { IoIosArrowForward,IoIosArrowBack } from 'react-icons/io';
 
-import {ShoeImagesWrapper, BigImage,OtherImagesWrapper, ImageContainer, SmallImage} from './DesktopMainCarousel.styles';
+import {ShoeImagesWrapper, BigImage,OtherImagesWrapper, ImageContainer, SmallImage,ArrowsContainer,ArrowSpan} from './DesktopMainCarousel.styles';
 
 function DesktopMainCarousel(){
+    const windowWidth = window.outerWidth;
+
     const {toggleGallery} = useContext(ECommerceContext);
     const [current, setCurrent] = useState(1);
 
@@ -13,7 +16,27 @@ function DesktopMainCarousel(){
     }
 
     const openGallery = () => {
-      toggleGallery(true);
+      if (windowWidth < 1024) {
+        return;
+      } else {
+        toggleGallery(true);
+      }
+    }
+
+    const handleForward = () => {
+      if ((current + 1) > 4) {
+        return;
+      } else {
+       setCurrent(current + 1); 
+      }
+    }
+
+    const handleBackward = () => {
+      if ((current - 1) < 1) {
+        return;
+      } else {
+        setCurrent(current - 1)
+      }
     }
 
     return(
@@ -24,18 +47,20 @@ function DesktopMainCarousel(){
                 src={`/e-commerce/image-product-${current}.jpg`}
                 onClick={openGallery}
               />
-            <div id="arrows" style={{display: 'none'}}>
-              <span id="previous-image">
-                <svg id="prev-img" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1 3 9l8 8" fillRule="nonzero" />
-                </svg>
-              </span>
-              <span id="next-image">
-                <svg id="next-img" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m2 1 8 8-8 8" fillRule="nonzero" />
-                </svg>
-              </span>
-            </div>
+            <ArrowsContainer>
+              <ArrowSpan 
+                className='w-[2rem] h-[2rem] bg-genericWhite rounded-full' 
+                onClick={handleBackward}
+                >
+                <IoIosArrowBack className='scale-150 hover:fill-eComOrangeColor hover:cursor-pointer'/>
+              </ArrowSpan>
+              <ArrowSpan 
+                className='w-[2rem] h-[2rem] bg-genericWhite rounded-full' 
+                onClick={handleForward}
+                >
+                <IoIosArrowForward className='scale-150 hover:fill-eComOrangeColor hover:cursor-pointer'/>
+              </ArrowSpan>
+            </ArrowsContainer>
           </div>
           <OtherImagesWrapper>
             <ImageContainer>
