@@ -9,7 +9,7 @@ function ECommerceWrapper(){
     return(
         <Wrapper>
             <Header />
-            {/* <Main /> */}
+            <Main />
             {/* <Gallery /> */}
         </Wrapper>
     )

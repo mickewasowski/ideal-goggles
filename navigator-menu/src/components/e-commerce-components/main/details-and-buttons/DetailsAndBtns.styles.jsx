@@ -6,6 +6,9 @@ export const Details = tw.div`
     flex
     flex-col
     justify-around
+
+    phone:px-[1rem]
+    phone:w-screen
 `
 
 export const SneakerH3 = tw.h3`
@@ -70,6 +73,9 @@ export const CartBtns = tw.div`
     flex
     justify-between
     items-center
+
+    phone:flex-col
+    phone:mb-[1rem]
 `
 
 export const QuantityBtns = tw.div`
@@ -77,6 +83,9 @@ export const QuantityBtns = tw.div`
     items-center
     bg-eComQuantityBtnsBg
     rounded-xl
+
+    phone:w-11/12
+    phone:mb-[1rem]
 `
 
 export const Btn = tw.span`
@@ -87,6 +96,8 @@ export const Btn = tw.span`
     flex
     justify-center
     items-center
+
+    phone:w-4/12
 `
 
 export const QuantityInput = tw.input`
@@ -97,6 +108,8 @@ export const QuantityInput = tw.input`
     font-bold
 
     focus:outline-none
+
+    phone:w-4/12
 `
 
 export const AddToCartWrapper = tw.div`
@@ -110,6 +123,8 @@ export const AddToCartWrapper = tw.div`
 
     hover:cursor-pointer
     hover:bg-opacity-70
+
+    phone:w-11/12
 `
 
 export const CartImg = tw.img`

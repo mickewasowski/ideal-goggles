@@ -4,18 +4,24 @@ export const ShoeImagesWrapper = tw.section`
     flex
     flex-col
     w-[30rem]
+
+    phone:w-screen
 `
 
 export const BigImage = tw.img`
     rounded-xl
 
     hover:cursor-pointer
+
+    phone:rounded-none
 `
 
 export const OtherImagesWrapper = tw.div`
     flex
     justify-between
     mt-[2rem]
+
+    phone:hidden
 `
 
 export const ImageContainer = tw.div`

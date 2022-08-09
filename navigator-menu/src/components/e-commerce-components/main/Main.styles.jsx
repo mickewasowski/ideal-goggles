@@ -5,4 +5,7 @@ export const Wrapper = tw.main`
     mx-[3rem]
     flex
     justify-around
+
+    phone:flex-col
+    phone:m-0
 `
