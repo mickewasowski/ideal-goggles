@@ -34,4 +34,7 @@ export const UserIconContainer = tw.div`
     hover:outline
     hover:outline-eComOrangeColor
     hover:outline-2
+
+    phone:w-[2.2rem]
+    phone:h-[2.2rem]
 `

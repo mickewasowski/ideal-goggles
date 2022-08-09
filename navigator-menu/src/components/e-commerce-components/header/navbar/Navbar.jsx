@@ -1,22 +1,26 @@
 import logo from '../../../../../public/e-commerce/logo.svg';
 
-import {ButtonsContainer,LogoContainer,AnchorTag,NavigationContainer,Navigation,Ul,LiItem, CloseIcon} from './Navbar.styles';
+import {ButtonsContainer,LogoContainer,AnchorTag,NavigationContainer,Navigation,Ul,LiItem, CloseIcon,Backdrop} from './Navbar.styles';
 
 function Navbar(){
     const windowWidth = window.outerWidth;
     
     const handleToggleNavbar = () => {
         let navbar = document.getElementById('navbar-container');
+        let backdrop = document.getElementById('navbar-backdrop');
 
         if (navbar.style.display === 'flex') {
             navbar.style.display = 'none';
+            backdrop.style.display = 'none';
         } else {
             navbar.style.display = 'flex'
+            backdrop.style.display = 'inline';
         }
     }
 
     return(
         <ButtonsContainer>
+            <Backdrop id='navbar-backdrop'></Backdrop>
             <LogoContainer>
                 <svg 
                     width="16" 

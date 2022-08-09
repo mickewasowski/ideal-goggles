@@ -23,7 +23,7 @@ export const NavigationContainer = tw.div`
     m-[.6rem]
 
     phone:hidden
-    phone:z-10
+    phone:z-20
     phone:w-3/5
     phone:h-screen
     phone:m-0
@@ -80,4 +80,15 @@ hidden
 
 phone:inline-block
 phone:mt-[.5rem]
+`
+
+export const Backdrop = tw.div`
+    hidden
+
+    phone:bg-genericBlack
+    phone:absolute
+    phone:w-screen
+    phone:h-screen
+    phone:z-10
+    phone:bg-opacity-90
 `
