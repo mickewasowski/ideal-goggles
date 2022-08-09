@@ -10,7 +10,7 @@ export const ECommerceInfoProvider = ({
 
     const clearCart = () => setItemsCount(0);
 
-    const addToCart = (count) => setItemsCount(count);
+    const addToCart = (count) => setItemsCount(itemsCount + count);
 
     const toggleGallery = (bool) => setIsGalleryOpen(bool);
 
