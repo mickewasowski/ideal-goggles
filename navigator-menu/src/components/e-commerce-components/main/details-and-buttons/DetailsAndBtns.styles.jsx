@@ -9,6 +9,9 @@ export const Details = tw.div`
 
     phone:px-[1rem]
     phone:w-screen
+
+    tablet:px-[1rem]
+    tablet:w-screen
 `
 
 export const SneakerH3 = tw.h3`
@@ -76,6 +79,9 @@ export const CartBtns = tw.div`
 
     phone:flex-col
     phone:mb-[1rem]
+
+    tablet:flex-col
+    tablet:mb-[1rem]
 `
 
 export const QuantityBtns = tw.div`
@@ -86,6 +92,9 @@ export const QuantityBtns = tw.div`
 
     phone:w-11/12
     phone:mb-[1rem]
+
+    tablet:w-11/12
+    tablet:mb-[1rem]
 `
 
 export const Btn = tw.span`
@@ -98,6 +107,8 @@ export const Btn = tw.span`
     items-center
 
     phone:w-4/12
+
+    tablet:w-4/12
 `
 
 export const QuantityInput = tw.input`
@@ -110,6 +121,8 @@ export const QuantityInput = tw.input`
     focus:outline-none
 
     phone:w-4/12
+
+    tablet:w-4/12
 `
 
 export const AddToCartWrapper = tw.div`
@@ -125,6 +138,8 @@ export const AddToCartWrapper = tw.div`
     hover:bg-opacity-70
 
     phone:w-11/12
+
+    tablet:w-11/12
 `
 
 export const CartImg = tw.img`

@@ -14,4 +14,10 @@ export const Wrapper = tw.header`
     phone:mt-0
     phone:mb-0
     phone:p-0
+
+    tablet:flex
+    tablet:justify-around
+    tablet:mt-0
+    tablet:mb-0
+    tablet:p-0
 `

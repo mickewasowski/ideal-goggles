@@ -15,6 +15,9 @@ export const CartList = tw.div`
 
     phone:w-11/12
     phone:right-[1rem]
+
+    tablet:w-11/12
+    tablet:right-[1rem]
 `
 
 export const CartHeadingContainer = tw.div`

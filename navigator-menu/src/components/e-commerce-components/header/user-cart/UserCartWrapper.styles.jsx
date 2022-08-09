@@ -37,4 +37,7 @@ export const UserIconContainer = tw.div`
 
     phone:w-[2.2rem]
     phone:h-[2.2rem]
+
+    tablet:w-[2.2rem]
+    tablet:h-[2.2rem]
 `

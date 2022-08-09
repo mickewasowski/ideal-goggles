@@ -6,4 +6,6 @@ export const Wrapper = tw.div`
     w-10/12
 
     phone:w-full
+
+    tablet:w-full
 `

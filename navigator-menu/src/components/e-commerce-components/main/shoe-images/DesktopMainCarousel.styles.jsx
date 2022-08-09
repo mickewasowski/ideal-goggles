@@ -6,6 +6,8 @@ export const ShoeImagesWrapper = tw.section`
     w-[30rem]
 
     phone:w-screen
+
+    tablet:w-screen
 `
 
 export const BigImage = tw.img`
@@ -14,6 +16,8 @@ export const BigImage = tw.img`
     hover:cursor-pointer
 
     phone:rounded-none
+
+    tablet:rounded-none
 `
 
 export const OtherImagesWrapper = tw.div`
@@ -22,6 +26,8 @@ export const OtherImagesWrapper = tw.div`
     mt-[2rem]
 
     phone:hidden
+
+    tablet:hidden
 `
 
 export const ImageContainer = tw.div`
@@ -54,6 +60,12 @@ export const ArrowsContainer = tw.div`
     phone:w-screen
     phone:justify-between
     phone:-top-60
+
+    tablet:flex
+    tablet:relative
+    tablet:w-screen
+    tablet:justify-between
+    tablet:-top-60
 `
 
 export const ArrowSpan = tw.span`
@@ -66,4 +78,14 @@ export const ArrowSpan = tw.span`
     phone:flex
     phone:justify-center
     phone:items-center
+
+    tablet:m-0
+    tablet:w-[3rem]
+    tablet:h-[3rem]
+    tablet:bg-genericWhite
+    tablet:rounded-full
+
+    tablet:flex
+    tablet:justify-center
+    tablet:items-center
 `
