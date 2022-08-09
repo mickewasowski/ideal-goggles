@@ -8,4 +8,10 @@ export const Wrapper = tw.header`
     border-b-2
     flex
     justify-between
+
+    phone:flex
+    phone:justify-around
+    phone:mt-0
+    phone:mb-0
+    phone:p-0
 `

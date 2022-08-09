@@ -9,8 +9,8 @@ function ECommerceWrapper(){
     return(
         <Wrapper>
             <Header />
-            <Main />
-            <Gallery />
+            {/* <Main /> */}
+            {/* <Gallery /> */}
         </Wrapper>
     )
 }
