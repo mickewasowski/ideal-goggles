@@ -12,6 +12,9 @@ export const CartList = tw.div`
     shadow-2xl
     flex
     flex-col
+
+    phone:w-11/12
+    phone:right-[1rem]
 `
 
 export const CartHeadingContainer = tw.div`
