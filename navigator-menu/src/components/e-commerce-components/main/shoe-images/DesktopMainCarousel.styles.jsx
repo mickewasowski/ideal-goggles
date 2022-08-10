@@ -10,12 +10,20 @@ export const ShoeImagesWrapper = tw.section`
     tablet:w-screen
 `
 
+export const MainImageContainer = tw.div`
+
+    phone:h-[30rem]
+
+    tablet:h-[50rem]
+`
+
 export const BigImage = tw.img`
     rounded-xl
 
     hover:cursor-pointer
 
     phone:rounded-none
+    phone:h-[30rem]
 
     tablet:rounded-none
 `
@@ -59,13 +67,13 @@ export const ArrowsContainer = tw.div`
     phone:relative
     phone:w-screen
     phone:justify-between
-    phone:-top-60
+    phone:bottom-1/2
 
     tablet:flex
     tablet:relative
     tablet:w-screen
     tablet:justify-between
-    tablet:-top-60
+    tablet:bottom-1/2
 `
 
 export const ArrowSpan = tw.span`

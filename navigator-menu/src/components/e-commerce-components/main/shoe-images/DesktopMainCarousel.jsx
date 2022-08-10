@@ -2,7 +2,7 @@ import {ECommerceContext} from '../../../../contexts/e-commerce/ECommerceContext
 import {useState, useContext} from 'react';
 import { IoIosArrowForward,IoIosArrowBack } from 'react-icons/io';
 
-import {ShoeImagesWrapper, BigImage,OtherImagesWrapper, ImageContainer, SmallImage,ArrowsContainer,ArrowSpan} from './DesktopMainCarousel.styles';
+import {ShoeImagesWrapper,MainImageContainer, BigImage,OtherImagesWrapper, ImageContainer, SmallImage,ArrowsContainer,ArrowSpan} from './DesktopMainCarousel.styles';
 
 function DesktopMainCarousel(){
     const windowWidth = window.outerWidth;
@@ -41,27 +41,27 @@ function DesktopMainCarousel(){
 
     return(
         <ShoeImagesWrapper>
-          <div className="main-image">
+          <MainImageContainer>
             <BigImage 
                 style={{display: "block"}} 
                 src={`/e-commerce/image-product-${current}.jpg`}
                 onClick={openGallery}
               />
-            <ArrowsContainer>
-              <ArrowSpan 
-                className='w-[2rem] h-[2rem] bg-genericWhite rounded-full' 
-                onClick={handleBackward}
-                >
-                <IoIosArrowBack className='scale-150 hover:fill-eComOrangeColor hover:cursor-pointer'/>
-              </ArrowSpan>
-              <ArrowSpan 
-                className='w-[2rem] h-[2rem] bg-genericWhite rounded-full' 
-                onClick={handleForward}
-                >
-                <IoIosArrowForward className='scale-150 hover:fill-eComOrangeColor hover:cursor-pointer'/>
-              </ArrowSpan>
+              <ArrowsContainer>
+                <ArrowSpan 
+                  className='w-[2rem] h-[2rem] bg-genericWhite rounded-full' 
+                  onClick={handleBackward}
+                  >
+                  <IoIosArrowBack className='scale-150 hover:fill-eComOrangeColor hover:cursor-pointer'/>
+                </ArrowSpan>
+                <ArrowSpan 
+                  className='w-[2rem] h-[2rem] bg-genericWhite rounded-full' 
+                  onClick={handleForward}
+                  >
+                  <IoIosArrowForward className='scale-150 hover:fill-eComOrangeColor hover:cursor-pointer'/>
+                </ArrowSpan>
             </ArrowsContainer>
-          </div>
+          </MainImageContainer>
           <OtherImagesWrapper>
             <ImageContainer>
               <SmallImage
