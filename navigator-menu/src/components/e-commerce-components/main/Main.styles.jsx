@@ -11,4 +11,7 @@ export const Wrapper = tw.main`
 
     tablet:flex-col
     tablet:m-0
+
+    laptop:justify-evenly
+    laptop:mx-0
 `

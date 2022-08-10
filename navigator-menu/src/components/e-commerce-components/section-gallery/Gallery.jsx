@@ -41,7 +41,7 @@ function Gallery(){
         <GalleryContainer>
           <div className="current-image-container">
           <MdOutlineClose 
-            className='relative top-7 left-[38.5rem] scale-150 hover:fill-eComOrangeColor hover:cursor-pointer'
+            className='relative top-7 left-[38.5rem] scale-150 hover:fill-eComOrangeColor hover:cursor-pointer laptop:top-1/5 laptop:left-full'
               onClick={handleCloseGallery}
             />
             <ArrowsContainer>

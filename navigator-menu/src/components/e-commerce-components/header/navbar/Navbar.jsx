@@ -26,7 +26,7 @@ function Navbar(){
                     width="16" 
                     height="15" 
                     className='mr-[1rem] mt-[.2rem]' 
-                    style={{display: 'inline'}}
+                    style={windowWidth >= 1024 ? {display: 'none'} : {display: 'inline'}}
                     onClick={handleToggleNavbar}
                     >
                         <path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fillRule="evenodd" fill="#69707D" />

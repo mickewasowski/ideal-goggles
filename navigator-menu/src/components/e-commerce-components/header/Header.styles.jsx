@@ -10,14 +10,16 @@ export const Wrapper = tw.header`
     justify-between
 
     phone:flex
-    phone:justify-around
+    phone:justify-between
     phone:mt-0
     phone:mb-0
     phone:p-0
+    tablet:px-[1rem]
 
     tablet:flex
-    tablet:justify-around
+    tablet:justify-between
     tablet:mt-0
     tablet:mb-0
     tablet:p-0
+    tablet:px-[1rem]
 `

@@ -8,6 +8,10 @@ export const ShoeImagesWrapper = tw.section`
     phone:w-screen
 
     tablet:w-screen
+
+    laptop:w-[25rem]
+    laptop:justify-around
+    laptop:mr-[2rem]
 `
 
 export const MainImageContainer = tw.div`
@@ -26,6 +30,8 @@ export const BigImage = tw.img`
     phone:h-[30rem]
 
     tablet:rounded-none
+
+    laptop:w-[25rem]
 `
 
 export const OtherImagesWrapper = tw.div`
@@ -46,6 +52,9 @@ export const ImageContainer = tw.div`
     hover:outline-2
     hover:outline-eComOrangeColor
     hover:outline
+
+    laptop:w-[5rem]
+    laptop:h-[5rem]
 `
 
 export const SmallImage = tw.div`
@@ -58,6 +67,9 @@ export const SmallImage = tw.div`
 
     hover:opacity-50
     hover:cursor-pointer
+
+    laptop:w-[5rem]
+    laptop:h-[5rem]
 `
 
 export const ArrowsContainer = tw.div`

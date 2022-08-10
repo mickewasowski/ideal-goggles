@@ -49,6 +49,10 @@ export const NavigationContainer = tw.div`
     tablet:justify-start
     tablet:pl-[1rem]
     tablet:pt-[1rem]
+
+    laptop:flex
+    laptop:items-center
+    laptop:m-[.6rem]
 `
 
 export const Navigation = tw.nav`

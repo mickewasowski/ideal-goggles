@@ -29,6 +29,8 @@ export const ArrowsContainer = tw.div`
     justify-between 
     relative 
     top-80
+
+    laptop:top-1/2
 `
 
 export const ArrowSpan = tw.span`
@@ -47,6 +49,9 @@ export const CurrentBig = tw.img`
     w-[40rem]
     h-[40rem]
     rounded-xl
+
+    laptop:w-[30rem]
+    laptop:h-[30rem]
 `
 
 export const ThumbnailImgsContainer = tw.div`
@@ -54,6 +59,8 @@ export const ThumbnailImgsContainer = tw.div`
     flex
     justify-around
     mt-[2rem]
+
+    laptop:w-[30rem]
 `
 
 export const ThumbImgContainer = tw.div`
@@ -75,4 +82,7 @@ export const ThumbImg = tw.div`
     items-center
 
     hover:opacity-40
+
+    laptop:w-[6rem]
+    laptop:h-[6rem]
 `

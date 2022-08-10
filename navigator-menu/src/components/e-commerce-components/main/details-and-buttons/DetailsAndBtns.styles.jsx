@@ -12,6 +12,8 @@ export const Details = tw.div`
 
     tablet:px-[1rem]
     tablet:w-screen
+
+    laptop:w-[25rem]
 `
 
 export const SneakerH3 = tw.h3`
@@ -140,6 +142,8 @@ export const AddToCartWrapper = tw.div`
     phone:w-11/12
 
     tablet:w-11/12
+
+    laptop:w-2/4
 `
 
 export const CartImg = tw.img`
