@@ -49,9 +49,7 @@ export const ImageContainer = tw.div`
     h-[6rem]
     rounded-lg
 
-    hover:outline-2
-    hover:outline-eComOrangeColor
-    hover:outline
+    
 
     laptop:w-[5rem]
     laptop:h-[5rem]

@@ -12,7 +12,16 @@ function DesktopMainCarousel(){
 
     const changeBigImage = (e) => {
         let id = Number(e.target.id);
-        setCurrent(id)
+        setCurrent(id);
+
+        let outers = Array.from(document.getElementById('small-images').children);
+        
+        for (let outer of outers) {
+          outer.style.outline = 'none';
+        }
+
+        let outerContainer = document.getElementById(`outer-${id}`);
+        outerContainer.style.outline = '2px solid #ff7d1a';
     }
 
     const openGallery = () => {
@@ -62,8 +71,8 @@ function DesktopMainCarousel(){
                 </ArrowSpan>
             </ArrowsContainer>
           </MainImageContainer>
-          <OtherImagesWrapper>
-            <ImageContainer>
+          <OtherImagesWrapper id='small-images'>
+            <ImageContainer id='outer-1'>
               <SmallImage
                 id="1" 
                 style={{backgroundImage: "url(/e-commerce/image-product-1-thumbnail.jpg)"}}
@@ -71,7 +80,7 @@ function DesktopMainCarousel(){
                 >
               </SmallImage>
             </ImageContainer>
-            <ImageContainer>
+            <ImageContainer id='outer-2'>
               <SmallImage
                 id="2" 
                 style={{backgroundImage: "url(/e-commerce/image-product-2-thumbnail.jpg)"}}
@@ -79,7 +88,7 @@ function DesktopMainCarousel(){
                 >
               </SmallImage>
             </ImageContainer>
-            <ImageContainer>
+            <ImageContainer id='outer-3'>
               <SmallImage 
                 id="3" 
                 style={{backgroundImage: "url(/e-commerce/image-product-3-thumbnail.jpg)"}}
@@ -87,7 +96,7 @@ function DesktopMainCarousel(){
                 >
               </SmallImage>
             </ImageContainer>
-            <ImageContainer>
+            <ImageContainer id='outer-4'>
               <SmallImage 
                 id="4" 
                 style={{backgroundImage: "url(/e-commerce/image-product-4-thumbnail.jpg)"}}
