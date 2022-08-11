@@ -14,6 +14,15 @@ function Gallery(){
     const handleChangeBigImage = (e) => {
       let id = Number(e.target.id);
       setCurrent(id);
+
+      let outers = Array.from(document.getElementById('smaller-images').children);
+        
+        for (let outer of outers) {
+          outer.style.outline = 'none';
+        }
+
+        let outerContainer = document.getElementById(`out-${id}`);
+        outerContainer.style.outline = '2px solid #ff7d1a';
     }
 
     const handleCloseGallery = () => {
@@ -58,8 +67,8 @@ function Gallery(){
               src={`/e-commerce/image-product-${current}.jpg`} 
             />
           </div>
-          <ThumbnailImgsContainer>
-            <ThumbImgContainer>
+          <ThumbnailImgsContainer id='smaller-images'>
+            <ThumbImgContainer id='out-1'>
               <ThumbImg 
                 id="1"
                 style={{backgroundImage: "url(/e-commerce/image-product-1-thumbnail.jpg)"}}
@@ -67,7 +76,7 @@ function Gallery(){
                 >
               </ThumbImg>
             </ThumbImgContainer>
-            <ThumbImgContainer>
+            <ThumbImgContainer id='out-2'>
               <ThumbImg 
                 id="2" 
                 style={{backgroundImage: "url(/e-commerce/image-product-2-thumbnail.jpg)"}}
@@ -75,7 +84,7 @@ function Gallery(){
                 >
               </ThumbImg>
             </ThumbImgContainer>
-            <ThumbImgContainer>
+            <ThumbImgContainer id='out-3'>
               <ThumbImg 
                 id="3" 
                 style={{backgroundImage: "url(/e-commerce/image-product-3-thumbnail.jpg)"}}
@@ -83,7 +92,7 @@ function Gallery(){
                 >
               </ThumbImg>
             </ThumbImgContainer>
-            <ThumbImgContainer>
+            <ThumbImgContainer id='out-4'>
               <ThumbImg 
                 id="4" 
                 style={{backgroundImage: "url(/e-commerce/image-product-4-thumbnail.jpg)"}}

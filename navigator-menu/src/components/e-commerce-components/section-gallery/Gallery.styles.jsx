@@ -67,9 +67,7 @@ export const ThumbImgContainer = tw.div`
     bg-genericWhite
     rounded-xl
 
-    hover:outline
-    hover:outline-eComOrangeColor
-    hover:outline-2
+
 `
 
 export const ThumbImg = tw.div`
