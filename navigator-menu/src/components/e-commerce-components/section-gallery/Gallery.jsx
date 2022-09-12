@@ -33,7 +33,7 @@ function Gallery(){
       if ((current + 1) > 4) {
         return;
       } else {
-       setCurrent(current + 1); 
+        setCurrent(current + 1); 
       }
     }
 
