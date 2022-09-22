@@ -1,26 +1,17 @@
+import {useState} from 'react';
+
 import logo from '../../../../../public/e-commerce/logo.svg';
 
 import {ButtonsContainer,LogoContainer,AnchorTag,NavigationContainer,Navigation,Ul,LiItem, CloseIcon,Backdrop} from './Navbar.styles';
 
 function Navbar(){
+    const [backdropIsOpen, setBackdropIsOpen] = useState(false);
     const windowWidth = window.outerWidth;
-    
-    const handleToggleNavbar = () => {
-        let navbar = document.getElementById('navbar-container');
-        let backdrop = document.getElementById('navbar-backdrop');
-
-        if (navbar.style.display === 'flex') {
-            navbar.style.display = 'none';
-            backdrop.style.display = 'none';
-        } else {
-            navbar.style.display = 'flex'
-            backdrop.style.display = 'inline';
-        }
-    }
+    const handleToggleNavbar = () => setBackdropIsOpen(!backdropIsOpen);
 
     return(
         <ButtonsContainer>
-            <Backdrop id='navbar-backdrop'></Backdrop>
+            <Backdrop className={`${backdropIsOpen ? "phone:inline" : "phone:hidden"}`}></Backdrop>
             <LogoContainer>
                 <svg 
                     width="16" 
@@ -35,7 +26,7 @@ function Navbar(){
                     <img src={logo} />
                 </AnchorTag>
             </LogoContainer>
-            <NavigationContainer id="navbar-container">
+            <NavigationContainer className={`${backdropIsOpen ? "phone:inline" : "phone:hidden"}`}>
                 <CloseIcon id="close-navbar" onClick={handleToggleNavbar}>
                     <svg width="14" height="15">
                         <path

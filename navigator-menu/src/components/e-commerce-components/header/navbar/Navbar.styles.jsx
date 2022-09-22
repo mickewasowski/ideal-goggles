@@ -21,8 +21,7 @@ export const NavigationContainer = tw.div`
     flex
     items-center
     m-[.6rem]
-
-    phone:hidden
+    
     phone:z-20
     phone:w-3/5
     phone:h-screen

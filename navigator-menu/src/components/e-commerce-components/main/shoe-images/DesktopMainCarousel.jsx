@@ -25,11 +25,9 @@ function DesktopMainCarousel(){
     }
 
     const openGallery = () => {
-      if (windowWidth < 1024) {
-        return;
-      } else {
+      if (windowWidth >= 1024) {
         toggleGallery(true);
-      }
+      } 
     }
 
     const handleForward = () => {

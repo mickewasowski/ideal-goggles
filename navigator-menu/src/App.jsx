@@ -9,8 +9,6 @@ import LoopStudioRoute from './routes/loop-studio/loop-studio';
 import TipsCalculatorRoute from './routes/tips-calculator/tips-calculator';
 
 function App() {
-
-
   return (
     <Routes>
       <Route index element={<HomeRoute />}/>
@@ -25,4 +23,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

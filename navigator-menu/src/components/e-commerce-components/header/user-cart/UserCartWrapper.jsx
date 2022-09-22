@@ -12,11 +12,7 @@ function UserCartWrapper(){
     const {itemsCount} = useContext(ECommerceContext);
 
     const toggleCart = () => {
-        if (isCartOpen) {
-            setIsCartOpen(false)
-        }else{
-            setIsCartOpen(true)
-        }
+        setIsCartOpen(!isCartOpen);
     }
 
     return(
