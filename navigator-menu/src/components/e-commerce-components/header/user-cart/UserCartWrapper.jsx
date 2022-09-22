@@ -8,16 +8,12 @@ import {UserCartContainer,CartContainerBtn,CartCount,UserIconContainer} from './
 
 function UserCartWrapper(){
     const [isCartOpen, setIsCartOpen] = useState(false);
-
     const {itemsCount} = useContext(ECommerceContext);
-
-    const toggleCart = () => {
-        setIsCartOpen(!isCartOpen);
-    }
+    const toggleCart = () => setIsCartOpen(!isCartOpen);
 
     return(
         <UserCartContainer>
-                <CartCount style={{display: 'inline'}}>{itemsCount}</CartCount>
+                <CartCount>{itemsCount}</CartCount>
                 <CartContainerBtn onClick={toggleCart}>
                     <svg className="cart-icon" width="22" height="20">
                         <path className="cart-icon-check"
