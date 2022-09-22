@@ -1,7 +1,5 @@
 import {ECommerceContext} from '../../../../contexts/e-commerce/ECommerceContext';
-
 import {Details,SneakerH3, LimitedH1,DescriptionParag,Price,CurrentPriceWrapper,CurrentPriceParag,Discount,OriginalPriceWrapper,OriginalPriceParag, CartBtns,QuantityBtns,Btn,QuantityInput,AddToCartWrapper,CartImg,AddBtn} from './DetailsAndBtns.styles';
-
 import { FiMinus,FiPlus } from 'react-icons/fi';
 import { useContext, useState } from 'react';
 
@@ -9,9 +7,7 @@ function DetailsAndBtns(){
     const {addToCart} = useContext(ECommerceContext);
     const [count, setCount] = useState(0);
 
-    const increment = () => {
-      setCount(count + 1);
-    }
+    const increment = () => setCount(count + 1);
 
     const decrement = () =>{
       if ((count - 1) < 0) {

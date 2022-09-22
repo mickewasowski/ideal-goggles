@@ -8,22 +8,9 @@ import {Wrapper, GalleryContainer,ArrowsContainer,ArrowSpan,CurrentBig,Thumbnail
 
 function Gallery(){
     const [current, setCurrent] = useState(1);
-
     const {isGalleryOpen, toggleGallery} = useContext(ECommerceContext);
-
-    const handleChangeBigImage = (e) => {
-      let id = Number(e.target.id);
-      setCurrent(id);
-
-      let outers = Array.from(document.getElementById('smaller-images').children);
-        
-        for (let outer of outers) {
-          outer.style.outline = 'none';
-        }
-
-        let outerContainer = document.getElementById(`out-${id}`);
-        outerContainer.style.outline = '2px solid #ff7d1a';
-    }
+    const outerOutline = 'outline-2 outline outline-[#ff7d1a]';
+    const handleChangeBigImage = (e) => setCurrent(Number(e.target.id));
 
     const handleCloseGallery = () => {
       toggleGallery(false);
@@ -46,7 +33,7 @@ function Gallery(){
     }
 
     return(
-      <Wrapper style={isGalleryOpen ? {display: "block"} : {display: 'none'}}>
+      <Wrapper className={isGalleryOpen ? "block" : 'hidden'}>
         <GalleryContainer>
           <div className="current-image-container">
           <MdOutlineClose 
@@ -68,7 +55,7 @@ function Gallery(){
             />
           </div>
           <ThumbnailImgsContainer id='smaller-images'>
-            <ThumbImgContainer id='out-1'>
+            <ThumbImgContainer id='out-1' className={`${current === 1 ? outerOutline : 'outline-none'}`}>
               <ThumbImg 
                 id="1"
                 style={{backgroundImage: "url(/e-commerce/image-product-1-thumbnail.jpg)"}}
@@ -76,7 +63,7 @@ function Gallery(){
                 >
               </ThumbImg>
             </ThumbImgContainer>
-            <ThumbImgContainer id='out-2'>
+            <ThumbImgContainer id='out-2' className={`${current === 2 ? outerOutline : 'outline-none'}`}>
               <ThumbImg 
                 id="2" 
                 style={{backgroundImage: "url(/e-commerce/image-product-2-thumbnail.jpg)"}}
@@ -84,7 +71,7 @@ function Gallery(){
                 >
               </ThumbImg>
             </ThumbImgContainer>
-            <ThumbImgContainer id='out-3'>
+            <ThumbImgContainer id='out-3' className={`${current === 3 ? outerOutline : 'outline-none'}`}>
               <ThumbImg 
                 id="3" 
                 style={{backgroundImage: "url(/e-commerce/image-product-3-thumbnail.jpg)"}}
@@ -92,7 +79,7 @@ function Gallery(){
                 >
               </ThumbImg>
             </ThumbImgContainer>
-            <ThumbImgContainer id='out-4'>
+            <ThumbImgContainer id='out-4' className={`${current === 4 ? outerOutline : 'outline-none'}`}>
               <ThumbImg 
                 id="4" 
                 style={{backgroundImage: "url(/e-commerce/image-product-4-thumbnail.jpg)"}}
