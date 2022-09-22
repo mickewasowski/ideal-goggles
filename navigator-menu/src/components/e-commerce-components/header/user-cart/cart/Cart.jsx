@@ -1,8 +1,6 @@
 import { useContext } from 'react';
 import {ECommerceContext} from '../../../../../contexts/e-commerce/ECommerceContext';
-
 import {CartList,CartHeadingContainer, H3,CartContent,EmptyCartParag,CartItem,ImageThumbnailWrapper,ImageThumb,ItemDetails,Strong,CheckOutBtn} from './Cart.styles';
-
 import imageThumbnail from '/e-commerce/image-product-1-thumbnail.jpg';
 import deleteIcon from '../../../../../../public/e-commerce/icon-delete.svg';
 
@@ -10,7 +8,7 @@ function Cart({isCartOpen}){
     const {itemsCount, clearCart} = useContext(ECommerceContext);
 
     return(
-        <CartList style={isCartOpen ? {display: 'block'} : {display: 'none'}}>
+        <CartList className={`${isCartOpen ? 'block' : 'hidden'}`}>
             <CartHeadingContainer>
                 <H3>Cart</H3>
             </CartHeadingContainer>
@@ -19,7 +17,7 @@ function Cart({isCartOpen}){
                 itemsCount > 0
                 ?
                 <>
-                    <CartItem style={{display: 'flex'}}>
+                    <CartItem className={'flex'}>
                         <ImageThumbnailWrapper>
                             <ImageThumb src={imageThumbnail} />
                         </ImageThumbnailWrapper>
@@ -31,10 +29,10 @@ function Cart({isCartOpen}){
                             <img src={deleteIcon} className="cursor-pointer" />
                         </div>
                     </CartItem>
-                    <CheckOutBtn style={{display: 'inline'}}>Checkout</CheckOutBtn>
+                    <CheckOutBtn className={'inline'}>Checkout</CheckOutBtn>
                 </>
                 :
-                <EmptyCartParag style={{display: 'inline'}}>
+                <EmptyCartParag className={'inline'}>
                     Your cart is empty.
                 </EmptyCartParag>
             }
