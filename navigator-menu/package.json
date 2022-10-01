@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "eslint": "eslint -c eslint.config.cjs --ext .js,.jsx,.css,.cjs src/ --fix"
+    "eslint": "eslint -c eslint.config.cjs --ext .js,.jsx,.cjs src/ --fix"
   },
   "dependencies": {
     "react": "^18.2.0",
