@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const UserDetailsContainer = tw.div`
     flex
@@ -18,4 +18,4 @@ export const UserDetailsContainer = tw.div`
 
     laptop:w-full
     laptop:justify-center
-`
+`;

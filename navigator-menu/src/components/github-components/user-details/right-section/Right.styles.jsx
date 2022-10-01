@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.div`
     flex
@@ -22,7 +22,7 @@ export const Wrapper = tw.div`
     laptop:self-center
     laptop:w-11/12
     laptop:m-0
-`
+`;
 
 export const AccountInfo = tw.div`
     flex
@@ -32,11 +32,11 @@ export const AccountInfo = tw.div`
     bg-githubAccountInfoBg
 
     dark:bg-githubAccountInfoBgDark
-`
+`;
 
 export const Table = tw.table`
     w-full
-`
+`;
 
 export const TH = tw.th`
     text-center
@@ -47,7 +47,7 @@ export const TH = tw.th`
     text-githubUserDetailsParagText
 
     dark:text-genericWhite
-`
+`;
 
 export const TD = tw.td`
 font-bold
@@ -56,7 +56,7 @@ text-[1.4rem]
 pb-[.5rem]
 
 dark:text-genericWhite
-`
+`;
 
 export const Contacts = tw.div`
     flex
@@ -70,7 +70,7 @@ export const Contacts = tw.div`
 
     
     tablet:gap-0
-`
+`;
 
 export const LeftContactsWrapper = tw.div`
 w-2/5
@@ -80,7 +80,7 @@ phone:w-full
 tablet:w-full
 tablet:flex
 tablet:justify-between
-`
+`;
 
 export const RightContactsWrapper = tw.div`
 w-2/5
@@ -90,7 +90,7 @@ phone:w-full
 tablet:w-full
 tablet:flex
 tablet:justify-between
-`
+`;
 
 export const DetailsWrapper = tw.div`
     flex
@@ -103,8 +103,8 @@ export const DetailsWrapper = tw.div`
     tablet:my-0
     tablet:mt-[1.5rem]
     tablet:w-1/2
-`
+`;
 
 export const IconSpan = tw.span`
     mr-[.5rem]
-`
+`;

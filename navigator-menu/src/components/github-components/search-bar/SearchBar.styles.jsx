@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.div`
     w-full
@@ -17,7 +17,7 @@ export const Wrapper = tw.div`
     tablet:w-full
 
     laptop:w-full
-`
+`;
 
 export const SearchBarContents = tw.div`
     flex
@@ -26,7 +26,7 @@ export const SearchBarContents = tw.div`
     w-full
     px-[.7rem]
     h-full
-`
+`;
 
 export const InputFieldAndErrorContainer = tw.div`
     w-11/12
@@ -34,7 +34,7 @@ export const InputFieldAndErrorContainer = tw.div`
     items-center
     justify-start
     h-full
-`
+`;
 
 export const InputWrapper = tw.div`
     flex
@@ -43,11 +43,11 @@ export const InputWrapper = tw.div`
     justify-start
     h-full
     pl-[.5rem]
-`
+`;
 
 export const SearchIcon = tw.span`
     mr-[.7rem]
-`
+`;
 
 export const InputField = tw.input`
     w-3/4
@@ -58,12 +58,12 @@ export const InputField = tw.input`
     dark:text-genericWhite
 
     focus:outline-none
-`
+`;
 
 export const ErrorMsg = tw.p`
     text-githubErrorColor
     font-bold
-`
+`;
 
 export const ButtonSearch = tw.button`
     text-genericWhite
@@ -73,4 +73,4 @@ export const ButtonSearch = tw.button`
     px-[1rem]
 
     hover:bg-opacity-[.7]
-`
+`;

@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.div`
 w-11/12
@@ -12,7 +12,7 @@ phone:justify-around
 tablet:flex
 tablet:flex-col
 tablet:justify-around
-`
+`;
 
 export const MainInfo = tw.div`
     flex
@@ -26,7 +26,7 @@ export const MainInfo = tw.div`
     tablet:justify-evenly
 
     laptop:justify-start
-`
+`;
 
 export const PicAndUsernameWrapper = tw.div`
     w-full
@@ -38,7 +38,7 @@ export const PicAndUsernameWrapper = tw.div`
 
     tablet:flex
     tablet:w-full
-`
+`;
 
 export const ProfilePicture = tw.img`
     w-[6rem]
@@ -46,7 +46,7 @@ export const ProfilePicture = tw.img`
     rounded-full
     float-left
     mr-[2.2rem]
-`
+`;
 
 export const H2 = tw.h2`
     mt-0
@@ -55,18 +55,18 @@ export const H2 = tw.h2`
     font-bold
 
     dark:text-genericWhite
-`
+`;
 
 export const H4 = tw.h4`
     text-githubUsernameText
     mt-0
     text-lg
-`
+`;
 
 export const JoinedWrapper = tw.div`
     w-1/2
     mt-[2rem]
-`
+`;
 
 export const JoinedParag = tw.p`
     text-githubUserDetailsParagText
@@ -79,7 +79,7 @@ export const JoinedParag = tw.p`
 
     tablet:text-left
     tablet:mb-[2rem]
-`
+`;
 
 export const BioWrapper = tw.div`
     w-85%
@@ -92,7 +92,7 @@ export const BioWrapper = tw.div`
 
     laptop:w-auto
     laptop:my-[2rem]
-`
+`;
 
 export const BioParag = tw.p`
     text-githubUserDetailsParagText
@@ -104,4 +104,4 @@ export const BioParag = tw.p`
 
     tablet:text-left
     tablet:mb-0
-`
+`;

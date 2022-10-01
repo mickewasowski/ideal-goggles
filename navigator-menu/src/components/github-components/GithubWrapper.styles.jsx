@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Background = tw.div`
     font-space-mono
@@ -12,7 +12,7 @@ export const Background = tw.div`
     flex
     justify-center
     items-center
-`
+`;
 
 export const PageContainer = tw.div`
     flex
@@ -26,4 +26,4 @@ export const PageContainer = tw.div`
     tablet:w-11/12
 
     laptop:w-11/12
-`
+`;
