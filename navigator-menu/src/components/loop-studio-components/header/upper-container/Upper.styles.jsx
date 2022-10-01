@@ -1,5 +1,5 @@
-import tw from "tailwind-styled-components/dist/tailwind";
-import {NavLink} from 'react-router-dom'
+import tw from 'tailwind-styled-components/dist/tailwind';
+import { NavLink } from 'react-router-dom';
 
 export const UpperContainer = tw.div`
     flex
@@ -16,7 +16,7 @@ export const UpperContainer = tw.div`
     tablet:mt-[2rem]
     tablet:px-[1rem]
     tablet:items-center
-`
+`;
 
 export const NavigationContainer = tw.div`
     flex
@@ -40,13 +40,13 @@ export const NavigationContainer = tw.div`
     tablet:-left-0
     tablet:flex-col
     tablet:gap-40
-`
+`;
 
 export const MobileLogoContainer = tw.div`
     pt-[2rem]
     px-[1.8rem]
     justify-between
-`
+`;
 
 export const UL = tw.ul`
     flex
@@ -56,12 +56,12 @@ export const UL = tw.ul`
 
     tablet:flex-col
     tablet:gap-4
-`
+`;
 
 export const LiItem = tw.li`
 list-none
 mx-[1.5rem]
-`
+`;
 
 export const AnchorTag = tw(NavLink)`
     text-genericWhite
@@ -81,4 +81,4 @@ export const AnchorTag = tw(NavLink)`
     tablet:uppercase
     tablet:font-josefin-sans
     tablet:font-light
-`
+`;

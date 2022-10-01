@@ -1,11 +1,7 @@
-import LoopStudioWrapper from "../../components/loop-studio-components/LoopStudioWrapper";
+import LoopStudioWrapper from '../../components/loop-studio-components/LoopStudioWrapper';
 
-
-function LoopStudioRoute(){
-
-    return(
-        <LoopStudioWrapper />
-    )
+function LoopStudioRoute() {
+  return <LoopStudioWrapper />;
 }
 
 export default LoopStudioRoute;

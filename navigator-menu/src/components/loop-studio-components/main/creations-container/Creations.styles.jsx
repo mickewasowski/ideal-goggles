@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.div`
     flex
@@ -12,7 +12,7 @@ export const Wrapper = tw.div`
     tablet:mt-[7rem]
     tablet:p-0
     tablet:items-center
-`
+`;
 
 export const HeadingBtnContainer = tw.div`
     flex
@@ -21,7 +21,7 @@ export const HeadingBtnContainer = tw.div`
     phone:flex-col
 
     tablet:flex-col
-`
+`;
 
 export const Heading = tw.h2`
     font-josefin-sans
@@ -32,7 +32,7 @@ export const Heading = tw.h2`
     phone:text-center
 
     tablet:text-center
-`
+`;
 
 export const BtnPrimary = tw.button`
 inline-block
@@ -49,7 +49,7 @@ tracking-[.2rem]
 
 hover:bg-genericBlack
 hover:text-genericWhite
-`
+`;
 
 export const CreationsContainer = tw.div`
     flex
@@ -67,7 +67,7 @@ export const CreationsContainer = tw.div`
     tablet:justify-center
     tablet:mb-[2rem]
     tablet:w-full
-`
+`;
 
 export const MobileBtn = tw.button`
 
@@ -92,4 +92,4 @@ export const MobileBtn = tw.button`
     tablet:text-[.9rem]
     tablet:tracking-[.2rem]
     tablet:mt-[3rem]
-`
+`;

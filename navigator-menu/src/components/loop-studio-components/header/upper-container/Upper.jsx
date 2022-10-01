@@ -1,51 +1,77 @@
 import logo from '../../../../assets/loop-studio/logo.svg';
-import hamburger from '../../../../assets/loop-studio/icon-hamburger.svg'
-import closeMenu from '../../../../assets/loop-studio/icon-close.svg'
+import hamburger from '../../../../assets/loop-studio/icon-hamburger.svg';
+import closeMenu from '../../../../assets/loop-studio/icon-close.svg';
 
-import {UpperContainer, NavigationContainer,MobileLogoContainer, UL, LiItem, AnchorTag} from './Upper.styles';
+import {
+  UpperContainer,
+  NavigationContainer,
+  MobileLogoContainer,
+  UL,
+  LiItem,
+  AnchorTag,
+} from './Upper.styles';
 
-function Upper(){
+function Upper() {
+  const isMobile = window.innerWidth >= 1440 ? false : true;
 
-    const isMobile = window.innerWidth >= 1440 ? false : true;
+  const toggleNavigation = () => {
+    let navbar = document.getElementById('nav-bar');
 
-    const toggleNavigation = () => {
-        let navbar = document.getElementById('nav-bar');
-
-        if (navbar.style.display === 'flex') {
-            navbar.style.display = 'none'
-        }else{
-            navbar.style.display = 'flex'
-        }
+    if (navbar.style.display === 'flex') {
+      navbar.style.display = 'none';
+    } else {
+      navbar.style.display = 'flex';
     }
+  };
 
-    return(
-        <UpperContainer id="upper">
-            <div id="logo-container">
-                <img src={logo} />
-            </div>
-            <div id="navigation-toggle" style={isMobile ? {display: "block"} : {display: 'none'}} onClick={toggleNavigation}>
-                <img src={hamburger}/>
-            </div>
-            <NavigationContainer id={'nav-bar'} style={isMobile ? {display: 'none'} : {display: 'flex'}}>
-                <MobileLogoContainer id="mobile-logo" style={isMobile ? {display: "flex"} : {display: 'none'}}>
-                    <img src={logo} />
-                    <span onClick={toggleNavigation}>
-                        <img src={closeMenu} />
-                    </span>
-                </MobileLogoContainer>
-                <nav id="nav-tag">
-                    {/* <!-- style="display: block;" --> */}
-                    <UL>
-                        <LiItem><AnchorTag to={''}>About</AnchorTag></LiItem>
-                        <LiItem><AnchorTag to={''}>Careers</AnchorTag></LiItem>
-                        <LiItem><AnchorTag to={''}>Events</AnchorTag></LiItem>
-                        <LiItem><AnchorTag to={''}>Products</AnchorTag></LiItem>
-                        <LiItem><AnchorTag to={''}>Support</AnchorTag></LiItem>
-                    </UL>
-                </nav>
-            </NavigationContainer>
-        </UpperContainer>
-    )
+  return (
+    <UpperContainer id="upper">
+      <div id="logo-container">
+        <img src={logo} />
+      </div>
+      <div
+        id="navigation-toggle"
+        style={isMobile ? { display: 'block' } : { display: 'none' }}
+        onClick={toggleNavigation}
+      >
+        <img src={hamburger} />
+      </div>
+      <NavigationContainer
+        id={'nav-bar'}
+        style={isMobile ? { display: 'none' } : { display: 'flex' }}
+      >
+        <MobileLogoContainer
+          id="mobile-logo"
+          style={isMobile ? { display: 'flex' } : { display: 'none' }}
+        >
+          <img src={logo} />
+          <span onClick={toggleNavigation}>
+            <img src={closeMenu} />
+          </span>
+        </MobileLogoContainer>
+        <nav id="nav-tag">
+          {/* <!-- style="display: block;" --> */}
+          <UL>
+            <LiItem>
+              <AnchorTag to={''}>About</AnchorTag>
+            </LiItem>
+            <LiItem>
+              <AnchorTag to={''}>Careers</AnchorTag>
+            </LiItem>
+            <LiItem>
+              <AnchorTag to={''}>Events</AnchorTag>
+            </LiItem>
+            <LiItem>
+              <AnchorTag to={''}>Products</AnchorTag>
+            </LiItem>
+            <LiItem>
+              <AnchorTag to={''}>Support</AnchorTag>
+            </LiItem>
+          </UL>
+        </nav>
+      </NavigationContainer>
+    </UpperContainer>
+  );
 }
 
 export default Upper;

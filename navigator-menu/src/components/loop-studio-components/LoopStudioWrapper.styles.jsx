@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.div`
 w-full
@@ -8,4 +8,4 @@ font-alata
 
 phone:w-full
 phone:h-full
-`
+`;

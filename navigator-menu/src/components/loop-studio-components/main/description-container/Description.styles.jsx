@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.div`
     flex
@@ -15,7 +15,7 @@ export const Wrapper = tw.div`
     tablet:p-0
     tablet:gap-3
     tablet:items-center
-`
+`;
 
 export const VRGoggles = tw.div`
     w-[55rem]
@@ -32,7 +32,7 @@ export const VRGoggles = tw.div`
     tablet:bg-vr-goggles-mobile
     tablet:w-11/12
     tablet:h-[27rem]
-`
+`;
 
 export const DescriptionContainer = tw.div`
     w-[30rem]
@@ -58,7 +58,7 @@ export const DescriptionContainer = tw.div`
     tablet:mt-[1rem]
     tablet:w-8/12
     tablet:h-auto
-`
+`;
 
 export const Heading = tw.h2`
     font-josefin-sans
@@ -72,7 +72,7 @@ export const Heading = tw.h2`
 
     tablet:text-[2rem]
     tablet:text-center
-`
+`;
 
 export const Parag = tw.p`
     m-0
@@ -83,4 +83,4 @@ export const Parag = tw.p`
     phone:text-center
 
     tablet:text-center
-`
+`;

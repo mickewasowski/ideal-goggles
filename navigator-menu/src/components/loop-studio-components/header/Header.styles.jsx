@@ -1,5 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
-
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const HeaderContainer = tw.header`
     w-full    
@@ -19,7 +18,7 @@ export const HeaderContainer = tw.header`
     tablet:w-full 
     tablet:h-screen
     tablet:hero-mobile
-`
+`;
 
 export const LowerContainer = tw.div`
     mx-[9rem]
@@ -38,7 +37,7 @@ export const LowerContainer = tw.div`
     tablet:self-center
     tablet:m-0
     tablet:mt-[12rem]
-`
+`;
 
 export const Heading = tw.h1`
     text-genericWhite
@@ -55,4 +54,4 @@ export const Heading = tw.h1`
 
     tablet:m-[1rem]
     tablet:text-[2.2rem]
-`
+`;

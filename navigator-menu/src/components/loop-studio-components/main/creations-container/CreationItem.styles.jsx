@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const ItemWrapper = tw.div`
     w-[19rem]
@@ -23,7 +23,7 @@ export const ItemWrapper = tw.div`
 
     tablet:w-11/12
     tablet:h-[10rem]
-`
+`;
 
 export const Backdrop = tw.div`
 w-full
@@ -32,7 +32,7 @@ bg-[#ffffff99]
 
 relative
 z-1
-`
+`;
 
 export const H3 = tw.h3`
 z-[2]
@@ -40,4 +40,4 @@ absolute
 font-josefin-sans
 font-light
 text-[1.8rem]
-`
+`;
