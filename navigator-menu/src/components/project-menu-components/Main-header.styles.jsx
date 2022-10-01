@@ -1,4 +1,4 @@
-import tw from 'tailwind-styled-components/dist/tailwind';
+import tw from 'tailwind-styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const NavigationWrapper = tw.div`
