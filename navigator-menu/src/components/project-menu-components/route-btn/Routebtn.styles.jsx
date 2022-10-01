@@ -1,5 +1,5 @@
 import tw from 'tailwind-styled-components';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const StyledNavLink = tw(NavLink)`
     flex
@@ -20,7 +20,7 @@ export const StyledNavLink = tw(NavLink)`
     phone:h-[18rem]
 
     tablet:h-[25rem]
-`
+`;
 
 export const Image = tw.img`
     w-10/12
@@ -28,4 +28,4 @@ export const Image = tw.img`
     hover:w-full
 
     phone:w-full
-`
+`;

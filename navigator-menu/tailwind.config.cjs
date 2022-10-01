@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     colors:{
       genericWhite: '#ffffff',
+      genericBlack: '#1C1F25',
       mainMenuCardsBackground: '#F5F8FF',
       mainMenuCardsHoverBackground: '#ebeef5',
       mainHeaderBackground: '#0A0A0B',

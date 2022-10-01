@@ -1,15 +1,15 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Container = tw.div`
 mt-2
 h-3/5
-`
+`;
 
 export const Label = tw.label`
     text-lg
     font-bold
     text-tipsCalcLabelTextColor
-`
+`;
 
 export const PercentageBtns = tw.div`
     flex
@@ -18,7 +18,7 @@ export const PercentageBtns = tw.div`
     justify-between
     gap-3
     mt-4
-`
+`;
 
 export const Button = tw.button`
     inline-block
@@ -42,7 +42,7 @@ export const Button = tw.button`
     tablet:text-2xl
 
     laptop:w-[7rem]
-`
+`;
 
 export const InputBtn = tw.input`
     inline-block
@@ -71,4 +71,4 @@ export const InputBtn = tw.input`
     tablet:text-2xl
 
     laptop:w-[7rem]
-`
+`;

@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.div`
     h-screen
@@ -8,7 +8,7 @@ export const Wrapper = tw.div`
     justify-evenly
     items-center
     font-space-mono
-`
+`;
 
 export const PageContainer = tw.div`
     bg-tipsCalculatorMainBackground
@@ -28,4 +28,4 @@ export const PageContainer = tw.div`
     tablet:w-full
 
     laptop:w-full
-`
+`;

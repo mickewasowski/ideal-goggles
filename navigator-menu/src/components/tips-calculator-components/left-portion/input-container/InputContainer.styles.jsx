@@ -1,15 +1,14 @@
-import tw from "tailwind-styled-components/dist/tailwind";
-
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Container = tw.div`
 h-1/5
-`
+`;
 
 export const Label = tw.label`
     text-lg
     font-bold
     text-tipsCalcLabelTextColor
-`
+`;
 
 export const InputWrapper = tw.div`
     bg-tipsCalcInputDivBG
@@ -25,7 +24,7 @@ export const InputWrapper = tw.div`
     hover:outline
     hover:outline-tipsCalcInputDivOutline
     hover:cursor-pointer
-`
+`;
 
 export const Input = tw.input`
     w-4/5
@@ -38,5 +37,4 @@ export const Input = tw.input`
     font-bold
 
     focus:outline-none
-`
-
+`;

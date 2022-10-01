@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Left = tw.div`
     w-2/5
@@ -9,4 +9,4 @@ export const Left = tw.div`
     phone:gap-8
     phone:w-11/12
     phone:h-auto
-`
+`;
