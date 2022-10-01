@@ -1,15 +1,14 @@
 import logo from '../../../assets/equalizer/logo.svg';
-import {LogoContainer} from './Header.styles';
+import { LogoContainer } from './Header.styles';
 
-function Header(){
-
-    return(
-        <header>
-            <LogoContainer>
-                <img src={logo} />
-            </LogoContainer>
-        </header>
-    )
+function Header() {
+  return (
+    <header>
+      <LogoContainer>
+        <img src={logo} />
+      </LogoContainer>
+    </header>
+  );
 }
 
 export default Header;

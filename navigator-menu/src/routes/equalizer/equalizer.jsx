@@ -1,11 +1,7 @@
-import EqualizerWrapper from "../../components/equalizer-components/EqualizerWrapper";
+import EqualizerWrapper from '../../components/equalizer-components/EqualizerWrapper';
 
-
-function EqualizerRoute(){
-
-    return(
-        <EqualizerWrapper />
-    )
+function EqualizerRoute() {
+  return <EqualizerWrapper />;
 }
 
 export default EqualizerRoute;
