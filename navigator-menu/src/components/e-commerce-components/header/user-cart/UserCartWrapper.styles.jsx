@@ -1,16 +1,16 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const UserCartContainer = tw.div`
     flex
     justify-between
     items-center
-`
+`;
 
 export const CartContainerBtn = tw.button`
     mr-[2.5rem]
 
     hover:cursor-pointer
-`
+`;
 
 export const CartCount = tw.p`
     inline
@@ -25,7 +25,7 @@ export const CartCount = tw.p`
     font-bold
     rounded-xl
     bg-eComOrangeColor
-`
+`;
 
 export const UserIconContainer = tw.div`
     w-[3rem]
@@ -41,4 +41,4 @@ export const UserIconContainer = tw.div`
 
     tablet:w-[2.2rem]
     tablet:h-[2.2rem]
-`
+`;

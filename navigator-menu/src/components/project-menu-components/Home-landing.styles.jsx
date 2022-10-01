@@ -1,17 +1,17 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const HomeHeadingWrapper = tw.div`
     w-full 
     text-center 
     py-[12rem]
-`
+`;
 
 export const H1 = tw.h1`
     text-6xl 
     text-genericWhite
 
     phone:text-5xl
-`
+`;
 
 export const H3 = tw.h3`
     text-3xl 
@@ -19,7 +19,7 @@ export const H3 = tw.h3`
     mt-[2rem]
 
     phone:text-2xl
-`
+`;
 
 export const HomeCardsWrapper = tw.div`
     inline-flex 
@@ -30,4 +30,4 @@ export const HomeCardsWrapper = tw.div`
     mt-[6rem] 
     mb-[4rem]
     justify-center
-`
+`;

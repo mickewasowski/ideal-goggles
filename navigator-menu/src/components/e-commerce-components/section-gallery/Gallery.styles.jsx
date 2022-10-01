@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.section`
 w-full
@@ -11,7 +11,7 @@ z-10
 
 bg-genericBlack
 bg-opacity-50
-`
+`;
 
 export const GalleryContainer = tw.div`
     w-full
@@ -22,7 +22,7 @@ export const GalleryContainer = tw.div`
     items-center
 
     mt-[5rem]
-`
+`;
 
 export const ArrowsContainer = tw.div`
     flex 
@@ -31,7 +31,7 @@ export const ArrowsContainer = tw.div`
     top-80
 
     laptop:top-1/2
-`
+`;
 
 export const ArrowSpan = tw.span`
     m-0
@@ -43,7 +43,7 @@ export const ArrowSpan = tw.span`
     flex
     justify-center
     items-center
-`
+`;
 
 export const CurrentBig = tw.img`
     w-[40rem]
@@ -52,7 +52,7 @@ export const CurrentBig = tw.img`
 
     laptop:w-[30rem]
     laptop:h-[30rem]
-`
+`;
 
 export const ThumbnailImgsContainer = tw.div`
     w-[40rem]
@@ -61,14 +61,14 @@ export const ThumbnailImgsContainer = tw.div`
     mt-[2rem]
 
     laptop:w-[30rem]
-`
+`;
 
 export const ThumbImgContainer = tw.div`
     bg-genericWhite
     rounded-xl
 
 
-`
+`;
 
 export const ThumbImg = tw.div`
     w-[7rem]
@@ -83,4 +83,4 @@ export const ThumbImg = tw.div`
 
     laptop:w-[6rem]
     laptop:h-[6rem]
-`
+`;

@@ -1,21 +1,21 @@
-import { NavLink } from "react-router-dom";
-import tw from "tailwind-styled-components/dist/tailwind";
+import { NavLink } from 'react-router-dom';
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const ButtonsContainer = tw.div`
 flex
 justify-start
-`
+`;
 
 export const LogoContainer = tw.div`
     flex
     mr-[1.1rem]
     items-center
-`
+`;
 
 export const AnchorTag = tw(NavLink)`
     justify-center
     self-center
-`
+`;
 
 export const NavigationContainer = tw.div`
     flex
@@ -52,7 +52,7 @@ export const NavigationContainer = tw.div`
     laptop:flex
     laptop:items-center
     laptop:m-[.6rem]
-`
+`;
 
 export const Navigation = tw.nav`
     flex
@@ -60,7 +60,7 @@ export const Navigation = tw.nav`
     phone:flex-col
 
     tablet:flex-col
-`
+`;
 
 export const Ul = tw.ul`
     flex
@@ -74,7 +74,7 @@ export const Ul = tw.ul`
     tablet:flex-col
     tablet:items-start
     tablet:mt-[2.5rem]
-`
+`;
 
 export const LiItem = tw.li`
     m-[.7rem]
@@ -105,7 +105,7 @@ export const LiItem = tw.li`
     tablet:m-0
     tablet:my-[.7rem]
     tablet:text-[1.2rem]
-`
+`;
 
 export const CloseIcon = tw.span`
 hidden
@@ -115,7 +115,7 @@ phone:mt-[.5rem]
 
 tablet:inline-block
 tablet:mt-[.5rem]
-`
+`;
 
 export const Backdrop = tw.div`
     hidden
@@ -133,4 +133,4 @@ export const Backdrop = tw.div`
     tablet:h-screen
     tablet:z-10
     tablet:bg-opacity-90
-`
+`;

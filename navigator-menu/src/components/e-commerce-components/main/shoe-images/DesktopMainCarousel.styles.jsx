@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const ShoeImagesWrapper = tw.section`
     flex
@@ -12,14 +12,14 @@ export const ShoeImagesWrapper = tw.section`
     laptop:w-[25rem]
     laptop:justify-around
     laptop:mr-[2rem]
-`
+`;
 
 export const MainImageContainer = tw.div`
 
     phone:h-[30rem]
 
     tablet:h-[50rem]
-`
+`;
 
 export const BigImage = tw.img`
     rounded-xl
@@ -32,7 +32,7 @@ export const BigImage = tw.img`
     tablet:rounded-none
 
     laptop:w-[25rem]
-`
+`;
 
 export const OtherImagesWrapper = tw.div`
     flex
@@ -42,7 +42,7 @@ export const OtherImagesWrapper = tw.div`
     phone:hidden
 
     tablet:hidden
-`
+`;
 
 export const ImageContainer = tw.div`
     w-[6rem]
@@ -53,7 +53,7 @@ export const ImageContainer = tw.div`
 
     laptop:w-[5rem]
     laptop:h-[5rem]
-`
+`;
 
 export const SmallImage = tw.div`
     w-[6rem]
@@ -68,7 +68,7 @@ export const SmallImage = tw.div`
 
     laptop:w-[5rem]
     laptop:h-[5rem]
-`
+`;
 
 export const ArrowsContainer = tw.div`
     hidden
@@ -84,7 +84,7 @@ export const ArrowsContainer = tw.div`
     tablet:w-screen
     tablet:justify-between
     tablet:bottom-1/2
-`
+`;
 
 export const ArrowSpan = tw.span`
     phone:m-0
@@ -106,4 +106,4 @@ export const ArrowSpan = tw.span`
     tablet:flex
     tablet:justify-center
     tablet:items-center
-`
+`;

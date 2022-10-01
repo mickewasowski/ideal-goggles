@@ -1,5 +1,5 @@
-import tw from "tailwind-styled-components/dist/tailwind";
-import {NavLink} from 'react-router-dom'
+import tw from 'tailwind-styled-components/dist/tailwind';
+import { NavLink } from 'react-router-dom';
 
 export const NavigationWrapper = tw.div`
     flex 
@@ -13,9 +13,9 @@ export const NavigationWrapper = tw.div`
     uppercase
 
     phone:text-base
-`
+`;
 
 export const StyledNavLink = tw(NavLink)`
     flex 
     items-center
-`
+`;

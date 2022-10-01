@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.div`
     font-kumbh-sans
@@ -8,4 +8,4 @@ export const Wrapper = tw.div`
     phone:w-full
 
     tablet:w-full
-`
+`;

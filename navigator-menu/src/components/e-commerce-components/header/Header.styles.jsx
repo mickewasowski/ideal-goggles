@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.header`
     h-[5rem]
@@ -22,4 +22,4 @@ export const Wrapper = tw.header`
     tablet:mb-0
     tablet:p-0
     tablet:px-[1rem]
-`
+`;

@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Wrapper = tw.main`
     mt-[5rem]
@@ -14,4 +14,4 @@ export const Wrapper = tw.main`
 
     laptop:justify-evenly
     laptop:mx-0
-`
+`;

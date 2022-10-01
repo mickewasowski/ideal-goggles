@@ -1,4 +1,4 @@
-import tw from "tailwind-styled-components/dist/tailwind";
+import tw from 'tailwind-styled-components/dist/tailwind';
 
 export const Details = tw.div`
     w-[30rem]
@@ -14,7 +14,7 @@ export const Details = tw.div`
     tablet:w-screen
 
     laptop:w-[25rem]
-`
+`;
 
 export const SneakerH3 = tw.h3`
     text-eComOrangeColor
@@ -22,37 +22,37 @@ export const SneakerH3 = tw.h3`
     tracking-wider
     text-[1rem]
     font-bold
-`
+`;
 
 export const LimitedH1 = tw.h1`
     text-eComLimitedH1Text
     text-[3rem]
     font-bold
     mt-[1rem]
-`
+`;
 
 export const DescriptionParag = tw.p`
     text-eComNavTextColor
     leading-relaxed
-`
+`;
 
 export const Price = tw.div`
     flex
     flex-col
-`
+`;
 
 export const CurrentPriceWrapper = tw.div`
     flex
     justify-start
     items-center
-`
+`;
 
 export const CurrentPriceParag = tw.p`
     mr-[1.5rem]
     text-[2rem]
     font-bold
     text-eComLimitedH1Text
-`
+`;
 
 export const Discount = tw.p`
     text-eComOrangeColor
@@ -62,17 +62,17 @@ export const Discount = tw.p`
     px-[.3rem]
     bg-eComDiscountBg
     rounded-md
-`
+`;
 
 export const OriginalPriceWrapper = tw.div`
     mt-[1rem]
-`
+`;
 
 export const OriginalPriceParag = tw.p`
     text-eComOriginalPriceText
     font-bold
     line-through
-`
+`;
 
 export const CartBtns = tw.div`
     flex
@@ -84,7 +84,7 @@ export const CartBtns = tw.div`
 
     tablet:flex-col
     tablet:mb-[1rem]
-`
+`;
 
 export const QuantityBtns = tw.div`
     flex
@@ -97,7 +97,7 @@ export const QuantityBtns = tw.div`
 
     tablet:w-11/12
     tablet:mb-[1rem]
-`
+`;
 
 export const Btn = tw.span`
     w-[4rem]
@@ -111,7 +111,7 @@ export const Btn = tw.span`
     phone:w-4/12
 
     tablet:w-4/12
-`
+`;
 
 export const QuantityInput = tw.input`
     bg-eComQuantityBtnsBg
@@ -125,7 +125,7 @@ export const QuantityInput = tw.input`
     phone:w-4/12
 
     tablet:w-4/12
-`
+`;
 
 export const AddToCartWrapper = tw.div`
     flex
@@ -144,16 +144,16 @@ export const AddToCartWrapper = tw.div`
     tablet:w-11/12
 
     laptop:w-2/4
-`
+`;
 
 export const CartImg = tw.img`
     w-[1.3rem]
     h-[1.3rem]
     mr-[.4rem]
-`
+`;
 
 export const AddBtn = tw.button`
     text-genericWhite
     text-[1.1rem]
     font-bold
-`
+`;
