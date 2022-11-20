@@ -8,7 +8,7 @@ function Amount({ name, amount }) {
         <Strong>{name}</Strong>
         <br />/ person
       </Parag>
-      {amount === 'NaN' ? (
+      {isNaN(amount) ? (
         <H1 id="tip-amount-person">$ {'0.00'}</H1>
       ) : (
         <H1 id="tip-amount-person">$ {amount}</H1>

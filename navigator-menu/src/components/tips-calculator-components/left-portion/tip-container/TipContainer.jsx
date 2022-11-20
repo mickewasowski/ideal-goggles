@@ -5,41 +5,49 @@ import {
   Button,
   InputBtn,
 } from './TipContainer.styles';
-import { useContext } from 'react';
+import { useContext, useRef } from 'react';
 import { TipsCalculatorContext } from '../../../../contexts/TipsCalculatorContext';
+
 
 function TipContainer() {
   const { percentage } = useContext(TipsCalculatorContext);
+  const tipAmount = useRef(0);
+  const currentBtn = useRef(0);
+  const inputRef = useRef();
+  const buttons = [5, 10, 15, 25, 50];
 
-  const handleBtnChange = (e) => {
-    let percentageAmount;
-
-    if (e.target.tagName === 'BUTTON') {
-      percentageAmount = parseFloat(e.target.innerText.replace('%', '')) / 100;
-
-      if (document.getElementById('percentage').value !== '') {
-        document.getElementById('percentage').value = '';
-      }
-    } else if (e.target.tagName === 'INPUT') {
-      percentageAmount = parseFloat(e.target.value) / 100;
+  const changeTipAmount = (e, amount) => {
+    if (inputRef.current.value !== '' && e.target.tagName === 'BUTTON') {
+      inputRef.current.value = '';
     }
-    percentage(percentageAmount);
-  };
+
+    tipAmount.current = Number(amount / 100);
+    percentage(tipAmount.current);
+    currentBtn.current = amount;
+  }
+
+  const preventMinus = (e) => {
+    if (e !== undefined && (e.code === 'NumpadSubtract' || e.code === 'Minus')) {
+      e.preventDefault();
+    }
+  }
 
   return (
     <Container>
       <Label>Select Tip %</Label>
       <PercentageBtns>
-        <Button onClick={handleBtnChange}>5%</Button>
-        <Button onClick={handleBtnChange}>10%</Button>
-        <Button onClick={handleBtnChange}>15%</Button>
-        <Button onClick={handleBtnChange}>25%</Button>
-        <Button onClick={handleBtnChange}>50%</Button>
+        {
+          buttons.map(x => {
+            return <Button className={x === currentBtn.current ? 'bg-tipsCalcBtnHover text-tipsCalcBtnTextHover' : ''} key={x} onClick={(e) => changeTipAmount(e, x)}>{x}%</Button>
+          })
+        }
         <InputBtn
           type="number"
           placeholder="Custom"
           id="percentage"
-          onChange={handleBtnChange}
+          ref={inputRef}
+          onKeyPress={preventMinus}
+          onChange={(e) => changeTipAmount(e, Number(e.target.value))}
         />
       </PercentageBtns>
     </Container>

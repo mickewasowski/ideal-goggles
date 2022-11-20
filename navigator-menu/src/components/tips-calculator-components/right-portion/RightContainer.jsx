@@ -4,14 +4,17 @@ import { useContext } from 'react';
 import { TipsCalculatorContext } from '../../../contexts/TipsCalculatorContext';
 
 function RightContainer() {
-  const { tipsCalc, reset } = useContext(TipsCalculatorContext);
+  const { tipsCalc: {bill, percentage, people}, reset } = useContext(TipsCalculatorContext);
+  let totalTip, tipPerPerson, perPersonBill;
 
-  const totalTip = tipsCalc.bill * tipsCalc.percentage;
-  const tipPerPerson = (totalTip / tipsCalc.people).toFixed(2);
-  const perPersonBill = (
-    tipsCalc.bill / tipsCalc.people +
-    totalTip / tipsCalc.people
-  ).toFixed(2);
+  if (bill && percentage && people) {
+    totalTip = bill * percentage;
+    tipPerPerson = parseFloat((totalTip / people).toFixed(2));
+    perPersonBill = parseFloat((
+      bill / people +
+      totalTip / people
+    ).toFixed(2));
+  }
 
   const activeReset = 'bg-tipsCalcResetBtnActive';
 
@@ -24,9 +27,9 @@ function RightContainer() {
           onClick={reset}
           id="reset-btn"
           className={
-            tipsCalc.bill != 0 ||
-            tipsCalc.people != 0 ||
-            tipsCalc.percentage != 0
+            bill &&
+            people &&
+            percentage
               ? activeReset
               : ''
           }

@@ -54,5 +54,5 @@ export const TipsCalculatorInfoProvider = ({ children }) => {
 };
 
 TipsCalculatorInfoProvider.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.object,
 };
