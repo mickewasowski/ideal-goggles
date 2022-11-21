@@ -1,4 +1,4 @@
-import tw from 'tailwind-styled-components/dist/tailwind';
+import tw from 'tailwind-styled-components';
 
 export const CartList = tw.div`
     absolute
@@ -41,6 +41,7 @@ export const CartContent = tw.div`
 `;
 
 export const EmptyCartParag = tw.p`
+    inline
     text-center
     text-eComNavTextColor
     font-bold
@@ -76,6 +77,7 @@ export const Strong = tw.strong`
 `;
 
 export const CheckOutBtn = tw.button`
+    inline
     bg-eComOrangeColor
     w-11/12
     self-center

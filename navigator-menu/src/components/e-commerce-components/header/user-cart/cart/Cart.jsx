@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { ECommerceContext } from '../../../../../contexts/e-commerce/ECommerceContext';
 import {
   CartList,
@@ -28,7 +28,7 @@ function Cart({ isCartOpen }) {
       <CartContent>
         {itemsCount > 0 ? (
           <>
-            <CartItem className={'flex'}>
+            <CartItem>
               <ImageThumbnailWrapper>
                 <ImageThumb src={imageThumbnail} />
               </ImageThumbnailWrapper>
@@ -43,10 +43,10 @@ function Cart({ isCartOpen }) {
                 <img src={deleteIcon} className="cursor-pointer" />
               </div>
             </CartItem>
-            <CheckOutBtn className={'inline'}>Checkout</CheckOutBtn>
+            <CheckOutBtn>Checkout</CheckOutBtn>
           </>
         ) : (
-          <EmptyCartParag className={'inline'}>
+          <EmptyCartParag>
             Your cart is empty.
           </EmptyCartParag>
         )}

@@ -16,10 +16,18 @@ function UserCartWrapper() {
   const { itemsCount } = useContext(ECommerceContext);
   const toggleCart = () => setIsCartOpen(!isCartOpen);
 
+  window.addEventListener('click', ({ target }) => {
+    const cartPopup = target.closest('.cart-item');
+    const cartBtn = target.closest('.cart-btn');
+    if (!cartPopup && isCartOpen && !cartBtn) {
+      toggleCart();
+    }
+  })
+
   return (
     <UserCartContainer>
       <CartCount>{itemsCount}</CartCount>
-      <CartContainerBtn onClick={toggleCart}>
+      <CartContainerBtn className="cart-btn" onClick={toggleCart}>
         <svg className="cart-icon" width="22" height="20">
           <path
             className="cart-icon-check"
@@ -29,7 +37,7 @@ function UserCartWrapper() {
           />
         </svg>
       </CartContainerBtn>
-      <Cart isCartOpen={isCartOpen} />
+      <Cart className="cart-item" isCartOpen={isCartOpen} />
       <UserIconContainer>
         <img src={avatar} />
       </UserIconContainer>

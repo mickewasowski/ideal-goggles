@@ -13,6 +13,12 @@ import {
 } from './DesktopMainCarousel.styles';
 
 function DesktopMainCarousel() {
+  const smallImages = [
+    {id: 1, backgroundImage: 'url(/e-commerce/image-product-1-thumbnail.jpg)'},
+    {id: 2, backgroundImage: 'url(/e-commerce/image-product-2-thumbnail.jpg)'},
+    {id: 3, backgroundImage: 'url(/e-commerce/image-product-3-thumbnail.jpg)'},
+    {id: 4, backgroundImage: 'url(/e-commerce/image-product-4-thumbnail.jpg)'},
+  ]
   const windowWidth = window.outerWidth;
   const { toggleGallery } = useContext(ECommerceContext);
   const [current, setCurrent] = useState(1);
@@ -65,54 +71,23 @@ function DesktopMainCarousel() {
         </ArrowsContainer>
       </MainImageContainer>
       <OtherImagesWrapper id="small-images">
-        <ImageContainer
-          id="outer-1"
-          className={`${current === 1 ? outerOutline : 'outline-none'}`}
-        >
-          <SmallImage
-            id="1"
-            style={{
-              backgroundImage: 'url(/e-commerce/image-product-1-thumbnail.jpg)',
-            }}
-            onClick={changeBigImage}
-          ></SmallImage>
-        </ImageContainer>
-        <ImageContainer
-          id="outer-2"
-          className={`${current === 2 ? outerOutline : 'outline-none'}`}
-        >
-          <SmallImage
-            id="2"
-            style={{
-              backgroundImage: 'url(/e-commerce/image-product-2-thumbnail.jpg)',
-            }}
-            onClick={changeBigImage}
-          ></SmallImage>
-        </ImageContainer>
-        <ImageContainer
-          id="outer-3"
-          className={`${current === 3 ? outerOutline : 'outline-none'}`}
-        >
-          <SmallImage
-            id="3"
-            style={{
-              backgroundImage: 'url(/e-commerce/image-product-3-thumbnail.jpg)',
-            }}
-            onClick={changeBigImage}
-          ></SmallImage>
-        </ImageContainer>
-        <ImageContainer
-          id="outer-4"
-          className={`${current === 4 ? outerOutline : 'outline-none'}`}
-        >
-          <SmallImage
-            id="4"
-            style={{
-              backgroundImage: 'url(/e-commerce/image-product-4-thumbnail.jpg)',
-            }}
-            onClick={changeBigImage}
-          ></SmallImage>
-        </ImageContainer>
+        {
+          smallImages.map((x, i) => {
+            return <ImageContainer
+                      key={i}
+                      id={`outer-${x.id}`}
+                      className={`${current === x.id ? outerOutline : 'outline-none'}`}
+                    >
+                      <SmallImage
+                        id={x.id}
+                        style={{
+                          backgroundImage: x.backgroundImage,
+                        }}
+                        onClick={changeBigImage}
+                      ></SmallImage>
+                    </ImageContainer>
+          })
+        }
       </OtherImagesWrapper>
     </ShoeImagesWrapper>
   );
