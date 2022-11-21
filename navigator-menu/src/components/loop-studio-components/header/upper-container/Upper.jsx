@@ -12,6 +12,7 @@ import {
 } from './Upper.styles';
 
 function Upper() {
+  const navigationItems = ["About", "Careers", "Events", "Products", "Support"];
   const isMobile = window.innerWidth >= 1440 ? false : true;
 
   const toggleNavigation = () => {
@@ -52,21 +53,13 @@ function Upper() {
         <nav id="nav-tag">
           {/* <!-- style="display: block;" --> */}
           <UL>
-            <LiItem>
-              <AnchorTag to={''}>About</AnchorTag>
-            </LiItem>
-            <LiItem>
-              <AnchorTag to={''}>Careers</AnchorTag>
-            </LiItem>
-            <LiItem>
-              <AnchorTag to={''}>Events</AnchorTag>
-            </LiItem>
-            <LiItem>
-              <AnchorTag to={''}>Products</AnchorTag>
-            </LiItem>
-            <LiItem>
-              <AnchorTag to={''}>Support</AnchorTag>
-            </LiItem>
+            {
+              navigationItems.map((x, i) => {
+                return <LiItem key={i}>
+                          <AnchorTag to={''}>{x}</AnchorTag>
+                        </LiItem>
+              })
+            }
           </UL>
         </nav>
       </NavigationContainer>

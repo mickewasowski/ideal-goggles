@@ -1,4 +1,4 @@
-import tw from 'tailwind-styled-components/dist/tailwind';
+import tw from 'tailwind-styled-components';
 
 export const ItemWrapper = tw.div`
     w-[19rem]

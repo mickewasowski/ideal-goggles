@@ -16,6 +16,9 @@ import {
 } from './Footer.styles';
 
 function Footer() {
+  const navigationItems = ["About", "Careers", "Events", "Products", "Support"];
+  const socials = [facebook, twitter, pinterest, instagram];
+
   return (
     <Wrapper>
       <LeftContainer id="left">
@@ -24,38 +27,25 @@ function Footer() {
         </LogoContainer>
         <div id="footer-nav">
           <Navigation>
-            <ListItem>
-              <a href="#">About</a>
-            </ListItem>
-            <ListItem>
-              <a href="#">Careers</a>
-            </ListItem>
-            <ListItem>
-              <a href="#">Events</a>
-            </ListItem>
-            <ListItem>
-              <a href="#">Products</a>
-            </ListItem>
-            <ListItem>
-              <a href="#">Support</a>
-            </ListItem>
+            {
+              navigationItems.map((x, i) => {
+                return <ListItem key={i}>
+                          <a href="#">{x}</a>
+                        </ListItem>
+              })
+            }
           </Navigation>
         </div>
       </LeftContainer>
       <RightContainer id="right">
         <IconsContainer id="icons">
-          <AnchorTag to={''}>
-            <img src={facebook} />
-          </AnchorTag>
-          <AnchorTag to={''}>
-            <img src={twitter} />
-          </AnchorTag>
-          <AnchorTag to={''}>
-            <img src={pinterest} />
-          </AnchorTag>
-          <AnchorTag to={''}>
-            <img src={instagram} />
-          </AnchorTag>
+          {
+            socials.map((x, i) => {
+              return <AnchorTag key={i} to={''}>
+                        <img src={x} />
+                      </AnchorTag>
+            })
+          }
         </IconsContainer>
         <div id="copyright">
           <p>© 2021 Loopstudios. All rights reserved.</p>

@@ -1,39 +1,36 @@
 import { ItemWrapper, Backdrop, H3 } from './CreationItem.styles';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 function CreationItem({ title, backgroundImage }) {
   let windowWidth = window.innerWidth;
-  let backdropID = title + '-backdrop';
-
   let design = windowWidth < 1440 ? 'mobile' : 'desktop';
   let string = `/images/loop-studio/${design}/image-${backgroundImage}.jpg`;
 
-  useEffect(() => {
-    let wrapper = document.getElementById(title);
+  const backdropRef = useRef({});
+  const wrapperRef = useRef({});
 
-    wrapper.style.background = `url(${string})`;
-    wrapper.style.backgroundPosition = 'center';
-    wrapper.style.backgroundRepeat = 'no-repeat';
+  useEffect(() => {
+    wrapperRef.current.style.background = `url(${string})`;
+    wrapperRef.current.style.backgroundPosition = 'center';
+    wrapperRef.current.style.backgroundRepeat = 'no-repeat';
   }, []);
 
   const removeBackdrop = () => {
-    let backdrop = document.getElementById(backdropID);
-    backdrop.style.display = 'none';
+    backdropRef.current.style.display = 'none';
   };
 
   const changeBackgroundOpacity = () => {
-    let backdrop = document.getElementById(backdropID);
-    backdrop.style.display = 'block';
+    backdropRef.current.style.display = 'block';
   };
 
   return (
     <ItemWrapper
-      id={title}
+      ref={wrapperRef}
       onMouseLeave={removeBackdrop}
       onMouseEnter={changeBackgroundOpacity}
     >
-      <Backdrop id={backdropID} style={{ display: 'none' }} />
+      <Backdrop ref={backdropRef} style={{ display: 'none' }} />
       <H3 className="creation-item">{title.toUpperCase()}</H3>
     </ItemWrapper>
   );
