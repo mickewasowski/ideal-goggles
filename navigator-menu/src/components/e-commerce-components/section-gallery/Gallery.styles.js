@@ -1,9 +1,13 @@
+import { MdContentCopy } from 'react-icons/md';
 import tw from 'tailwind-styled-components';
+
 
 export const Wrapper = tw.section`
 w-full
 h-full
 
+justify-center
+items-center
 absolute
 top-0
 left-0
@@ -14,8 +18,8 @@ bg-opacity-50
 `;
 
 export const GalleryContainer = tw.div`
-    w-full
-    h-5/6
+    w-fit
+    h-4/6
     flex
     flex-col
     justify-center

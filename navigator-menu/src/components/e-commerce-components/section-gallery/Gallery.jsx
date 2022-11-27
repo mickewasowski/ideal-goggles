@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useRef } from 'react';
 import { MdOutlineClose } from 'react-icons/md';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 
@@ -16,6 +16,7 @@ import {
 } from './Gallery.styles';
 
 function Gallery() {
+  const galleryWrapperRef = useRef();
   const [current, setCurrent] = useState(1);
   const { isGalleryOpen, toggleGallery } = useContext(ECommerceContext);
   const outerOutline = 'outline-2 outline outline-[#ff7d1a]';
@@ -41,8 +42,15 @@ function Gallery() {
     }
   };
 
+  const handleClickOutside = (e) => {
+    if (e.target === galleryWrapperRef.current) {
+      toggleGallery(false);
+    }
+  }
+
   return (
-    <Wrapper className={isGalleryOpen ? 'block' : 'hidden'}>
+    <Wrapper ref={galleryWrapperRef} 
+      className={isGalleryOpen ? 'flex' : 'hidden'} onClick={e => handleClickOutside(e)}>
       <GalleryContainer>
         <div className="current-image-container">
           <MdOutlineClose
