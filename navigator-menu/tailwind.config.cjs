@@ -11,6 +11,15 @@ module.exports = {
       mainMenuCardsBackground: '#F5F8FF',
       mainMenuCardsHoverBackground: '#ebeef5',
       mainHeaderBackground: '#0A0A0B',
+      equalizerOfferBg: '#191826',
+      equalizerPlanBg: '#fa7352',
+      equalizerPlanText: '#fcf9f8',
+      equalizerAppleBtnBg: '#191826',
+      equalizerAppleBtnBgHover: '#65e2db',
+      equalizerAndroidBtnBg: '#fcf9f8',
+      equalizerAndroidBtnText: '#191826',
+      equalizerAndroidBtnBgHover: '#ffba66',
+      equalizerFooterIconsHover: '#fa7352',
       eComHeaderBorder: '#f7f8fd',
       eComNavTextColor: '#68707d',
       eComNavTextColorHover: '#1d2025',
@@ -29,7 +38,15 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        'ibm-plex': ['"IBM Plex Sans"', 'sans-serif'],
         'kumbh-sans': ['"Kumbh Sans"', 'sans-serif']
+      },
+      backgroundImage: {
+        'offer-desktop-bg': "url('/images/equalizer/bg-pattern-2.svg')",
+      },
+      flex: {
+        '2': '2 2 0%',
+        '4': '4 4 0%',
       },
     },
   },
