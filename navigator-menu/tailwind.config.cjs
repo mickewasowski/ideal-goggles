@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
+  darkMode: 'class',
   theme: {
     colors:{
       genericWhite: '#ffffff',
@@ -55,14 +56,18 @@ module.exports = {
       fontFamily: {
         'alata': ['"Alata"', 'sans-serif'],
         'josefin-sans': ['"Josefin Sans"', 'sans-serif'],
+        'space-mono': ['"Space Mono"', 'monospace'],
         'ibm-plex': ['"IBM Plex Sans"', 'sans-serif'],
         'kumbh-sans': ['"Kumbh Sans"', 'sans-serif'],
-        'space-mono': ['"Space Mono"', 'monospace'],
       },
       backgroundImage: {
         'hero-desktop': "url('/images/loop-studio/desktop/image-hero.jpg')",
         'hero-mobile': "url('/images/loop-studio/mobile/image-hero.jpg')",
         'vr-goggles-desktop': "url('/images/loop-studio/desktop/image-interactive.jpg')",
+      },
+      width: {
+        '85%': '46.75rem',
+        '70%': '42rem',
       },
       backgroundImage: {
         'offer-desktop-bg': "url('/images/equalizer/bg-pattern-2.svg')",
