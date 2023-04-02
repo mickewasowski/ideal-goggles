@@ -52,7 +52,7 @@ function Gallery() {
     <Wrapper ref={galleryWrapperRef} 
       className={isGalleryOpen ? 'flex' : 'hidden'} onClick={e => handleClickOutside(e)}>
       <GalleryContainer>
-        <div className="current-image-container">
+        <div className="current-image-container select-none">
           <MdOutlineClose
             className="relative top-7 left-[38.5rem] scale-150 hover:fill-eComOrangeColor hover:cursor-pointer laptop:top-1/5 laptop:left-full"
             onClick={handleCloseGallery}
@@ -69,7 +69,7 @@ function Gallery() {
             id="1"
             className="current-image"
             style={{ display: 'block' }}
-            src={`/e-commerce/image-product-${current}.jpg`}
+            src={`/src/assets/e-commerce/image-product-${current}.jpg`}
           />
         </div>
         <ThumbnailImgsContainer id="smaller-images">
@@ -81,7 +81,7 @@ function Gallery() {
               id="1"
               style={{
                 backgroundImage:
-                  'url(/e-commerce/image-product-1-thumbnail.jpg)',
+                  'url(/src/assets/e-commerce/image-product-1-thumbnail.jpg)',
               }}
               onClick={handleChangeBigImage}
             ></ThumbImg>
@@ -94,7 +94,7 @@ function Gallery() {
               id="2"
               style={{
                 backgroundImage:
-                  'url(/e-commerce/image-product-2-thumbnail.jpg)',
+                  'url(/src/assets/e-commerce/image-product-2-thumbnail.jpg)',
               }}
               onClick={handleChangeBigImage}
             ></ThumbImg>
@@ -107,7 +107,7 @@ function Gallery() {
               id="3"
               style={{
                 backgroundImage:
-                  'url(/e-commerce/image-product-3-thumbnail.jpg)',
+                  'url(/src/assets/e-commerce/image-product-3-thumbnail.jpg)',
               }}
               onClick={handleChangeBigImage}
             ></ThumbImg>
@@ -120,7 +120,7 @@ function Gallery() {
               id="4"
               style={{
                 backgroundImage:
-                  'url(/e-commerce/image-product-4-thumbnail.jpg)',
+                  'url(/src/assets/e-commerce/image-product-4-thumbnail.jpg)',
               }}
               onClick={handleChangeBigImage}
             ></ThumbImg>

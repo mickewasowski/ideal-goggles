@@ -1,4 +1,4 @@
-import tw from 'tailwind-styled-components/dist/tailwind';
+import tw from 'tailwind-styled-components';
 
 export const LogoContainer = tw.div`
     mt-[3rem]

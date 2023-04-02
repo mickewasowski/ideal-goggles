@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import logo from '../../../../../public/e-commerce/logo.svg';
+import logo from '/src/assets/e-commerce/logo.svg';
 
 import {
   ButtonsContainer,

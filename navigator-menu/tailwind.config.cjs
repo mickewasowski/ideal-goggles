@@ -25,7 +25,7 @@ module.exports = {
       githubAccountInfoBg: '#f5f7ff',
       githubAccountInfoBgDark: '#141d2f',
       githubSVGAndTextLightFill: '#4b699b',
-      githubSVGAndTextUnavailableLight: '#8f95a8'
+      githubSVGAndTextUnavailableLight: '#8f95a8',
       equalizerOfferBg: '#191826',
       equalizerPlanBg: '#fa7352',
       equalizerPlanText: '#fcf9f8',
