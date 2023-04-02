@@ -6,14 +6,14 @@ export const HomeHeadingWrapper = tw.div`
     py-[12rem]
 `;
 
-export const H1 = tw.h1`
+export const MainHeading = tw.h1`
     text-6xl 
     text-genericWhite
 
     phone:text-5xl
 `;
 
-export const H3 = tw.h3`
+export const SubHeading = tw.h3`
     text-3xl 
     text-genericWhite 
     mt-[2rem]
