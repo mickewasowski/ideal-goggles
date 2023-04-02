@@ -1,5 +1,7 @@
+import EqualizerWrapper from '../../components/equalizer-components/EqualizerWrapper';
+
 function EqualizerRoute() {
-  return <h2>This is the Equalizer landing page</h2>;
+  return <EqualizerWrapper />;
 }
 
 export default EqualizerRoute;
