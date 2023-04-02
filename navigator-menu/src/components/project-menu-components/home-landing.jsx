@@ -2,8 +2,8 @@ import '../../index.css';
 import RouteBtn from './route-btn/Routebtn-Component';
 import {
   HomeHeadingWrapper,
-  H1,
-  H3,
+  MainHeading,
+  SubHeading,
   HomeCardsWrapper,
 } from './Home-landing.styles';
 
@@ -11,8 +11,8 @@ function Home() {
   return (
     <>
       <HomeHeadingWrapper id="homeHeading">
-        <H1>All Projects Combined.</H1>
-        <H3>A navigational menu for all N2J Academy projects.</H3>
+        <MainHeading>All Projects Combined.</MainHeading>
+        <SubHeading>A navigational menu for all N2J Academy projects.</SubHeading>
       </HomeHeadingWrapper>
       <HomeCardsWrapper>
         <RouteBtn

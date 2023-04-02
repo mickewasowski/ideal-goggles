@@ -20,6 +20,15 @@ module.exports = {
       equalizerAndroidBtnText: '#191826',
       equalizerAndroidBtnBgHover: '#ffba66',
       equalizerFooterIconsHover: '#fa7352',
+      eComHeaderBorder: '#f7f8fd',
+      eComNavTextColor: '#68707d',
+      eComNavTextColorHover: '#1d2025',
+      eComNavTextBorderHover: '#ff7d1a',
+      eComOrangeColor: '#ff7d1a',
+      eComLimitedH1Text: '#1d2025',
+      eComDiscountBg: '#ffede0',
+      eComOriginalPriceText: '#b6bcc8',
+      eComQuantityBtnsBg: '#f7f8fd',
     },
     screens: {
       'phone': {'min': '320px', 'max': '767px'},
@@ -29,7 +38,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'ibm-plex': ['"IBM Plex Sans"', 'sans-serif']
+        'ibm-plex': ['"IBM Plex Sans"', 'sans-serif'],
+        'kumbh-sans': ['"Kumbh Sans"', 'sans-serif']
       },
       backgroundImage: {
         'offer-desktop-bg': "url('/images/equalizer/bg-pattern-2.svg')",
@@ -37,7 +47,7 @@ module.exports = {
       flex: {
         '2': '2 2 0%',
         '4': '4 4 0%',
-      }
+      },
     },
   },
   plugins: [],
