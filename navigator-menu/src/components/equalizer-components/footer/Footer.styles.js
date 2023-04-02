@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import tw from 'tailwind-styled-components/dist/tailwind';
+import tw from 'tailwind-styled-components';
 
 export const Wrapper = tw.footer`
     flex

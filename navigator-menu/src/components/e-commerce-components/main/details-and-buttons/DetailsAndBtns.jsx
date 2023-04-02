@@ -81,7 +81,7 @@ function DetailsAndBtns() {
           </Btn>
         </QuantityBtns>
         <AddToCartWrapper onClick={handleAddToCart}>
-          <CartImg src="/e-commerce/icon-cart.svg" />
+          <CartImg src="/src/assets/e-commerce/icon-cart.svg" />
           <AddBtn>Add to cart</AddBtn>
         </AddToCartWrapper>
       </CartBtns>
