@@ -17,31 +17,31 @@ function Home() {
       <HomeCardsWrapper>
         <RouteBtn
           path={'project/tips-calculator'}
-          imageSource={'./tipscalculator-thumbnail.jpg'}
+          imageSource={'./images/tipscalculator-thumbnail.jpg'}
         >
           Tips Calculator
         </RouteBtn>
         <RouteBtn
           path={'project/github'}
-          imageSource={'./github-thumbnail.jpg'}
+          imageSource={'./images/github-thumbnail.jpg'}
         >
           Github
         </RouteBtn>
         <RouteBtn
           path={'project/e-commerce'}
-          imageSource={'./e-commerce-thumbnail.jpg'}
+          imageSource={'./images/e-commerce-thumbnail.jpg'}
         >
           E-Commerce
         </RouteBtn>
         <RouteBtn
           path={'project/loop-studio'}
-          imageSource={'./loopstudio-thumbnail.jpg'}
+          imageSource={'./images/loopstudio-thumbnail.jpg'}
         >
           Loop-studio
         </RouteBtn>
         <RouteBtn
           path={'project/equalizer'}
-          imageSource={'./equalizer-thumbnail.jpg'}
+          imageSource={'./images/equalizer-thumbnail.jpg'}
         >
           Equalizer
         </RouteBtn>

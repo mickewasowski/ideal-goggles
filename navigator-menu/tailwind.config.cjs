@@ -2,13 +2,13 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
   darkMode: 'class',
   theme: {
     colors:{
       genericWhite: '#ffffff',
-      genericBlack: '#1C1F25',
+      genericBlack: '#000000',
       mainMenuCardsBackground: '#F5F8FF',
       mainMenuCardsHoverBackground: '#ebeef5',
       mainHeaderBackground: '#0A0A0B',
@@ -43,6 +43,7 @@ module.exports = {
       githubAccountInfoBgDark: '#141d2f',
       githubSVGAndTextLightFill: '#4b699b',
       githubSVGAndTextUnavailableLight: '#8f95a8',
+      loopStudioDescParag: '#8c8c8c',
       equalizerOfferBg: '#191826',
       equalizerPlanBg: '#fa7352',
       equalizerPlanText: '#fcf9f8',
@@ -70,9 +71,16 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        'alata': ['"Alata"', 'sans-serif'],
+        'josefin-sans': ['"Josefin Sans"', 'sans-serif'],
         'space-mono': ['"Space Mono"', 'monospace'],
         'ibm-plex': ['"IBM Plex Sans"', 'sans-serif'],
         'kumbh-sans': ['"Kumbh Sans"', 'sans-serif'],
+      },
+      backgroundImage: {
+        'hero-desktop': "url('/images/loop-studio/desktop/image-hero.jpg')",
+        'hero-mobile': "url('/images/loop-studio/mobile/image-hero.jpg')",
+        'vr-goggles-desktop': "url('/images/loop-studio/desktop/image-interactive.jpg')",
       },
       width: {
         '85%': '46.75rem',
