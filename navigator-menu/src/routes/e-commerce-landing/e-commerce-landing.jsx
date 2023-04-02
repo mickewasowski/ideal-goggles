@@ -1,5 +1,13 @@
+import ECommerceWrapper from '../../components/e-commerce-components/ECommerceWrapper';
+
+import { ECommerceInfoProvider } from '../../contexts/e-commerce/ECommerceContext';
+
 function ECommerceRoute() {
-  return <h2>This is the E-commerce landing page</h2>;
+  return (
+    <ECommerceInfoProvider>
+      <ECommerceWrapper />
+    </ECommerceInfoProvider>
+  );
 }
 
 export default ECommerceRoute;
