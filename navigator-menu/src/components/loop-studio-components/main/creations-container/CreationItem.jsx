@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function CreationItem({ title, backgroundImage }) {
   let windowWidth = window.innerWidth;
   let design = windowWidth < 1440 ? 'mobile' : 'desktop';
-  let string = `/images/loop-studio/${design}/image-${backgroundImage}.jpg`;
+  let string = `/src/assets/loop-studio/${design}/image-${backgroundImage}.jpg`;
 
   const backdropRef = useRef({});
   const wrapperRef = useRef({});

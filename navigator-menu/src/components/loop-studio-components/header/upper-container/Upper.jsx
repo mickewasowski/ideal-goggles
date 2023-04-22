@@ -1,6 +1,6 @@
-import logo from '../../../../assets/loop-studio/logo.svg';
-import hamburger from '../../../../assets/loop-studio/icon-hamburger.svg';
-import closeMenu from '../../../../assets/loop-studio/icon-close.svg';
+import logo from '/src/assets/loop-studio/logo.svg';
+import hamburger from '/src/assets/loop-studio/icon-hamburger.svg';
+import closeMenu from '/src/assets/loop-studio/icon-close.svg';
 
 import {
   UpperContainer,

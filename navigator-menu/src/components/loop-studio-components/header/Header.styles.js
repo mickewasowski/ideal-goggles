@@ -6,7 +6,7 @@ export const HeaderContainer = tw.header`
     flex
     flex-col
 
-    bg-hero-desktop
+    // bg-hero-desktop
     bg-no-repeat
     bg-center
     bg-cover

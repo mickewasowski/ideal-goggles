@@ -31,16 +31,20 @@ function Right() {
     <Wrapper>
       <AccountInfo>
         <Table>
+        <thead>
           <tr id="topics">
             <TH>Repos</TH>
             <TH>Followers</TH>
             <TH>Following</TH>
           </tr>
+        </thead>
+        <tbody>
           <tr id="values">
             <TD>{data.repos}</TD>
             <TD>{data.followers}</TD>
             <TD>{data.following}</TD>
           </tr>
+        </tbody>
         </Table>
       </AccountInfo>
       <Contacts>

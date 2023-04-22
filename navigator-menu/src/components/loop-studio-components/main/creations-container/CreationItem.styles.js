@@ -1,8 +1,8 @@
 import tw from 'tailwind-styled-components';
 
 export const ItemWrapper = tw.div`
-    w-[19rem]
-    h-[28.1rem]
+    w-[20rem]
+    h-[28.4rem]
     bg-no-repeat
     bg-cover
     bg-[#00000066]

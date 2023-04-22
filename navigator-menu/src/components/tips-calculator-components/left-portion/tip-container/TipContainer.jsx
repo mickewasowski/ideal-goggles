@@ -45,6 +45,7 @@ function TipContainer() {
           type="number"
           placeholder="Custom"
           id="percentage"
+          min="0"
           ref={inputRef}
           onKeyPress={preventMinus}
           onChange={(e) => changeTipAmount(e, Number(e.target.value))}

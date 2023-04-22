@@ -78,16 +78,14 @@ module.exports = {
         'kumbh-sans': ['"Kumbh Sans"', 'sans-serif'],
       },
       backgroundImage: {
-        'hero-desktop': "url('/images/loop-studio/desktop/image-hero.jpg')",
-        'hero-mobile': "url('/images/loop-studio/mobile/image-hero.jpg')",
-        'vr-goggles-desktop': "url('/images/loop-studio/desktop/image-interactive.jpg')",
+        'hero-desktop': "url('/src/assets/loop-studio/desktop/image-hero.jpg')",
+        'hero-mobile': "url('/src/assets/loop-studio/mobile/image-hero.jpg')",
+        'vr-goggles-desktop': "url('/src/assets/loop-studio/desktop/image-interactive.jpg')",
+        'offer-desktop-bg': "url('/src/assets/equalizer/bg-pattern-2.svg')",
       },
       width: {
         '85%': '46.75rem',
         '70%': '42rem',
-      },
-      backgroundImage: {
-        'offer-desktop-bg': "url('/images/equalizer/bg-pattern-2.svg')",
       },
       flex: {
         '2': '2 2 0%',

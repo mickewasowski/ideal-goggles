@@ -1,8 +1,8 @@
-import logo from '../../../assets/loop-studio/logo.svg';
-import facebook from '../../../assets/loop-studio/icon-facebook.svg';
-import instagram from '../../../assets/loop-studio/icon-instagram.svg';
-import pinterest from '../../../assets/loop-studio/icon-pinterest.svg';
-import twitter from '../../../assets/loop-studio/icon-twitter.svg';
+import logo from '/src/assets/loop-studio/logo.svg';
+import facebook from '/src/assets/loop-studio/icon-facebook.svg';
+import instagram from '/src/assets/loop-studio/icon-instagram.svg';
+import pinterest from '/src/assets/loop-studio/icon-pinterest.svg';
+import twitter from '/src/assets/loop-studio/icon-twitter.svg';
 
 import {
   Wrapper,
