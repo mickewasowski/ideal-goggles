@@ -37,9 +37,10 @@ function PeopleContainer() {
       </ErrorLabel>
       <InputWrapper className={error ? errorDiv : ''}>
         <PersonSvg />
-        <Input 
-          type="number" 
-          id="people-count" 
+        <Input
+          type="number"
+          style={{ background: 'none' }}
+          id="people-count"
           onChange={handleChange} />
       </InputWrapper>
     </Container>

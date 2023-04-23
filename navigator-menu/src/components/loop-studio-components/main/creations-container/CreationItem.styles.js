@@ -26,18 +26,18 @@ export const ItemWrapper = tw.div`
 `;
 
 export const Backdrop = tw.div`
-w-full
-h-full
-bg-[#ffffff99]
+    w-full
+    h-full
+    bg-[#ffffff99]
 
-relative
-z-1
+    relative
+    z-1
 `;
 
 export const H3 = tw.h3`
-z-[2]
-absolute
-font-josefin-sans
-font-light
-text-[1.8rem]
+    z-[2]
+    absolute
+    font-josefin-sans
+    font-light
+    text-[1.8rem]
 `;

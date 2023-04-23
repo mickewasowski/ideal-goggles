@@ -10,19 +10,38 @@ import {
   LiItem,
   AnchorTag,
 } from './Upper.styles';
+import { useEffect, useState } from 'react';
 
 function Upper() {
   const navigationItems = ["About", "Careers", "Events", "Products", "Support"];
-  const isMobile = window.innerWidth >= 1440 ? false : true;
+  const [isMobile, setIsMobile] = useState(false);
+  const [openNavbar, setOpenNavbar] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth <= 1023) {
+      setIsMobile(true);
+    }
+    addEventListener('resize', handleResizeEvent);
+
+    return () => {
+      removeEventListener('resize', handleResizeEvent);
+    };
+  }, [isMobile]);
+
+  const handleResizeEvent = (event) => {
+    const { target } = event;
+    const { innerWidth } = target;
+
+    if (innerWidth <= 1023 && !isMobile) {
+      setIsMobile(true);
+    } else if (innerWidth > 1023 && isMobile) {
+      setIsMobile(false);
+      setOpenNavbar(false);
+    }
+  }
 
   const toggleNavigation = () => {
-    let navbar = document.getElementById('nav-bar');
-
-    if (navbar.style.display === 'flex') {
-      navbar.style.display = 'none';
-    } else {
-      navbar.style.display = 'flex';
-    }
+    setOpenNavbar(!openNavbar);
   };
 
   return (
@@ -32,14 +51,14 @@ function Upper() {
       </div>
       <div
         id="navigation-toggle"
-        style={isMobile ? { display: 'block' } : { display: 'none' }}
+        style={isMobile ? { display: 'inline' } : { display: 'none' }}
         onClick={toggleNavigation}
       >
-        <img src={hamburger} />
+        <img src={hamburger} style={{ cursor: 'pointer' }} />
       </div>
       <NavigationContainer
         id={'nav-bar'}
-        style={isMobile ? { display: 'none' } : { display: 'flex' }}
+        style={openNavbar ? { display: 'flex' } : { display: 'none' }}
       >
         <MobileLogoContainer
           id="mobile-logo"
@@ -47,17 +66,16 @@ function Upper() {
         >
           <img src={logo} />
           <span onClick={toggleNavigation}>
-            <img src={closeMenu} />
+            <img src={closeMenu} style={{ cursor: 'pointer' }} />
           </span>
         </MobileLogoContainer>
         <nav id="nav-tag">
-          {/* <!-- style="display: block;" --> */}
           <UL>
             {
               navigationItems.map((x, i) => {
                 return <LiItem key={i}>
-                          <AnchorTag to={''}>{x}</AnchorTag>
-                        </LiItem>
+                  <AnchorTag to={''}>{x}</AnchorTag>
+                </LiItem>
               })
             }
           </UL>

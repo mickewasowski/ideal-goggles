@@ -1,20 +1,40 @@
 import { ItemWrapper, Backdrop, H3 } from './CreationItem.styles';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
 function CreationItem({ title, backgroundImage }) {
-  let windowWidth = window.innerWidth;
-  let design = windowWidth < 1440 ? 'mobile' : 'desktop';
-  let string = `/src/assets/loop-studio/${design}/image-${backgroundImage}.jpg`;
-
+  const [isMobile, setIsMobile] = useState(false);
   const backdropRef = useRef({});
   const wrapperRef = useRef({});
+  const design = isMobile ? 'mobile' : 'desktop';
+  const imagePathTemplate = `/src/assets/loop-studio/${design}/image-${backgroundImage}.jpg`;
 
   useEffect(() => {
-    wrapperRef.current.style.background = `url(${string})`;
+    if (window.innerWidth <= 1023) {
+      setIsMobile(true);
+    }
+
+    addEventListener('resize', handleResize);
+
+    wrapperRef.current.style.background = `url(${imagePathTemplate})`;
     wrapperRef.current.style.backgroundPosition = 'center';
     wrapperRef.current.style.backgroundRepeat = 'no-repeat';
-  }, []);
+
+    return () => {
+      removeEventListener('resize', handleResize);
+    };
+  }, [isMobile]);
+
+  const handleResize = (event) => {
+    const { target } = event;
+    const { innerWidth } = target;
+
+    if (innerWidth <= 1023 && !isMobile) {
+      setIsMobile(!isMobile);
+    } else if (innerWidth > 1023 && isMobile) {
+      setIsMobile(false);
+    }
+  }
 
   const removeBackdrop = () => {
     backdropRef.current.style.display = 'none';

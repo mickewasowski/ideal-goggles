@@ -101,7 +101,9 @@ export const BioParag = tw.p`
 
     phone:text-left
     phone:mb-[2rem]
+    phone:break-all
 
     tablet:text-left
     tablet:mb-0
+    tablet:break-all
 `;

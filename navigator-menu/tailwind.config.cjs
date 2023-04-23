@@ -6,7 +6,7 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    colors:{
+    colors: {
       genericWhite: '#ffffff',
       genericBlack: '#000000',
       mainMenuCardsBackground: '#F5F8FF',
@@ -64,10 +64,10 @@ module.exports = {
       eComQuantityBtnsBg: '#f7f8fd',
     },
     screens: {
-      'phone': {'min': '320px', 'max': '767px'},
-      'tablet': {'min':'768px', 'max': '1023px'},
-      'laptop': {'min': '1023px', 'max': '1399px'},
-      'desktop': {'min': '1440px'}
+      'phone': { 'min': '320px', 'max': '767px' },
+      'tablet': { 'min': '768px', 'max': '1023px' },
+      'laptop': { 'min': '1024px', 'max': '1399px' },
+      'desktop': { 'min': '1440px' }
     },
     extend: {
       fontFamily: {

@@ -19,6 +19,7 @@ function InputContainer() {
         <DollarSignSvg />
         <Input
           type="number"
+          style={{ background: 'none' }}
           id="bill"
           min="0"
           onKeyPress={preventMinus}

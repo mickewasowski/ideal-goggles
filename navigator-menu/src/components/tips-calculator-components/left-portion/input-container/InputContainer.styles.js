@@ -30,7 +30,6 @@ export const Input = tw.input`
     w-4/5
     h-2/4
     border-none
-    bg-transparent
     text-right
     text-tipsCalcInputColor
     text-2xl

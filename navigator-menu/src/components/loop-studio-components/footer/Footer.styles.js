@@ -50,15 +50,24 @@ export const Navigation = tw.ul`
 export const ListItem = tw.li`
     mr-[2rem]
     pb-[1rem]
+`;
+
+export const ListItemAnchor = tw.a`
+    pb-[1rem]
+
+    phone:pb-[.5rem]
+
+    tablet:pb-[.5rem]
 
     hover:border-b-2
     hover:border-genericWhite
-`;
+`
 
 export const RightContainer = tw.div`
     flex
     flex-col
     gap-6
+    mb-[1rem]
 
     phone:items-center
     phone:gap-0
