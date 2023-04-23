@@ -43,6 +43,17 @@ export const OfferContainer = tw.div`
     phone:flex-col
     phone:items-center
     phone:mt-[12rem]
+    phone:bg-75%
+    phone:bg-[51%_5%]
+
+    tablet:bg-27%
+    tablet:bg-[51%_-31%]
+
+    laptop:bg-35%
+    laptop:bg-[52%_0%]
+
+    desktop:bg-27%
+    desktop:bg-[43%_-4%]
 `;
 
 export const AppIllustrationContainer = tw.div`
@@ -78,9 +89,9 @@ export const PlanContainer = tw.div`
     phone:w-full
     phone:translate-y-0
 
-    tablet:w-7/12
-    tablet:-translate-x-[56px]
-    tablet:translate-y-[137px]
+    tablet:w-[55%]
+    tablet:-translate-x-[2.8rem]
+    tablet:translate-y-[8.6rem]
 `;
 
 export const Headings = tw.div`

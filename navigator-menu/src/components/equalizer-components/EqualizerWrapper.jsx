@@ -24,6 +24,12 @@ function EqualizerWrapper() {
     }
     bodyTag.style.backgroundRepeat = 'no-repeat, no-repeat';
     bodyTag.style.backgroundPosition = 'top 2% right, top left';
+
+    return () => {
+      bodyTag.style.backgroundImage = 'none';
+      bodyTag.style.backgroundRepeat = 'inherit';
+      bodyTag.style.backgroundPosition = 'inherit';
+    }
   }, []);
 
   return (

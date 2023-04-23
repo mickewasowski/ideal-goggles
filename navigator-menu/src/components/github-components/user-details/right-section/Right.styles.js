@@ -22,6 +22,8 @@ export const Wrapper = tw.div`
     laptop:self-center
     laptop:w-11/12
     laptop:m-0
+
+    desktop:ml-[2rem]
 `;
 
 export const AccountInfo = tw.div`

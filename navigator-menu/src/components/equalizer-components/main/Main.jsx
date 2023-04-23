@@ -22,7 +22,6 @@ import {
 } from './Main.styles';
 
 function Main() {
-  let currentWidth = window.outerWidth;
 
   return (
     <main>
@@ -36,31 +35,7 @@ function Main() {
         </Parag>
       </DescriptionContainer>
       <OfferContainer
-        style={
-          currentWidth <= 500
-            ? {
-                backgroundImage: 'url(/src/assets/equalizer/bg-pattern-2.svg)',
-                backgroundSize: '75%',
-                backgroundPosition: '51% 0%',
-              }
-            : currentWidth > 500 && currentWidth < 1024
-            ? {
-                backgroundImage: 'url(/src/assets/equalizer/bg-pattern-2.svg)',
-                backgroundSize: '27%',
-                backgroundPosition: '57% 0%',
-              }
-            : currentWidth >= 1024 && currentWidth <= 1440
-            ? {
-                backgroundImage: 'url(/src/assets/equalizer/bg-pattern-2.svg)',
-                backgroundSize: '35%',
-                backgroundPosition: '52% 0%',
-              }
-            : {
-                backgroundImage: 'url(/src/assets/equalizer/bg-pattern-2.svg)',
-                backgroundSize: '27%',
-                backgroundPosition: '43% -228%',
-              }
-        }
+        style={{ backgroundImage: 'url(/src/assets/equalizer/bg-pattern-2.svg)' }}
       >
         <AppIllustrationContainer>
           <AppImage src={appIllustration} alt="app-illustration" />
