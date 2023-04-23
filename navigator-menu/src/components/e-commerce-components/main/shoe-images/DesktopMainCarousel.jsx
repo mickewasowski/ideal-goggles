@@ -14,10 +14,10 @@ import {
 
 function DesktopMainCarousel() {
   const smallImages = [
-    {id: 1, backgroundImage: 'url(/src/assets/e-commerce/image-product-1-thumbnail.jpg)'},
-    {id: 2, backgroundImage: 'url(/src/assets/e-commerce/image-product-2-thumbnail.jpg)'},
-    {id: 3, backgroundImage: 'url(/src/assets/e-commerce/image-product-3-thumbnail.jpg)'},
-    {id: 4, backgroundImage: 'url(/src/assets/e-commerce/image-product-4-thumbnail.jpg)'},
+    { id: 1, backgroundImage: 'url(/src/assets/e-commerce/image-product-1-thumbnail.jpg)' },
+    { id: 2, backgroundImage: 'url(/src/assets/e-commerce/image-product-2-thumbnail.jpg)' },
+    { id: 3, backgroundImage: 'url(/src/assets/e-commerce/image-product-3-thumbnail.jpg)' },
+    { id: 4, backgroundImage: 'url(/src/assets/e-commerce/image-product-4-thumbnail.jpg)' },
   ]
   const windowWidth = window.outerWidth;
   const { toggleGallery } = useContext(ECommerceContext);
@@ -74,18 +74,18 @@ function DesktopMainCarousel() {
         {
           smallImages.map((x, i) => {
             return <ImageContainer
-                      key={i}
-                      id={`outer-${x.id}`}
-                      className={`${current === x.id ? outerOutline : 'outline-none'}`}
-                    >
-                      <SmallImage
-                        id={x.id}
-                        style={{
-                          backgroundImage: x.backgroundImage,
-                        }}
-                        onClick={changeBigImage}
-                      ></SmallImage>
-                    </ImageContainer>
+              key={i}
+              id={`outer-${x.id}`}
+              className={`${current === x.id ? outerOutline : 'outline-none'}`}
+            >
+              <SmallImage
+                id={x.id}
+                style={{
+                  backgroundImage: x.backgroundImage,
+                }}
+                onClick={changeBigImage}
+              ></SmallImage>
+            </ImageContainer>
           })
         }
       </OtherImagesWrapper>

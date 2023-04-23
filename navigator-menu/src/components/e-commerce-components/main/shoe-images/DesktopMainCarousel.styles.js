@@ -28,6 +28,7 @@ export const BigImage = tw.img`
 
     phone:rounded-none
     phone:h-[30rem]
+    phone:w-[-webkit-fill-available]
 
     tablet:rounded-none
 
