@@ -12,6 +12,20 @@ function InputContainer() {
     }
   }
 
+  function preventNonNumericalInput(e) {
+    e = e || window.event;
+
+    if (e !== undefined && (e.code === 'NumpadSubtract' || e.code === 'Minus')) {
+      e.preventDefault();
+    }
+
+    var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
+    var charStr = String.fromCharCode(charCode);
+  
+    if (!charStr.match(/^[0-9]+$/))
+      e.preventDefault();
+  }
+
   return (
     <Container>
       <Label>Bill</Label>
@@ -21,7 +35,7 @@ function InputContainer() {
           type="number"
           id="bill"
           min="0"
-          onKeyPress={preventMinus}
+          onKeyPress={preventNonNumericalInput}
           onChange={(e) => bill(Number(e.target.value))}
         />
       </InputWrapper>

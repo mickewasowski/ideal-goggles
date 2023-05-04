@@ -26,6 +26,20 @@ function PeopleContainer() {
     }
   };
 
+  function preventNonNumericalInput(e) {
+    e = e || window.event;
+
+    if (e !== undefined && (e.code === 'NumpadSubtract' || e.code === 'Minus')) {
+      e.preventDefault();
+    }
+
+    var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
+    var charStr = String.fromCharCode(charCode);
+  
+    if (!charStr.match(/^[0-9]+$/))
+      e.preventDefault();
+  }
+
   return (
     <Container>
       <Label>Number of People</Label>
@@ -39,7 +53,8 @@ function PeopleContainer() {
         <PersonSvg />
         <Input 
           type="number" 
-          id="people-count" 
+          id="people-count"
+          onKeyPress={preventNonNumericalInput}
           onChange={handleChange} />
       </InputWrapper>
     </Container>
