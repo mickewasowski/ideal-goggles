@@ -1,4 +1,4 @@
-import logo from '../../../assets/equalizer/logo.svg';
+import logo from '/src/assets/equalizer/logo.svg';
 import { LogoContainer } from './Header.styles';
 
 function Header() {

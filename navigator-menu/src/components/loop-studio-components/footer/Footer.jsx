@@ -1,8 +1,8 @@
-import logo from '../../../assets/loop-studio/logo.svg';
-import facebook from '../../../assets/loop-studio/icon-facebook.svg';
-import instagram from '../../../assets/loop-studio/icon-instagram.svg';
-import pinterest from '../../../assets/loop-studio/icon-pinterest.svg';
-import twitter from '../../../assets/loop-studio/icon-twitter.svg';
+import logo from '/src/assets/loop-studio/logo.svg';
+import facebook from '/src/assets/loop-studio/icon-facebook.svg';
+import instagram from '/src/assets/loop-studio/icon-instagram.svg';
+import pinterest from '/src/assets/loop-studio/icon-pinterest.svg';
+import twitter from '/src/assets/loop-studio/icon-twitter.svg';
 
 import {
   Wrapper,
@@ -10,6 +10,7 @@ import {
   LogoContainer,
   Navigation,
   ListItem,
+  ListItemAnchor,
   RightContainer,
   IconsContainer,
   AnchorTag,
@@ -30,8 +31,8 @@ function Footer() {
             {
               navigationItems.map((x, i) => {
                 return <ListItem key={i}>
-                          <a href="#">{x}</a>
-                        </ListItem>
+                  <ListItemAnchor href="#">{x}</ListItemAnchor>
+                </ListItem>
               })
             }
           </Navigation>
@@ -42,8 +43,8 @@ function Footer() {
           {
             socials.map((x, i) => {
               return <AnchorTag key={i} to={''}>
-                        <img src={x} />
-                      </AnchorTag>
+                <img src={x} />
+              </AnchorTag>
             })
           }
         </IconsContainer>

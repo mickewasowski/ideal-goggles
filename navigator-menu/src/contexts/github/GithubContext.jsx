@@ -38,5 +38,5 @@ export const GithubInfoProvider = ({ children }) => {
 };
 
 GithubInfoProvider.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.object,
 };

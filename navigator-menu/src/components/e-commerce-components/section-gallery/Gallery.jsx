@@ -1,4 +1,4 @@
-import { useState, useContext, useRef } from 'react';
+import { useState, useContext, useRef, useEffect } from 'react';
 import { MdOutlineClose } from 'react-icons/md';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 
@@ -18,7 +18,31 @@ import {
 function Gallery() {
   const galleryWrapperRef = useRef();
   const [current, setCurrent] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
   const { isGalleryOpen, toggleGallery } = useContext(ECommerceContext);
+
+  useEffect(() => {
+    if (window.innerWidth <= 1023 && !isMobile) {
+      setIsMobile(true);
+    } else if (window.innerWidth > 1023 && !isMobile) {
+      setIsMobile(false);
+    }
+
+    addEventListener('resize', handleResize);
+
+    return () => {
+      removeEventListener('resize', handleResize);
+    }
+  }, []);
+
+  const handleResize = (event) => {
+    if (window.innerWidth <= 1023 && !isMobile) {
+      setIsMobile(true);
+    } else if (window.innerWidth > 1023 && !isMobile) {
+      setIsMobile(false);
+    }
+  };
+
   const outerOutline = 'outline-2 outline outline-[#ff7d1a]';
   const handleChangeBigImage = (e) => setCurrent(Number(e.target.id));
 
@@ -49,8 +73,10 @@ function Gallery() {
   }
 
   return (
-    <Wrapper ref={galleryWrapperRef} 
-      className={isGalleryOpen ? 'flex' : 'hidden'} onClick={e => handleClickOutside(e)}>
+    <Wrapper ref={galleryWrapperRef}
+      className={isGalleryOpen ? 'flex' : 'hidden'} onClick={e => handleClickOutside(e)}
+      style={isMobile ? { display: 'none' } : {}}
+    >
       <GalleryContainer>
         <div className="current-image-container select-none">
           <MdOutlineClose

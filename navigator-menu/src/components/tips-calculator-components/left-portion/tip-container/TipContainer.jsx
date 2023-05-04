@@ -26,11 +26,20 @@ function TipContainer() {
     currentBtn.current = amount;
   }
 
-  const preventMinus = (e) => {
+  const preventNonNumericalInput = (e) => {
+    e = e || window.event;
+  
     if (e !== undefined && (e.code === 'NumpadSubtract' || e.code === 'Minus')) {
       e.preventDefault();
     }
-  }
+  
+    const charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
+    const charStr = String.fromCharCode(charCode);
+  
+    if (!charStr.match(/^[0-9]+$/)) {
+      e.preventDefault();
+    }
+  }  
 
   return (
     <Container>
@@ -45,8 +54,9 @@ function TipContainer() {
           type="number"
           placeholder="Custom"
           id="percentage"
+          min="0"
           ref={inputRef}
-          onKeyPress={preventMinus}
+          onKeyPress={preventNonNumericalInput}
           onChange={(e) => changeTipAmount(e, Number(e.target.value))}
         />
       </PercentageBtns>

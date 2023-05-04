@@ -25,22 +25,26 @@ function Right() {
   const inactiveTextClasses = 'text-githubSVGAndTextUnavailableLight';
 
   const blogActive =
-    'text-githubSVGAndTextLightFill cursor-pointer dark:text-genericWhite hover:underline hover:decoration-githubSVGAndTextLightFill hover:dark:decoration-genericWhite';
+    'text-githubSVGAndTextLightFill cursor-pointer dark:text-genericWhite hover:underline hover:decoration-githubSVGAndTextLightFill hover:dark:decoration-genericWhite phone:break-all tablet:break-all';
 
   return (
     <Wrapper>
       <AccountInfo>
         <Table>
-          <tr id="topics">
-            <TH>Repos</TH>
-            <TH>Followers</TH>
-            <TH>Following</TH>
-          </tr>
-          <tr id="values">
-            <TD>{data.repos}</TD>
-            <TD>{data.followers}</TD>
-            <TD>{data.following}</TD>
-          </tr>
+          <thead>
+            <tr id="topics">
+              <TH>Repos</TH>
+              <TH>Followers</TH>
+              <TH>Following</TH>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="values">
+              <TD>{data.repos}</TD>
+              <TD>{data.followers}</TD>
+              <TD>{data.following}</TD>
+            </tr>
+          </tbody>
         </Table>
       </AccountInfo>
       <Contacts>
@@ -80,9 +84,11 @@ function Right() {
                 </g>
               </svg>
             </IconSpan>
-            <p className={data.blog ? blogActive : inactiveTextClasses}>
-              {data.blog ? data.blog : 'Not available'}
-            </p>
+            {
+              data.blog ?
+                <a className={blogActive}>{data.blog}</a>
+                : <p className={inactiveTextClasses}>Not available</p>
+            }
           </DetailsWrapper>
         </LeftContactsWrapper>
         <RightContactsWrapper>
