@@ -26,19 +26,20 @@ function PeopleContainer() {
     }
   };
 
-  function preventNonNumericalInput(e) {
+  const preventNonNumericalInput = (e) => {
     e = e || window.event;
-
+  
     if (e !== undefined && (e.code === 'NumpadSubtract' || e.code === 'Minus')) {
       e.preventDefault();
     }
-
-    var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
-    var charStr = String.fromCharCode(charCode);
   
-    if (!charStr.match(/^[0-9]+$/))
+    const charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
+    const charStr = String.fromCharCode(charCode);
+  
+    if (!charStr.match(/^[0-9]+$/)) {
       e.preventDefault();
-  }
+    }
+  }  
 
   return (
     <Container>
