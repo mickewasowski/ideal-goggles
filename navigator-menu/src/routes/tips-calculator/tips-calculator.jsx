@@ -1,5 +1,12 @@
+import TipsCalculatorWrapper from '../../components/tips-calculator-components/TipsCalculatorWrapper';
+import { TipsCalculatorInfoProvider } from '../../contexts/TipsCalculatorContext';
+
 function TipsCalculatorRoute() {
-  return <h2>This is the Tips Calculator landing page</h2>;
+  return (
+    <TipsCalculatorInfoProvider>
+      <TipsCalculatorWrapper />
+    </TipsCalculatorInfoProvider>
+  );
 }
 
 export default TipsCalculatorRoute;
