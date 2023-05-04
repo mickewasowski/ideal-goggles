@@ -1,7 +1,7 @@
 import tw from 'tailwind-styled-components';
 
 export const Wrapper = tw.div`
-    w-full
+    w-auto
     bg-genericWhite
     rounded-xl
     h-[3.5rem]

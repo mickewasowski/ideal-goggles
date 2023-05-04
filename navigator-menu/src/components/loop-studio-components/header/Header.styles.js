@@ -37,6 +37,8 @@ export const LowerContainer = tw.div`
     tablet:self-center
     tablet:m-0
     tablet:mt-[12rem]
+
+    laptop:w-[80%]
 `;
 
 export const Heading = tw.h1`
@@ -48,10 +50,13 @@ export const Heading = tw.h1`
     mx-[3rem]
     text-9xl
     font-light
+    break-normal
 
     phone:m-[1rem]
     phone:text-[2.2rem]
 
     tablet:m-[1rem]
     tablet:text-[2.2rem]
+
+    laptop:text-8xl
 `;

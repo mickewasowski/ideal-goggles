@@ -6,7 +6,7 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    colors:{
+    colors: {
       genericWhite: '#ffffff',
       genericBlack: '#000000',
       mainMenuCardsBackground: '#F5F8FF',
@@ -64,10 +64,10 @@ module.exports = {
       eComQuantityBtnsBg: '#f7f8fd',
     },
     screens: {
-      'phone': {'min': '320px', 'max': '767px'},
-      'tablet': {'min':'768px', 'max': '1023px'},
-      'laptop': {'min': '1023px', 'max': '1399px'},
-      'desktop': {'min': '1440px'}
+      'phone': { 'min': '320px', 'max': '767px' },
+      'tablet': { 'min': '768px', 'max': '1023px' },
+      'laptop': { 'min': '1024px', 'max': '1399px' },
+      'desktop': { 'min': '1400px' }
     },
     extend: {
       fontFamily: {
@@ -82,6 +82,11 @@ module.exports = {
         'hero-mobile': "url('/src/assets/loop-studio/mobile/image-hero.jpg')",
         'vr-goggles-desktop': "url('/src/assets/loop-studio/desktop/image-interactive.jpg')",
         'offer-desktop-bg': "url('/src/assets/equalizer/bg-pattern-2.svg')",
+      },
+      backgroundSize: {
+        '27%': '27%',
+        '35%': '35%',
+        '75%': '75%'
       },
       width: {
         '85%': '46.75rem',

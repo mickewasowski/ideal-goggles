@@ -10,6 +10,7 @@ import {
   LogoContainer,
   Navigation,
   ListItem,
+  ListItemAnchor,
   RightContainer,
   IconsContainer,
   AnchorTag,
@@ -30,8 +31,8 @@ function Footer() {
             {
               navigationItems.map((x, i) => {
                 return <ListItem key={i}>
-                          <a href="#">{x}</a>
-                        </ListItem>
+                  <ListItemAnchor href="#">{x}</ListItemAnchor>
+                </ListItem>
               })
             }
           </Navigation>
@@ -42,8 +43,8 @@ function Footer() {
           {
             socials.map((x, i) => {
               return <AnchorTag key={i} to={''}>
-                        <img src={x} />
-                      </AnchorTag>
+                <img src={x} />
+              </AnchorTag>
             })
           }
         </IconsContainer>

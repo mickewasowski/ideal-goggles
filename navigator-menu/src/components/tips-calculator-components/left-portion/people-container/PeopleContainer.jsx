@@ -55,6 +55,7 @@ function PeopleContainer() {
           type="number" 
           id="people-count"
           onKeyPress={preventNonNumericalInput}
+          style={{ background: 'none' }}
           onChange={handleChange} />
       </InputWrapper>
     </Container>
