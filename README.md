@@ -2,6 +2,8 @@
 This project is brought to you by me :)
 The designs for the five subprojects, Github search, Equalizer, Tips Calculator, Loopstudio and E-commerce, are provided by the N2J Academy. My task was to create a pixel perfect and responsive pages.
 
+Hosted at: https://rosen-projects.vercel.app/
+
 ## Start the project
 ```bash
 yarn run dev
