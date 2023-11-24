@@ -13,8 +13,8 @@ import {
   Strong,
   CheckOutBtn,
 } from './Cart.styles';
-import imageThumbnail from '/src/assets/e-commerce/image-product-1-thumbnail.jpg';
-import deleteIcon from '/src/assets/e-commerce/icon-delete.svg';
+import imageThumbnail from '/assets/e-commerce/image-product-1-thumbnail.jpg';
+import deleteIcon from '/assets/e-commerce/icon-delete.svg';
 import PropTypes from 'prop-types';
 
 function Cart({ isCartOpen }) {

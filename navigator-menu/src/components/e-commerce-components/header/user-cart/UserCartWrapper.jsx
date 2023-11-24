@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { ECommerceContext } from '../../../../contexts/e-commerce/ECommerceContext';
 
-import avatar from '/src/assets/e-commerce/image-avatar.png';
+import avatar from '/assets/e-commerce/image-avatar.png';
 import Cart from './cart/Cart';
 
 import {

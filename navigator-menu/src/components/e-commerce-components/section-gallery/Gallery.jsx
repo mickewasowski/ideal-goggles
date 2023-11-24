@@ -95,7 +95,7 @@ function Gallery() {
             id="1"
             className="current-image"
             style={{ display: 'block' }}
-            src={`/src/assets/e-commerce/image-product-${current}.jpg`}
+            src={`/assets/e-commerce/image-product-${current}.jpg`}
           />
         </div>
         <ThumbnailImgsContainer id="smaller-images">
@@ -107,7 +107,7 @@ function Gallery() {
               id="1"
               style={{
                 backgroundImage:
-                  'url(/src/assets/e-commerce/image-product-1-thumbnail.jpg)',
+                  'url(/assets/e-commerce/image-product-1-thumbnail.jpg)',
               }}
               onClick={handleChangeBigImage}
             ></ThumbImg>
@@ -120,7 +120,7 @@ function Gallery() {
               id="2"
               style={{
                 backgroundImage:
-                  'url(/src/assets/e-commerce/image-product-2-thumbnail.jpg)',
+                  'url(/assets/e-commerce/image-product-2-thumbnail.jpg)',
               }}
               onClick={handleChangeBigImage}
             ></ThumbImg>
@@ -133,7 +133,7 @@ function Gallery() {
               id="3"
               style={{
                 backgroundImage:
-                  'url(/src/assets/e-commerce/image-product-3-thumbnail.jpg)',
+                  'url(/assets/e-commerce/image-product-3-thumbnail.jpg)',
               }}
               onClick={handleChangeBigImage}
             ></ThumbImg>
@@ -146,7 +146,7 @@ function Gallery() {
               id="4"
               style={{
                 backgroundImage:
-                  'url(/src/assets/e-commerce/image-product-4-thumbnail.jpg)',
+                  'url(/assets/e-commerce/image-product-4-thumbnail.jpg)',
               }}
               onClick={handleChangeBigImage}
             ></ThumbImg>
