@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import profilePic from '../../assets/github/octocat.png';
+import profilePic from '/assets/github/octocat.png';
 import PropTypes from 'prop-types';
 
 export const GithubContext = createContext();
