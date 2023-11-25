@@ -78,9 +78,9 @@ module.exports = {
         'kumbh-sans': ['"Kumbh Sans"', 'sans-serif'],
       },
       backgroundImage: {
-        'hero-desktop': "url('/src/assets/loop-studio/desktop/image-hero.jpg')",
-        'hero-mobile': "url('/src/assets/loop-studio/mobile/image-hero.jpg')",
-        'vr-goggles-desktop': "url('/src/assets/loop-studio/desktop/image-interactive.jpg')",
+        'hero-desktop': "url('/assets/loop-studio/desktop/image-hero.jpg')",
+        'hero-mobile': "url('/assets/loop-studio/mobile/image-hero.jpg')",
+        'vr-goggles-desktop': "url('/assets/loop-studio/desktop/image-interactive.jpg')",
         'offer-desktop-bg': "url('/src/assets/equalizer/bg-pattern-2.svg')",
       },
       backgroundSize: {

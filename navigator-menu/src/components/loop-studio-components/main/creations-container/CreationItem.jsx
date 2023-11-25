@@ -7,7 +7,7 @@ function CreationItem({ title, backgroundImage }) {
   const backdropRef = useRef({});
   const wrapperRef = useRef({});
   const design = isMobile ? 'mobile' : 'desktop';
-  const imagePathTemplate = `/src/assets/loop-studio/${design}/image-${backgroundImage}.jpg`;
+  const imagePathTemplate = `/assets/loop-studio/${design}/image-${backgroundImage}.jpg`;
 
   useEffect(() => {
     if (window.innerWidth <= 1023) {
