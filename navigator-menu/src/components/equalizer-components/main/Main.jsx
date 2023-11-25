@@ -1,6 +1,6 @@
-import appleLogo from '/src/assets/equalizer/icon-apple.svg';
-import androidLogo from '/src/assets/equalizer/icon-android.svg';
-import appIllustration from '/src/assets/equalizer/illustration-app.png';
+import appleLogo from '/assets/equalizer/icon-apple.svg';
+import androidLogo from '/assets/equalizer/icon-android.svg';
+import appIllustration from '/assets/equalizer/illustration-app.png';
 
 import {
   DescriptionContainer,
@@ -35,7 +35,7 @@ function Main() {
         </Parag>
       </DescriptionContainer>
       <OfferContainer
-        style={{ backgroundImage: 'url(/src/assets/equalizer/bg-pattern-2.svg)' }}
+        style={{ backgroundImage: 'url(/assets/equalizer/bg-pattern-2.svg)' }}
       >
         <AppIllustrationContainer>
           <AppImage src={appIllustration} alt="app-illustration" />

@@ -1,4 +1,4 @@
-import logo from '/src/assets/equalizer/logo.svg';
+import logo from '/assets/equalizer/logo.svg';
 
 import {
   Wrapper,

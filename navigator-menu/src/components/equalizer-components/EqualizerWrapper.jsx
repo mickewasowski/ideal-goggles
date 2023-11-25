@@ -14,13 +14,13 @@ function EqualizerWrapper() {
 
     if (currentWidth >= 1440) {
       bodyTag.style.backgroundImage =
-        "url('/src/assets/equalizer/bg-pattern-1.svg'), url('/src/assets/equalizer/bg-main-desktop.png')";
+        "url('/assets/equalizer/bg-pattern-1.svg'), url('/assets/equalizer/bg-main-desktop.png')";
     } else if (currentWidth < 1440 && currentWidth >= 500) {
       bodyTag.style.backgroundImage =
-        "url('/src/assets/equalizer/bg-pattern-1.svg'), url('/src/assets/equalizer/bg-main-tablet.png')";
+        "url('/assets/equalizer/bg-pattern-1.svg'), url('/assets/equalizer/bg-main-tablet.png')";
     } else {
       bodyTag.style.backgroundImage =
-        "url('src/assets/equalizer/bg-main-mobile.png')";
+        "url('/assets/equalizer/bg-main-mobile.png')";
     }
     bodyTag.style.backgroundRepeat = 'no-repeat, no-repeat';
     bodyTag.style.backgroundPosition = 'top 2% right, top left';
